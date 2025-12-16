@@ -1,0 +1,25 @@
+<!-- public/index.html -->
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/projeto-phrima/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PRHIMA</title>
+    <!-- Script para redirecionamento SPA -->
+    <script>
+      (function() {
+        var redirect = sessionStorage.redirect;
+        delete sessionStorage.redirect;
+        if (redirect && redirect != location.href) {
+          history.replaceState(null, null, redirect);
+        }
+      })();
+    </script>
+    <script type="module" crossorigin src="/projeto-phrima/assets/index-CGgnJ9ql.js"></script>
+    <link rel="stylesheet" crossorigin href="/projeto-phrima/assets/index-DNx9UuH5.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
