@@ -1,0 +1,127 @@
+:host,
+:root {
+  --fa-style-family-classic: "Font Awesome 6 Free";
+  --fa-font-solid: normal 900 1em / 1 "Font Awesome 6 Free";
+
+  --fa-font-regular: normal 400 1em / 1 "Font Awesome 6 Free";
+
+  --fa-style-family-brands: "Font Awesome 6 Brands";
+  --fa-font-brands: normal 400 1em / 1 "Font Awesome 6 Brands";
+
+  --color-primary: #0D2C4F;
+  --color-secondary: #D4AF37;
+  --color-secondary-dark: #c29d2e;
+  --color-white: #FFFFFF;
+  --color-light-gray: #f8f9fa;
+  --color-border: #dee2e6;
+  --color-text: #212529;
+  --color-text-light: #6c757d;
+  --font-main: 'Poppins', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 16px;
+  transition: 0.3s ease-in-out;
+}
+
+a:hover {
+  color: var(--color-secondary-dark);
+  transform: scale(1.1);
+}
+
+.active:Link  {
+  text-decoration: var(--color-secondary-dark);
+  color: var(--color-secondary-dark);
+  background: none;
+}
+
+.header {
+  background: white;
+  top: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+  gap: 20px;
+
+}
+
+.logoHeader {
+  height: 100px;
+  padding: 10px;
+}
+
+.headerLine {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  text-decoration: none;
+  color: black;
+  ;
+}
+
+.languages {
+  display: flex;
+  position: absolute;
+  right: 50px;
+  gap: 20px;
+}
+
+/* Animação */
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+  .header {
+    padding: 15px 20px;
+  }
+  
+  .headerLine {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .headerLine {
+    display: none;
+  }
+  
+  .languages {
+    display: none;
+  }
+  
+  .menu-toggle {
+    display: block;
+  }
+  
+  .mobile-menu-overlay {
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 10px 15px;
+  }
+  
+  .logoHeader {
+    height: 40px;
+  }
+  
+  .mobile-menu {
+    width: 85%;
+  }
+}
