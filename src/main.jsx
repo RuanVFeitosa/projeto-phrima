@@ -1,13 +1,14 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import { BrowserRouter } from 'react-router-dom'
-import App from './pages/App.jsx'
+// main.jsx
+import { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
+import { BrowserRouter } from 'react-router-dom' // ← Importe BrowserRouter
 import './index.css'
+import App from './pages/App.jsx'
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <BrowserRouter basename="/projeto-phrima"> {/* ← NOME DO REPOSITÓRIO */}
+createRoot(document.getElementById('root')).render(
+  <StrictMode>
+    <BrowserRouter basename="/projeto-phrima"> {/* ← Adicione basename */}
       <App />
     </BrowserRouter>
-  </React.StrictMode>,
+  </StrictMode>,
 )
