@@ -1,3 +1,4 @@
+// No main.jsx, certifique-se que está assim:
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
