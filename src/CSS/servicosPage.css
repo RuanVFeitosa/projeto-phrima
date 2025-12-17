@@ -121,16 +121,18 @@
 .servicos-grid-section {
     padding: 80px 20px;
     background: white;
-    align-items: center;
+    display: flex;
+    justify-content: center;
 }
 
 .servicos-grid {
     max-width: 1400px;
+    width: 100%;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    gap: 50px;
-    align-items: center;
+    gap: 30px;
+    align-items: stretch; /* Isso faz os cards terem a mesma altura na linha */
 }
 
 .servico-card {
@@ -142,6 +144,7 @@
     border: 2px solid transparent;
     display: flex;
     flex-direction: column;
+    height: 100%; /* Importante para que todos ocupem toda a altura disponível */
 }
 
 .servico-card:hover {
@@ -153,9 +156,9 @@
 .card-header {
     padding: 25px 25px 0;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: c;
+    justify-content: space-between;
+    align-items: flex-start;
+    min-height: 90px; /* Altura mínima consistente */
 }
 
 .card-icon {
@@ -167,6 +170,7 @@
     justify-content: center;
     color: white;
     font-size: 1.5rem;
+    flex-shrink: 0; /* Impede que o ícone seja comprimido */
 }
 
 .card-tag {
@@ -175,11 +179,14 @@
     border-radius: 20px;
     font-size: 0.8rem;
     font-weight: 600;
+    height: fit-content;
 }
 
 .card-body {
-    padding: 15px;
-    flex: 1;
+    padding: 25px;
+    flex: 1; /* Faz o corpo expandir para ocupar espaço disponível */
+    display: flex;
+    flex-direction: column;
 }
 
 .card-title {
@@ -188,6 +195,7 @@
     color: #1a1a1a;
     margin-bottom: 15px;
     line-height: 1.3;
+    min-height: 3.6rem; /* Altura consistente para títulos */
 }
 
 .card-description {
@@ -195,10 +203,12 @@
     line-height: 1.6;
     margin-bottom: 20px;
     font-size: 1rem;
+    flex-grow: 0; /* Não cresce mais que o necessário */
 }
 
 .card-features {
-    margin-top: 20px;
+    margin-top: auto; /* Empurra os benefícios para o final */
+    padding-top: 20px;
 }
 
 .features-title {
@@ -229,15 +239,14 @@
 }
 
 .card-footer {
-
     padding: 0 25px 25px;
+    margin-top: auto; /* Garante que o footer fique no final */
 }
 
 .cta-button {
-    position: relative;
-    margin-left: -60px;
-    height: 20px;
-    padding: px;
+    width: calc(100% + 50px); /* Para compensar as margens laterais */
+    height: 50px;
+    padding: 0 25px;
     border: none;
     border-radius: 80px;
     color: white;
@@ -245,13 +254,39 @@
     font-size: 1rem;
     cursor: pointer;
     display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 10px;
     transition: all 0.3s ease;
+    margin-left: -25px; /* Para alinhar com o conteúdo do card */
 }
 
 .cta-button:hover {
     opacity: 0.9;
     transform: scale(1.02);
+}
+
+/* Responsividade */
+@media (max-width: 1200px) {
+    .servicos-grid {
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .servicos-grid-section {
+        padding: 60px 20px;
+    }
+    
+    .servicos-grid {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+        gap: 25px;
+    }
+    
+    .card-title {
+        min-height: auto; /* Remove altura fixa em mobile */
+    }
 }
 
 /* Seção de Diferenciais */
@@ -361,10 +396,9 @@
     margin-bottom: 30px;
 }
 
-.cta-buttons {
+.cta-buttonsSP {
     display: flex;
     gap: 20px;
-    flex-wrap: wrap;
 }
 
 .cta-button-primary,
@@ -426,7 +460,7 @@
         gap: 40px;
     }
 
-    .cta-buttons {
+    .cta-buttonsSP {
         justify-content: center;
     }
 }
@@ -467,7 +501,7 @@
         font-size: 1rem;
     }
 
-    .cta-buttons {
+    .cta-buttonsSP {
         flex-direction: column;
     }
 

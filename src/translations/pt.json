@@ -89,7 +89,7 @@
     "model": {
       "tag": "NOSSO MODELO",
       "title": "O Modelo PRHIMA",
-      "subtitle": "PRHIMA não aluga pessoas. Assumimos o risco para você.",
+      "subtitle": "A PRHIMA não aluga pessoas. Assumimos o risco para você.",
       "comparison": {
         "company": {
           "title": "Sua Empresa",
@@ -236,7 +236,7 @@
       },
       "2020": {
         "title": "O ecossistema 360°",
-        "text": "Lançamos o modelo PRINMA 360°, integrando Recrutamento, Terceirização, Compliance e Clima Organizacional em um ecossistema estratégico."
+        "text": "Lançamos o modelo PRHIMA 360°, integrando Recrutamento, Terceirização, Compliance e Clima Organizacional em um ecossistema estratégico."
       },
       "2023": {
         "title": "Expansão Internacional",
@@ -400,5 +400,154 @@
         ]
       }
     }
+  }, 
+  "services": {
+    "hero": {
+      "badge": "SOLUÇÕES INTEGRADAS",
+      "title": "Serviços <span class='highlight'>PRHIMA 360º</span>",
+      "subtitle": "Nossas soluções são desenhadas para criar uma verdadeira blindagem corporativa, integrando pessoas, processos e tecnologia em um modelo estratégico de atuação global."
+    },
+    "stats": {
+      "compliance": "Conformidade",
+      "coverage": "Cobertura",
+      "monitoring": "Monitoramento"
+    },
+    "services": {
+      "recruitment": {
+        "tag": "INOVAÇÃO",
+        "title": "Recrutamento Inteligente",
+        "description": "Utilizamos IA e análise de fit cultural para encontrar os talentos certos, reduzindo o tempo de contratação e o turnover.",
+        "features": [
+          "Garantimos o SLA de contratação para posições estratégicas",
+          "Análise preditiva de desempenho",
+          "Matching inteligente com cultura organizacional"
+        ],
+        "cta": "Falar com especialista"
+      },
+      "outsourcing": {
+        "tag": "PROTEÇÃO TOTAL",
+        "title": "Terceirização Blindada",
+        "description": "Oferecemos modelos operacionais flexíveis com compliance ativo, assegurando escalabilidade segura para operações nacionais e internacionais.",
+        "features": [
+          "Seguro de Responsabilidade Civil",
+          "Seguro Garantia Contratual",
+          "Proteção contra multas e penalidades",
+          "Continuidade operacional garantida"
+        ],
+        "cta": "Solicitar proposta"
+      },
+      "labor": {
+        "tag": "PREVENÇÃO",
+        "title": "Relações Trabalhistas Estratégicas",
+        "description": "Atuamos com mediação preventiva e auditorias de processos para reduzir litígios e passivos, transformando as relações de trabalho em um ativo estratégico.",
+        "features": [
+          "Mediação preventiva de conflitos",
+          "Auditorias de processos trabalhistas",
+          "Redução de passivos trabalhistas",
+          "Transformação de RH em vantagem competitiva"
+        ],
+        "cta": "Falar com especialista"
+      },
+      "compliance": {
+        "tag": "CONFORMIDADE",
+        "title": "Compliance Trabalhista",
+        "description": "Oferecemos monitoramento contínuo, dashboards com indicadores de risco e consultoria para manter sua empresa 100% em conformidade com a legislação.",
+        "features": [
+          "Monitoramento contínuo 24/7",
+          "Dashboards com indicadores de risco",
+          "Consultoria especializada em legislação",
+          "Auditorias de conformidade regulares"
+        ],
+        "cta": "Solicitar proposta"
+      },
+      "wellness": {
+        "tag": "BEM-ESTAR",
+        "title": "Clima Organizacional e Saúde Mental",
+        "description": "Desenvolvemos programas de engajamento, bem-estar e saúde corporativa integrada para aumentar a produtividade e reter seus melhores talentos.",
+        "features": [
+          "Programas de engajamento personalizados",
+          "Saúde mental corporativa",
+          "Pesquisas de clima organizacional",
+          "Estratégias de retenção de talentos"
+        ],
+        "cta": "Falar com especialista"
+      }
+    },
+    "benefits": {
+      "title": "Benefícios",
+      "cta": {
+        "speakExpert": "Falar com Especialista",
+        "requestProposal": "Solicitar Proposta"
+      }
+    },
+    "differentiators": {
+      "title": "Por que escolher a <span class='highlight'>PRHIMA 360º</span>?",
+      "subtitle": "Nossa abordagem integrada garante uma blindagem corporativa completa",
+      "items": [
+        {
+          "title": "Parceria Estratégica",
+          "description": "Não somos apenas fornecedores, somos parceiros no crescimento do seu negócio"
+        },
+        {
+          "title": "Blindagem Completa",
+          "description": "Proteção jurídica, financeira e operacional em um único modelo"
+        },
+        {
+          "title": "Tecnologia Avançada",
+          "description": "Plataformas inteligentes e IA para tomada de decisão estratégica"
+        },
+        {
+          "title": "Atendimento Personalizado",
+          "description": "Consultores especializados dedicados ao seu negócio"
+        }
+      ]
+    },
+    "cta": {
+      "title": "Pronto para blindar seu negócio?",
+      "text": "Entre em contato com nossa equipe de especialistas e descubra como podemos transformar sua gestão de pessoas em uma vantagem competitiva.",
+      "buttons": {
+        "speakExpert": "Falar com Especialista",
+        "requestProposal": "Solicitar Proposta Personalizada"
+      }
+    }
+  }, "shielding": {
+      "tag": "Diferencial Absoluto",
+      "title": "Blindagem Jurídica Real",
+      "subtitle": "Nossa Garantia Não é uma Promessa. É uma Apólice.",
+      "insurance": {
+        "professional": {
+          "title": "Seguro de Responsabilidade Civil Profissional & E&O",
+          "benefits": [
+            "Cobertura contra perdas financeiras por falhas profissionais",
+            "Defesa contra custos judiciais e indenizações",
+            "Cobertura para danos materiais, corporais e morais",
+            "Proteção contra ações por erros e omissões"
+          ]
+        },
+        "contractual": {
+          "title": "Seguro de Garantia Contratual",
+          "benefits": [
+            "Cobertura específica para verbas trabalhistas",
+            "Proteção contra encargos e responsabilidades",
+            "Garantia de cumprimento contratual",
+            "Salvaguarda financeira contra inadimplência"
+          ]
+        }
+      },
+      "beneficiary": {
+        "title": "Cliente como Beneficiário Direto",
+        "benefits": [
+          "Cliente nomeado como beneficiário principal",
+          "Indenização direcionada ao tomador de serviços",
+          "Proteção prioritária e sem burocracia",
+          "Compromisso reforçado de blindagem proativa"
+        ],
+        "badge": "Proteção Prioritária"
+      },
+      "summary": {
+        "title": "Tripé Proteção",
+        "description": "Seguro profissional + Garantia contratual + Cliente como beneficiário direto. A blindagem que seu negócio realmente precisa."
+      }
+    }
   }
-}
+

@@ -4,6 +4,8 @@ import { useTranslation } from '../hooks/useTranslation';
 import Footer from '../components/Footer';
 import '../CSS/App.css'
 import Navbar from '../components/navBar';
+import avisoHP from '../assets/aviso.png'
+import func from '../assets/espec.png'
 
 import foto1 from '../assets/foto1.png'
 import foto2 from '../assets/foto2.png'
@@ -45,27 +47,6 @@ function HomePage() {
           ))}
         </div>
 
-        {/* <h1 className='bannerH1'>
-          {t('home.banner.title')}
-        </h1>
-        <p className="bannerP">
-          {t('home.banner.description')}
-        </p>
-        <div className="bannerDescription">
-          <p className="bannerDescription1">
-            {t('home.banner.stats.companies')}
-          </p>
-          <div className="vertical-line1"></div>
-
-          <p className="bannerDescription2">
-            {t('home.banner.stats.coverage')}
-          </p>
-          <div className="vertical-line2"></div>
-
-          <p className="bannerDescription3">
-            {t('home.banner.stats.satisfaction')}
-          </p>
-        </div> */}
       </div>
 
       <div className="home2-section">
@@ -200,17 +181,18 @@ function HomePage() {
 
               {/* Risco 4 */}
               <div className="risco-card">
-      <div className="risco-header">
-        <div className="risco-icon">
-          <i className="fas fa-clock"></i>
-        </div>
-        <div className="risco-tag tag-operacional">
-          {t('home.risks.tags.operational')}
-        </div>
-      </div>
-      <h4 className="risco-title">
-        {t('home.risks.operational.title')}
-      </h4>
+                <div className="risco-header">
+                  <div className="risco-icon">
+                    <i className="fas fa-clock"></i>
+                  </div>
+                  <div className="risco-tag tag-operacional">
+                    {t('home.risks.tags.operational')}
+                  </div>
+                </div>
+                <h4 className="risco-title">
+                  {t('home.risks.operational.title')}
+                </h4>
+
                 <p className="risco-desc">
                   {t('home.risks.operational.description')}
                 </p>
@@ -235,20 +217,23 @@ function HomePage() {
 
           {/* Call to Action */}
           <div className="risco-cta">
-            <div className="cta-content">
-              <div className="cta-text">
-                <h3>{t('home.risks.cta.title')}</h3>
-                <p>{t('home.risks.cta.description')}</p>
-              </div>
-              <div className="cta-buttons">
-                <button className="btn-analise">
-                  <i className="fas fa-search"></i>
-                  {t('common.buttons.freeAnalysis')}
-                </button>
-                <button className="btn-fale-especialista">
-                  <i className="fas fa-headset"></i>
-                  {t('common.buttons.speakExpert')}
-                </button>
+            <div className="cta-container">
+              <img src={avisoHP} alt="" className="avisoHP" />
+              <div className="cta-content">
+                <div className="cta-text">
+                  <h3>{t('home.risks.cta.title')}</h3>
+                  <p>{t('home.risks.cta.description')}</p>
+                </div>
+                <div className="cta-buttons">
+                  <button className="btn-analise">
+                    <i className="fas fa-search"></i>
+                    {t('common.buttons.freeAnalysis')}
+                  </button>
+                  <button className="btn-fale-especialista">
+                    <i className="fas fa-headset"></i>
+                    {t('common.buttons.speakExpert')}
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -261,7 +246,7 @@ function HomePage() {
             <div className="modelo-header">
               <div className="modelo-tag">{t('home.model.tag')}</div>
               <h2 className="modelo-title">
-                {t('home.model.title')} <span className="highlight">PRHIMA</span>
+                {t('home.model.title')}
               </h2>
               <p className="modelo-subtitle">
                 {t('home.model.subtitle')}
@@ -301,20 +286,20 @@ function HomePage() {
               </div>
 
               <div className="comparacao-item prhima">
-  <div className="comparacao-icon">
-    <i className="fas fa-shield-alt fa-2x"></i>
-  </div>
-  <h3 className="comparacao-titulo">
-    {t('home.model.comparison.prhima.title')}
-  </h3>
-  <p className="comparacao-desc">
-    {t('home.model.comparison.prhima.description')}
-  </p>
-  <div className="comparacao-badge">
-    <i className="fas fa-medal"></i>
-    <span>{t('home.model.badges.totalShielding')}</span>
-  </div>
-</div>
+                <div className="comparacao-icon">
+                  <i className="fas fa-shield-alt fa-2x"></i>
+                </div>
+                <h3 className="comparacao-titulo">
+                  {t('home.model.comparison.prhima.title')}
+                </h3>
+                <p className="comparacao-desc">
+                  {t('home.model.comparison.prhima.description')}
+                </p>
+                <div className="comparacao-badge">
+                  <i className="fas fa-medal"></i>
+                  <span>{t('home.model.badges.totalShielding')}</span>
+                </div>
+              </div>
             </div>
 
             {/* Benefícios em grid */}
@@ -389,7 +374,6 @@ function HomePage() {
                   </p>
                   <div className="beneficio-badge">
                     <i className="fas fa-shield"></i>
-                    <span>Proteção Total</span>
                   </div>
                 </div>
               </div>
@@ -397,17 +381,20 @@ function HomePage() {
 
             {/* CTA Final */}
             <div className="modelo-cta">
-              <div className="cta-content">
-                <h3 className="cta-titulo">
-                  {t('home.model.cta.title')}
-                </h3>
-                <p className="cta-texto">
-                  {t('home.model.cta.description')}
-                </p>
-                <button className="cta-button">
-                  <i className="fas fa-handshake"></i>
-                  {t('common.buttons.speakExpert')}
-                </button>
+              <div className="cta-contentHP">
+                <div className="cta-text-contentHP">
+                  <h3 className="cta-tituloHP">
+                    {t('home.model.cta.title')}
+                  </h3>
+                  <p className="cta-textoHP">
+                    {t('home.model.cta.description')}
+                  </p>
+                  <button className="cta-buttonHP">
+                    <i className="fas fa-handshake"></i>
+                    {t('common.buttons.speakExpert')}
+                  </button>
+                </div>
+                <img src={func} alt="" className="espec" />
               </div>
             </div>
           </div>
@@ -485,50 +472,59 @@ function HomePage() {
                   {t('home.results.social.title')}
                 </h2>
 
-                <div className="prova-social-item">
-                  <div className="item-icon">
-                    <i className="fas fa-video"></i>
+                <div className="prova-social-content-wrapper">
+                  {/* Itens à esquerda */}
+                  <div className="prova-social-items-column">
+                    <div className="prova-social-item">
+                      <div className="item-icon">
+                        <i className="fas fa-video"></i>
+                      </div>
+                      <div className="item-content">
+                        <h3 className="item-title">
+                          {t('home.results.social.videos.title')}
+                        </h3>
+                        <p className="item-desc">
+                          {t('home.results.social.videos.description')}
+                        </p>
+                      </div>
+                    </div>
+
+                    <div className="prova-social-item">
+                      <div className="item-icon">
+                        <i className="fas fa-chart-bar"></i>
+                      </div>
+                      <div className="item-content">
+                        <h3 className="item-title">
+                          {t('home.results.social.results.title')}
+                        </h3>
+                        <p className="item-desc">
+                          {t('home.results.social.results.description')}
+                        </p>
+                      </div>
+                    </div>
                   </div>
-                  <div className="item-content">
-                    <h3 className="item-title">
-                      {t('home.results.social.videos.title')}
-                    </h3>
-                    <p className="item-desc">
-                      {t('home.results.social.videos.description')}
+
+                  {/* Citação à direita */}
+                  <div className="prova-social-quote">
+                    <div className="quote-icon">
+                      <i className="fas fa-quote-left"></i>
+                    </div>
+                    <p className="quote-text">
+                      {t('home.results.social.quote')}
                     </p>
                   </div>
                 </div>
 
-                <div className="prova-social-item">
-                  <div className="item-icon">
-                    <i className="fas fa-chart-bar"></i>
-                  </div>
-                  <div className="item-content">
-                    <h3 className="item-title">
-                      {t('home.results.social.results.title')}
-                    </h3>
-                    <p className="item-desc">
-                      {t('home.results.social.results.description')}
-                    </p>
-                  </div>
-                </div>
-
-                <div className="prova-social-quote">
-                  <div className="quote-icon">
-                    <i className="fas fa-quote-left"></i>
-                  </div>
-                  <p className="quote-text">
-                    {t('home.results.social.quote')}
-                  </p>
-                </div>
-
+                {/* Botão abaixo de tudo */}
                 <button className="prova-social-button">
                   <i className="fas fa-play-circle"></i>
                   {t('common.buttons.watchTestimonials')}
                 </button>
               </div>
             </div>
+
           </div>
+
         </div>
       </div>
       <Footer />

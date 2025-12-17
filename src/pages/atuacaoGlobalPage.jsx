@@ -15,10 +15,10 @@ const AtuacaoGlobalPage = () => {
         const checkMobile = () => {
             setIsMobile(window.innerWidth <= 768);
         };
-        
+
         checkMobile();
         window.addEventListener('resize', checkMobile);
-        
+
         return () => window.removeEventListener('resize', checkMobile);
     }, []);
 
@@ -32,7 +32,7 @@ const AtuacaoGlobalPage = () => {
             position: { top: '55%', left: '38%' },
             mobilePosition: { top: '60%', left: '40%' },
             description: t('global.map.countries.brasil.description'),
-            
+
         },
         {
             id: 'portugal',
@@ -42,7 +42,7 @@ const AtuacaoGlobalPage = () => {
             position: { top: '28%', left: '48%' },
             mobilePosition: { top: '25%', left: '48%' },
             description: t('global.map.countries.portugal.description'),
-           
+
         },
         {
             id: 'eua',
@@ -52,7 +52,7 @@ const AtuacaoGlobalPage = () => {
             position: { top: '30%', left: '26%' },
             mobilePosition: { top: '35%', left: '20%' },
             description: t('global.map.countries.eua.description'),
-           
+
         },
         {
             id: 'china',
@@ -62,7 +62,7 @@ const AtuacaoGlobalPage = () => {
             position: { top: '30%', left: '75%' },
             mobilePosition: { top: '35%', left: '75%' },
             description: t('global.map.countries.china.description'),
-           
+
         }
     ];
 
@@ -88,27 +88,27 @@ const AtuacaoGlobalPage = () => {
     ];
 
     const estatisticas = [
-        { 
-            valor: t('global.stats.continents.value'), 
-            label: t('global.stats.continents.label'), 
+        {
+            valor: t('global.stats.continents.value'),
+            label: t('global.stats.continents.label'),
             desc: t('global.stats.continents.description'),
             icon: ''
         },
-        { 
-            valor: t('global.stats.countries.value'), 
-            label: t('global.stats.countries.label'), 
+        {
+            valor: t('global.stats.countries.value'),
+            label: t('global.stats.countries.label'),
             desc: t('global.stats.countries.description'),
             icon: ''
         },
-        { 
-            valor: t('global.stats.support.value'), 
-            label: t('global.stats.support.label'), 
+        {
+            valor: t('global.stats.support.value'),
+            label: t('global.stats.support.label'),
             desc: t('global.stats.support.description'),
             icon: ''
         },
-        { 
-            valor: t('global.stats.clients.value'), 
-            label: t('global.stats.clients.label'), 
+        {
+            valor: t('global.stats.clients.value'),
+            label: t('global.stats.clients.label'),
             desc: t('global.stats.clients.description'),
             icon: ''
         }
@@ -160,9 +160,9 @@ const AtuacaoGlobalPage = () => {
                 <div className="world-icon">
                     <FaGlobe size={60} color="#2c5aa0" />
                 </div>
-                
+
                 <div className="mobile-countries-list">
-                    <button 
+                    <button
                         className="mobile-country-selector"
                         onClick={() => setShowCountryList(!showCountryList)}
                     >
@@ -176,7 +176,7 @@ const AtuacaoGlobalPage = () => {
                         </span>
                         <FaChevronDown className={`chevron ${showCountryList ? 'open' : ''}`} />
                     </button>
-                    
+
                     {showCountryList && (
                         <div className="countries-dropdown">
                             {paises.map((pais) => (
@@ -228,7 +228,7 @@ const AtuacaoGlobalPage = () => {
             {/* Hero Section */}
             <section className="global-hero">
                 <div className="hero-content">
-                    
+
                 </div>
             </section>
 
@@ -249,7 +249,7 @@ const AtuacaoGlobalPage = () => {
                         <div className="mapa-completo">
                             {isMobile ? <MobileMap /> : <DesktopMap />}
 
-                           
+
                         </div>
                     </div>
 
@@ -296,22 +296,24 @@ const AtuacaoGlobalPage = () => {
             {/* CTA */}
             <section className="global-cta">
                 <div className="container">
-                    <div className="cta-content">
-                        <div className="cta-text">
-                            <h2 className="cta-title">{t('global.cta.title')}</h2>
-                            <p className="cta-subtitle">
+                    <div className="cta-contentGP">
+                        <div className="cta-textGP">
+                            <h2 className="cta-titleGP">{t('global.cta.title')}</h2>
+                            <p className="cta-subtitleGP">
                                 {t('global.cta.subtitle')}
                             </p>
                         </div>
-                        <div className="cta-buttons">
-                            <button className="cta-button primary">
-                                <FaPlane />
-                                <span>{t('global.cta.buttons.international')}</span>
-                            </button>
-                            <button className="cta-button secondary">
-                                <FaBuilding />
-                                <span>{t('global.cta.buttons.brazil')}</span>
-                            </button>
+                        <div className="cta-actionsGP">
+                            <div className="cta-buttonsGP">
+                                <button className="cta-buttonGP primary">
+                                    <FaPlane />
+                                    <span>{t('global.cta.buttons.international')}</span>
+                                </button>
+                                <button className="cta-buttonGP secondary">
+                                    <FaBuilding />
+                                    <span>{t('global.cta.buttons.brazil')}</span>
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>

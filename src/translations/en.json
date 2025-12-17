@@ -89,7 +89,7 @@
     "model": {
       "tag": "OUR MODEL",
       "title": "The PRHIMA Model",
-      "subtitle": "PRHIMA doesn't rent people. We take the risk for you.",
+      "subtitle": "The PRHIMA doesn't rent people. We take the risk for you.",
       "comparison": {
         "company": {
           "title": "Your Company",
@@ -257,9 +257,14 @@
     },
     "values": {
       "title": "Values",
-      "items": ["Integrity", "Innovation", "Humanity", "Results"]
+      "items": [
+        "Integrity",
+        "Innovation",
+        "Humanity",
+        "Results"
+      ]
     }
-  }, 
+  },
   "global": {
     "hero": {
       "badge": "GLOBAL PRESENCE",
@@ -343,7 +348,7 @@
         "brazil": "Operations in Brazil"
       }
     }
-  }, 
+  },
   "contact": {
     "hero": {
       "title": "Talk to an Expert",
@@ -380,7 +385,11 @@
         "title": "Address",
         "street": "Av. Ayrton Senna, 2500 - Barra da Tijuca, Rio de Janeiro - RJ, 22775-003",
         "maps": "View on Google Maps",
-        "tags": ["Info", "Cas Shopping", "Google"],
+        "tags": [
+          "Info",
+          "Cas Shopping",
+          "Google"
+        ],
         "notes": [
           "Cartographic data: 2023/5 Google",
           "Terms: Report map error"
@@ -389,16 +398,189 @@
       "emails": {
         "title": "Our Emails",
         "list": [
-          { "department": "General", "email": "contato@prhima.com.br" },
-          { "department": "Resumes", "email": "curriculos@prhima.com.br" },
-          { "department": "Commercial", "email": "comercial@prhima.com.br" },
-          { "department": "Franchises", "email": "franquias@prhima.com.br" },
-          { "department": "Legal", "email": "juridico@prhima.com.br" },
-          { "department": "Press", "email": "imprensa@prhima.com.br" },
-          { "department": "Ombudsman", "email": "ouvidoria@prhima.com.br" },
-          { "department": "Partnerships", "email": "parcerias@prhima.com.br" }
+          {
+            "department": "General",
+            "email": "contato@prhima.com.br"
+          },
+          {
+            "department": "Resumes",
+            "email": "curriculos@prhima.com.br"
+          },
+          {
+            "department": "Commercial",
+            "email": "comercial@prhima.com.br"
+          },
+          {
+            "department": "Franchises",
+            "email": "franquias@prhima.com.br"
+          },
+          {
+            "department": "Legal",
+            "email": "juridico@prhima.com.br"
+          },
+          {
+            "department": "Press",
+            "email": "imprensa@prhima.com.br"
+          },
+          {
+            "department": "Ombudsman",
+            "email": "ouvidoria@prhima.com.br"
+          },
+          {
+            "department": "Partnerships",
+            "email": "parcerias@prhima.com.br"
+          }
         ]
       }
     }
+  },
+  "services": {
+    "hero": {
+      "badge": "INTEGRATED SOLUTIONS",
+      "title": "PRHIMA 360º <span class='highlight'>Services</span>",
+      "subtitle": "Our solutions are designed to create true corporate shielding, integrating people, processes and technology into a global strategic operating model."
+    },
+    "stats": {
+      "compliance": "Compliance",
+      "coverage": "Coverage",
+      "monitoring": "Monitoring"
+    },
+    "services": {
+      "recruitment": {
+        "tag": "INNOVATION",
+        "title": "Intelligent Recruitment",
+        "description": "We use AI and cultural fit analysis to find the right talents, reducing hiring time and turnover.",
+        "features": [
+          "We guarantee SLA for strategic positions hiring",
+          "Predictive performance analysis",
+          "Intelligent matching with organizational culture"
+        ],
+        "cta": "Talk to expert"
+      },
+      "outsourcing": {
+        "tag": "TOTAL PROTECTION",
+        "title": "Shielded Outsourcing",
+        "description": "We offer flexible operational models with active compliance, ensuring safe scalability for national and international operations.",
+        "features": [
+          "Civil Liability Insurance",
+          "Contract Guarantee Insurance",
+          "Protection against fines and penalties",
+          "Guaranteed operational continuity"
+        ],
+        "cta": "Request proposal"
+      },
+      "labor": {
+        "tag": "PREVENTION",
+        "title": "Strategic Labor Relations",
+        "description": "We work with preventive mediation and process audits to reduce litigation and liabilities, transforming labor relations into a strategic asset.",
+        "features": [
+          "Preventive conflict mediation",
+          "Labor process audits",
+          "Reduction of labor liabilities",
+          "Transforming HR into competitive advantage"
+        ],
+        "cta": "Talk to expert"
+      },
+      "compliance": {
+        "tag": "COMPLIANCE",
+        "title": "Labor Compliance",
+        "description": "We offer continuous monitoring, dashboards with risk indicators and consulting to keep your company 100% compliant with legislation.",
+        "features": [
+          "24/7 continuous monitoring",
+          "Dashboards with risk indicators",
+          "Specialized legislation consulting",
+          "Regular compliance audits"
+        ],
+        "cta": "Request proposal"
+      },
+      "wellness": {
+        "tag": "WELL-BEING",
+        "title": "Organizational Climate and Mental Health",
+        "description": "We develop engagement, well-being and integrated corporate health programs to increase productivity and retain your best talents.",
+        "features": [
+          "Personalized engagement programs",
+          "Corporate mental health",
+          "Organizational climate surveys",
+          "Talent retention strategies"
+        ],
+        "cta": "Talk to expert"
+      }
+    },
+    "benefits": {
+      "title": "Benefits",
+      "cta": {
+        "speakExpert": "Talk to Expert",
+        "requestProposal": "Request Proposal"
+      }
+    },
+    "differentiators": {
+      "title": "Why choose <span class='highlight'>PRHIMA 360º</span>?",
+      "subtitle": "Our integrated approach ensures complete corporate shielding",
+      "items": [
+        {
+          "title": "Strategic Partnership",
+          "description": "We are not just suppliers, we are partners in your business growth"
+        },
+        {
+          "title": "Complete Shielding",
+          "description": "Legal, financial and operational protection in a single model"
+        },
+        {
+          "title": "Advanced Technology",
+          "description": "Intelligent platforms and AI for strategic decision making"
+        },
+        {
+          "title": "Personalized Service",
+          "description": "Specialized consultants dedicated to your business"
+        }
+      ]
+    },
+    "cta": {
+      "title": "Ready to shield your business?",
+      "text": "Contact our team of experts and discover how we can transform your people management into a competitive advantage.",
+      "buttons": {
+        "speakExpert": "Talk to Expert",
+        "requestProposal": "Request Customized Proposal"
+      }
+    }
+  },
+    "shielding": {
+      "tag": "Absolute Differential",
+      "title": "Real Legal Shielding",
+      "subtitle": "Our Guarantee is Not a Promise. It's a Policy.",
+      "insurance": {
+        "professional": {
+          "title": "Professional Civil Liability Insurance & E&O",
+          "benefits": [
+            "Coverage against financial losses due to professional failures",
+            "Defense against legal costs and indemnifications",
+            "Coverage for material, bodily, and moral damages",
+            "Protection against lawsuits for errors and omissions"
+          ]
+        },
+        "contractual": {
+          "title": "Contractual Guarantee Insurance",
+          "benefits": [
+            "Specific coverage for labor claims",
+            "Protection against charges and responsibilities",
+            "Guarantee of contractual compliance",
+            "Financial safeguard against default"
+          ]
+        }
+      },
+      "beneficiary": {
+        "title": "Client as Direct Beneficiary",
+        "benefits": [
+          "Client named as primary beneficiary",
+          "Compensation directed to the service taker",
+          "Priority protection without bureaucracy",
+          "Reinforced commitment to proactive shielding"
+        ],
+        "badge": "Priority Protection"
+      },
+      "summary": {
+        "title": "Threefold Protection",
+        "description": "Professional insurance + Contractual guarantee + Client as direct beneficiary. The shielding your business really needs."
+      }
+    }
   }
-}

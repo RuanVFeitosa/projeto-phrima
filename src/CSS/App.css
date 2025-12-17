@@ -23,9 +23,11 @@
 .slideshow-container {
   position: relative;
   width: 100%;
-  height: 100vh; /* Ocupa toda a altura da viewport */
-  max-height: 900px; /* Limite máximo para telas grandes */
-  min-height: 500px; /* Altura mínima para mobile */
+  height: 80vh;
+  max-height: 900px;
+  /* Limite máximo para telas grandes */
+  min-height: 500px;
+  /* Altura mínima para mobile */
   overflow: hidden;
   margin: 0;
   padding: 0;
@@ -34,7 +36,8 @@
 /* Para dispositivos móveis, ajustamos a altura */
 @media (max-width: 768px) {
   .slideshow-container {
-    height: 70vh; /* Altura menor em mobile */
+    height: 70vh;
+    /* Altura menor em mobile */
     min-height: 400px;
     max-height: 600px;
   }
@@ -42,7 +45,8 @@
 
 @media (max-width: 480px) {
   .slideshow-container {
-    height: 60vh; /* Altura ainda menor em telas pequenas */
+    height: 60vh;
+    /* Altura ainda menor em telas pequenas */
     min-height: 350px;
     max-height: 500px;
   }
@@ -62,22 +66,26 @@
 
 .mySlides.active {
   display: block;
-  opacity: 0.3; /* Mantém a opacidade do design original */
+  opacity: 0.3;
+  /* Mantém a opacidade do design original */
 }
 
 /* Imagens do slideshow */
 .slideshowDecoration {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Garante que a imagem cubra todo o container */
+  object-fit: cover;
+  /* Garante que a imagem cubra todo o container */
   object-position: center;
   user-select: none;
   -webkit-user-drag: none;
 }
 
 /* Botões de navegação */
-.prev, .next {
-  display: none; /* Esconde os botões em mobile */
+.prev,
+.next {
+  display: none;
+  /* Esconde os botões em mobile */
 }
 
 /* Pontos indicadores */
@@ -122,7 +130,7 @@
   .dots-container {
     bottom: 15px;
   }
-  
+
   .dot {
     height: 10px;
     width: 10px;
@@ -134,7 +142,7 @@
   .dots-container {
     bottom: 10px;
   }
-  
+
   .dot {
     height: 8px;
     width: 8px;
@@ -153,6 +161,7 @@
   from {
     opacity: 0.4;
   }
+
   to {
     opacity: 1;
   }
@@ -172,16 +181,18 @@
     width: 14px;
     margin: 0 6px;
   }
-  
+
   .dots-container {
-    bottom: 25px; /* Mais espaço para o dedo */
+    bottom: 25px;
+    /* Mais espaço para o dedo */
   }
 }
 
 /* Modo retrato (portrait) */
 @media (orientation: portrait) {
   .slideshow-container {
-    aspect-ratio: 3/4; /* Proporção mais adequada para retrato */
+    aspect-ratio: 3/4;
+    /* Proporção mais adequada para retrato */
   }
 }
 
@@ -191,7 +202,7 @@
     height: 80vh;
     min-height: 300px;
   }
-  
+
   .dots-container {
     bottom: 10px;
   }
@@ -226,8 +237,13 @@
 }
 
 @keyframes loading {
-  0% { background-position: 200% 0; }
-  100% { background-position: -200% 0; }
+  0% {
+    background-position: 200% 0;
+  }
+
+  100% {
+    background-position: -200% 0;
+  }
 }
 
 /* Controles de swipe (opcional) */
@@ -630,21 +646,29 @@ a:hover {
 .risco-cta {
   background: linear-gradient(135deg, var(--color-primary) 0%, #0a1f3a 100%);
   border-radius: 20px;
-  padding: 50px;
-  margin-top: 40px;
 }
 
-.cta-content {
+.cta-container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   gap: 40px;
   flex-wrap: wrap;
 }
 
-.cta-text {
+.avisoHP {
+  /* Ajuste o tamanho conforme necessário */
+  width: 300px;
+  height: auto;
+}
+
+.cta-content {
   flex: 1;
-  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.cta-text {
   color: white;
 }
 
@@ -652,6 +676,7 @@ a:hover {
   font-size: 28px;
   margin-bottom: 15px;
   font-weight: 600;
+  margin-left: -85px;
 }
 
 .cta-text p {
@@ -659,15 +684,19 @@ a:hover {
   opacity: 0.9;
   margin: 0;
   font-weight: 300;
+  margin-left: -80px;
+
 }
 
 .cta-buttons {
   display: flex;
-  gap: 20px;
+  gap: 10px;
   flex-wrap: wrap;
+  position: relative;
 }
 
-.btn-analise, .btn-fale-especialista {
+.btn-analise,
+.btn-fale-especialista {
   display: inline-flex;
   align-items: center;
   gap: 12px;
@@ -702,6 +731,33 @@ a:hover {
   background: var(--color-secondary);
   color: var(--color-primary);
   transform: translateY(-3px);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .risco-cta {
+    padding: 30px;
+  }
+
+  .cta-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .avisoHP {
+    width: 150px;
+  }
+
+  .cta-buttons {
+    justify-content: center;
+  }
+
+  .btn-analise,
+  .btn-fale-especialista {
+    min-width: 100%;
+    justify-content: center;
+  }
 }
 
 
@@ -997,7 +1053,6 @@ a:hover {
   background: linear-gradient(135deg, var(--color-primary) 0%, #1a3a63 100%);
   border-radius: 20px;
   padding: 60px;
-  text-align: center;
   color: white;
   position: relative;
   overflow: hidden;
@@ -1013,52 +1068,116 @@ a:hover {
   background: url('data:image/svg+xml,<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><rect width="1" height="1" fill="%23ffffff" opacity="0.05"/></svg>');
 }
 
-.cta-content {
-  align-items: center;
+.cta-contentHP {
   position: relative;
   z-index: 1;
-  max-width: 600px;
-  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
 }
 
-.cta-titulo {
+.cta-text-contentHP {
+  flex: 1;
+  max-width: 600px;
+}
+
+.cta-tituloHP {
   font-size: 32px;
-  margin-bottom: -20px;
+  margin-bottom: 20px;
   font-weight: 600;
   color: white;
+  text-align: left;
 }
 
-.cta-texto {
+.cta-textoHP {
   font-size: 18px;
   line-height: 1.6;
   margin-bottom: 30px;
   color: rgba(255, 255, 255, 0.9);
   font-weight: 300;
+  text-align: left;
 }
 
-.cta-button {
+.cta-buttonHP {
   background: var(--color-secondary);
   color: var(--color-primary);
   border: none;
-  margin-left: 160px;
   padding: 18px 40px;
   font-size: 18px;
   font-weight: 600;
   border-radius: 50px;
   cursor: pointer;
   transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
   gap: 12px;
   box-shadow: 0 5px 20px rgba(212, 175, 55, 0.3);
 }
 
-.cta-button:hover {
+.cta-buttonHP:hover {
   background: #ffd940;
   transform: translateY(-3px);
   box-shadow: 0 8px 30px rgba(212, 175, 55, 0.4);
 }
 
-.cta-button i {
+.cta-buttonHP i {
   font-size: 20px;
+}
+
+.espec {
+  flex-shrink: 0;
+  width: 400px;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Responsividade */
+@media (max-width: 992px) {
+  .cta-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .cta-text-content {
+    max-width: 100%;
+  }
+
+  .cta-titulo,
+  .cta-texto {
+    text-align: center;
+  }
+
+  .espec {
+    width: 250px;
+    max-width: 80%;
+  }
+
+  .modelo-cta {
+    padding: 40px 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .cta-titulo {
+    font-size: 28px;
+  }
+
+  .cta-texto {
+    font-size: 16px;
+  }
+
+  .cta-button {
+    padding: 16px 30px;
+    font-size: 16px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .espec {
+    width: 200px;
+  }
 }
 
 
@@ -1068,19 +1187,21 @@ a:hover {
   flex-direction: row;
   gap: 40px;
   margin-top: 30px;
-  justify-content: center; 
+  justify-content: center;
 }
 
-.caixa1, .caixa2 {
-  padding: 20px; 
+.caixa1,
+.caixa2 {
+  padding: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  border-radius: 8px; 
-  flex: 1; 
-  max-width: 400px; 
-  background-color: white; 
+  border-radius: 8px;
+  flex: 1;
+  max-width: 400px;
+  background-color: white;
 }
 
-.titleCorporativo, .titleBlindagem {
+.titleCorporativo,
+.titleBlindagem {
   font-size: 22px;
   margin-bottom: 15px;
   color: var(--color-primary);
@@ -1116,8 +1237,7 @@ a:hover {
 }
 
 .resultados-completo {
-  padding: 60px 20px;
-  margin-top: 60px;
+  padding: 0px 20px;
 }
 
 .confiarH1 {
@@ -1155,7 +1275,7 @@ a:hover {
   flex: 1;
   background: white;
   border-radius: 12px;
-  padding: 25px;
+  padding: 30px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   text-align: center;
   transition: all 0.3s ease;
@@ -1168,9 +1288,8 @@ a:hover {
 }
 
 .prova-social-container {
-  flex: 0.8;
-  position: sticky;
-  top: 20px;
+  max-width: 1200px;
+  display: flex;
 }
 
 .prova-social-card {
@@ -1220,15 +1339,30 @@ a:hover {
   border-radius: 2px;
 }
 
+/* Nova estrutura de layout */
+.prova-social-content-wrapper {
+  display: flex;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.prova-social-items-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .prova-social-item {
   display: flex;
   gap: 15px;
-  margin-bottom: 25px;
-  padding: 15px;
+  padding: 20px;
   background: var(--color-light-gray);
   border-radius: 10px;
   transition: all 0.3s ease;
   align-items: flex-start;
+  flex: 1;
+  min-height: 120px;
 }
 
 .prova-social-item:hover {
@@ -1237,8 +1371,8 @@ a:hover {
 }
 
 .item-icon {
-  width: 40px;
-  height: 40px;
+  width: 45px;
+  height: 45px;
   background: var(--color-secondary);
   color: white;
   border-radius: 50%;
@@ -1246,10 +1380,11 @@ a:hover {
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+  margin-top: 5px;
 }
 
 .item-icon i {
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .item-content {
@@ -1260,7 +1395,7 @@ a:hover {
   font-size: 18px;
   font-weight: 600;
   color: var(--color-primary);
-  margin-bottom: 5px;
+  margin-bottom: 8px;
 }
 
 .item-desc {
@@ -1270,27 +1405,32 @@ a:hover {
   margin: 0;
 }
 
+/* Citação lado a lado */
 .prova-social-quote {
+  flex: 1;
   background: linear-gradient(135deg, var(--color-primary) 0%, #1a3a63 100%);
   border-radius: 12px;
   padding: 25px;
-  margin: 30px 0;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   color: white;
-  position: relative;
+  min-height: 280px;
 }
 
 .quote-icon {
   color: var(--color-secondary);
-  font-size: 24px;
+  font-size: 28px;
   margin-bottom: 15px;
 }
 
 .quote-text {
-  font-size: 20px;
-  line-height: 1.4;
+  font-size: 18px;
+  line-height: 1.5;
   margin: 0;
   font-weight: 300;
+  text-align: center;
 }
 
 .quote-text strong {
@@ -1298,6 +1438,7 @@ a:hover {
   font-weight: 700;
 }
 
+/* Botão abaixo do conteúdo */
 .prova-social-button {
   width: 100%;
   background: var(--color-secondary);
@@ -1313,7 +1454,7 @@ a:hover {
   align-items: center;
   justify-content: center;
   gap: 10px;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .prova-social-button:hover {
@@ -1322,20 +1463,55 @@ a:hover {
   box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3);
 }
 
+/* Responsividade */
+@media (max-width: 1024px) {
+  .prova-social-content-wrapper {
+    flex-direction: column;
+  }
 
+  .prova-social-quote {
+    min-height: auto;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .prova-social-card {
+    padding: 25px;
+  }
+
+  .prova-social-content-wrapper {
+    gap: 20px;
+  }
+
+  .prova-social-item {
+    padding: 15px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .item-icon {
+    margin-bottom: 10px;
+  }
+
+  .quote-text {
+    font-size: 16px;
+  }
+}
 
 /* Responsividade */
 @media (max-width: 1024px) {
   .home2-title {
     font-size: 42px;
   }
-  
+
   .cta-content {
     flex-direction: column;
     text-align: center;
     gap: 30px;
   }
-  
+
   .cta-text {
     min-width: 100%;
   }
@@ -1345,36 +1521,37 @@ a:hover {
   .home2-section {
     padding: 60px 15px;
   }
-  
+
   .home2-title {
     font-size: 36px;
   }
-  
+
   .stats-warning {
     flex-direction: column;
     align-items: center;
     gap: 20px;
   }
-  
+
   .stat-item {
     width: 100%;
     max-width: 300px;
   }
-  
+
   .riscos-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .risco-cta {
     padding: 40px 25px;
   }
-  
+
   .cta-buttons {
     flex-direction: column;
     width: 100%;
   }
-  
-  .btn-analise, .btn-fale-especialista {
+
+  .btn-analise,
+  .btn-fale-especialista {
     width: 100%;
     justify-content: center;
   }
@@ -1384,21 +1561,21 @@ a:hover {
   .home2-title {
     font-size: 28px;
   }
-  
+
   .home2-subtitle {
     font-size: 18px;
   }
-  
+
   .diagnostico-box {
     padding: 20px 25px;
   }
-  
+
   .diagnostico-title {
     font-size: 18px;
     flex-direction: column;
     gap: 10px;
   }
-  
+
   .risco-card {
     padding: 25px;
   }
@@ -1408,7 +1585,7 @@ a:hover {
   .modelo-title {
     font-size: 36px;
   }
-  
+
   .modelo-subtitle {
     font-size: 20px;
   }
@@ -1418,32 +1595,32 @@ a:hover {
   .modelo-prhima {
     padding: 60px 15px;
   }
-  
+
   .modelo-title {
     font-size: 30px;
   }
-  
+
   .modelo-subtitle {
     font-size: 18px;
   }
-  
+
   .comparacao-item {
     min-width: 100%;
     padding: 30px;
   }
-  
+
   .beneficios-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .modelo-cta {
     padding: 40px 20px;
   }
-  
+
   .cta-titulo {
     font-size: 26px;
   }
-  
+
   .cta-texto {
     font-size: 16px;
   }
@@ -1453,30 +1630,32 @@ a:hover {
   .modelo-title {
     font-size: 26px;
   }
-  
+
   .comparacao-titulo {
     font-size: 24px;
   }
-  
+
   .beneficio-card {
     padding: 25px;
   }
-  
+
   .cta-button {
     width: 100%;
     justify-content: center;
     padding: 16px 30px;
   }
 
-}@media (max-width: 1024px) {
+}
+
+@media (max-width: 1024px) {
   .footer-title {
     font-size: 32px;
   }
-  
+
   .title-line2 {
     font-size: 36px;
   }
-  
+
   .cta-button {
     min-width: 240px;
   }
@@ -1486,36 +1665,36 @@ a:hover {
   .footer {
     padding: 40px 20px 20px;
   }
-  
+
   .footer-title {
     font-size: 28px;
   }
-  
+
   .title-line2 {
     font-size: 32px;
   }
-  
+
   .footer-cta {
     flex-direction: column;
     align-items: center;
   }
-  
+
   .cta-button {
     width: 100%;
     max-width: 350px;
   }
-  
+
   .footer-bottom {
     grid-template-columns: 1fr;
     gap: 30px;
   }
-  
+
   .footer-end {
     flex-direction: column;
     text-align: center;
     gap: 25px;
   }
-  
+
   .footer-copyright {
     min-width: 100%;
   }
@@ -1525,15 +1704,15 @@ a:hover {
   .footer-title {
     font-size: 24px;
   }
-  
+
   .title-line2 {
     font-size: 28px;
   }
-  
+
   .description-text {
     font-size: 16px;
   }
-  
+
   .cta-button {
     padding: 15px 20px;
     font-size: 14px;
@@ -1545,15 +1724,15 @@ a:hover {
     flex-direction: column;
     gap: 40px;
   }
-  
+
   .prova-social-container {
     position: static;
   }
-  
+
   .caixas-linha {
     flex-direction: column;
   }
-  
+
   .resultado-caixa {
     max-width: 100%;
   }
@@ -1563,11 +1742,11 @@ a:hover {
   .prova-social-card {
     padding: 25px;
   }
-  
+
   .prova-social-title {
     font-size: 24px;
   }
-  
+
   .quote-text {
     font-size: 18px;
   }
