@@ -88,7 +88,6 @@ const HistoryPage = () => {
         </div>
       </div>
       <div className="footerHP">
-        <Footer />
       </div>
     </div>
   );
