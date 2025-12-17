@@ -1,0 +1,20 @@
+:host,
+:root {
+  --fa-style-family-classic: "Font Awesome 6 Free";
+  --fa-font-solid: normal 900 1em / 1 "Font Awesome 6 Free";
+
+  --fa-font-regular: normal 400 1em / 1 "Font Awesome 6 Free";
+
+  --fa-style-family-brands: "Font Awesome 6 Brands";
+  --fa-font-brands: normal 400 1em / 1 "Font Awesome 6 Brands";
+
+  --color-primary: #0D2C4F;
+  --color-secondary: #D4AF37;
+  --color-secondary-dark: #c29d2e;
+  --color-white: #FFFFFF;
+  --color-light-gray: #f8f9fa;
+  --color-border: #dee2e6;
+  --color-text: #212529;
+  --color-text-light: #6c757d;
+  --font-main: 'Poppins', sans-serif;
+}

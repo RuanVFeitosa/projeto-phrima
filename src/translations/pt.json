@@ -1,0 +1,404 @@
+{
+  "common": {
+    "nav": {
+      "about": "Sobre Nós",
+      "services": "Serviços",
+      "global": "Atuação Global",
+      "cases": "Cases",
+      "contact": "Fale Conosco"
+    },
+    "buttons": {
+      "speakExpert": "Falar com Especialista",
+      "freeAnalysis": "Fazer Análise de Risco Grátis",
+      "watchTestimonials": "Ver Depoimentos",
+      "seeMore": "Saiba Mais",
+      "send": "Enviar"
+    }
+  },
+  "home": {
+    "banner": {
+      "title": "Protegemos pessoas, processos e relações em qualquer lugar do mundo.",
+      "description": "PRHIMA 360° integra Recrutamento, Terceirização, Relações Trabalhistas, Compliance e Clima Organizacional em um único modelo estratégico.",
+      "stats": {
+        "companies": "+200 empresas protegidas",
+        "coverage": "Atuação Nacional e Internacional",
+        "satisfaction": "98% de satisfação"
+      }
+    },
+    "security": {
+      "alert": "ALERTA DE SEGURANÇA",
+      "question": "Sua empresa está realmente protegida?",
+      "subtitle": "Riscos invisíveis podem ser custosos. Descubra se seu negócio está exposto.",
+      "diagnosis": {
+        "title": "Faça um diagnóstico rápido do seu negócio",
+        "text": "Responda mentalmente: seu negócio está exposto a algum desses riscos?"
+      }
+    },
+    "risks": {
+      "labor": {
+        "title": "Riscos Trabalhistas",
+        "description": "Processos, multas e passivos trabalhistas que podem surgir a qualquer momento.",
+        "examples": [
+          "Reclamações trabalhistas",
+          "Multas por irregularidades",
+          "Passivos ocultos"
+        ],
+        "alert": "Perdas: Imediatas e a longo prazo"
+      },
+      "compliance": {
+        "title": "Falhas de Compliance",
+        "description": "Desconformidade com leis e regulamentos que podem paralisar suas operações.",
+        "examples": [
+          "Sanções regulatórias",
+          "Perda de certificações",
+          "Restrições operacionais"
+        ],
+        "alert": "Consequência: Paralisação da empresa"
+      },
+      "lgpd": {
+        "title": "Vulnerabilidade LGPD",
+        "description": "Vazamento de dados e descumprimento da Lei Geral de Proteção de Dados.",
+        "examples": [
+          "Multas de até R$ 50 milhões",
+          "Danos à reputação",
+          "Processos por danos morais"
+        ],
+        "alert": "Risco: Exposição de dados sensíveis"
+      },
+      "operational": {
+        "title": "Ineficiência Operacional",
+        "description": "Processos ineficientes que reduzem a produtividade e aumentam custos.",
+        "examples": [
+          "Baixa produtividade",
+          "Custos desnecessários",
+          "Perda de competitividade"
+        ],
+        "alert": "Impacto: Redução da rentabilidade"
+      },
+      "tags": {
+        "highGravity": "ALTA GRAVIDADE",
+        "compliance": "COMPLIANCE",
+        "lgpd": "LGPD",
+        "operational": "OPERACIONAL"
+      },
+      "cta": {
+        "title": "Identificou algum desses riscos?",
+        "description": "Não espere o problema acontecer. A prevenção é a melhor estratégia."
+      }
+    },
+    "model": {
+      "tag": "NOSSO MODELO",
+      "title": "O Modelo PRHIMA",
+      "subtitle": "PRHIMA não aluga pessoas. Assumimos o risco para você.",
+      "comparison": {
+        "company": {
+          "title": "Sua Empresa",
+          "description": "Foco no seu negócio principal",
+          "benefits": [
+            "Crescimento sustentável",
+            "Produtividade máxima",
+            "Zero burocracia"
+          ]
+        },
+        "prhima": {
+          "title": "PRHIMA",
+          "description": "Assumimos todas as responsabilidades"
+        }
+      },
+      "benefits": {
+        "title": "Tudo que assumimos por você:",
+        "employment": {
+          "title": "Vínculo Empregatício",
+          "description": "PRHIMA é o empregador legal, eliminando o vínculo direto com sua empresa."
+        },
+        "payroll": {
+          "title": "Gestão de Folha",
+          "description": "Cuidamos de toda a burocracia salarial, impostos e contribuições."
+        },
+        "benefits": {
+          "title": "Benefícios",
+          "description": "Gestão completa de benefícios e controle de jornada."
+        },
+        "replacements": {
+          "title": "Substituições",
+          "description": "Garantia de continuidade operacional com reposição ágil de profissionais."
+        },
+        "legal": {
+          "title": "Risco Jurídico",
+          "description": "Assumimos a totalidade do risco trabalhista e previdenciário."
+        }
+      },
+      "badges": {
+        "totalShielding": "Blindagem Total",
+        "totalProtection": "Proteção Total"
+      },
+      "cta": {
+        "title": "Pronto para focar no que realmente importa?",
+        "description": "Deixe a burocracia e os riscos trabalhistas conosco. Sua empresa livre para crescer."
+      }
+    },
+    "results": {
+      "title": "Por que confiar na PRHIMA?",
+      "stats": {
+        "managed": {
+          "title": "Colaboradores Gerenciados",
+          "value": "+17 anos",
+          "description": "de excelência"
+        },
+        "reduction": {
+          "title": "Redução de Passivos",
+          "value": "-34,97%",
+          "description": "de redução média"
+        },
+        "sla": {
+          "title": "SLA de Substituição",
+          "value": "24h",
+          "description": "de tempo médio de resposta"
+        },
+        "satisfaction": {
+          "title": "Satisfação do Cliente",
+          "value": "+90%",
+          "description": "de aprovação"
+        }
+      },
+      "social": {
+        "title": "Prova Social",
+        "videos": {
+          "title": "Vídeos Reais",
+          "description": "Depoimentos de clientes em nosso site"
+        },
+        "results": {
+          "title": "Resultados Concretos",
+          "description": "Imagens de operações reais"
+        },
+        "quote": "Números não mentem. A confiança é construída com resultados reais."
+      }
+    }
+  },
+  "footer": {
+    "title": {
+      "line1": "Você Já Conhece o Risco.",
+      "line2": "A Proteção Tem um Nome:"
+    },
+    "description": {
+      "line1": "A terceirização exposta a riscos sem a proteção adequada pode comprometer sua empresa",
+      "line2": "PRHIMA oferece a solução completa para a sua proteção legal"
+    },
+    "buttons": {
+      "proposal": "Solicite sua Proposta Blindada",
+      "meeting": "Agende uma Reunião Estratégica",
+      "start": "Inicie seu Blindagem Agora"
+    },
+    "contact": {
+      "title": "Contato",
+      "phone": "+55 (21) 96628-6353",
+      "email": "comercial@prhima.com.br",
+      "website": "www.prhima.com.br"
+    },
+    "quickLinks": {
+      "title": "Links Rápidos",
+      "about": "Sobre Nós",
+      "services": "Serviços",
+      "global": "Atuação Global",
+      "cases": "Cases",
+      "contact": "Fale Conosco"
+    },
+    "services": {
+      "title": "Nossos Serviços",
+      "compliance": "Compliance Corporativo",
+      "risk": "Gestão de Riscos",
+      "lgpd": "Consultoria LGPD",
+      "outsourcing": "Terceirização Blindada",
+      "audit": "Auditoria Trabalhista"
+    },
+    "certifications": {
+      "certified": "Empresa Certificada",
+      "excellence": "Excelência em Compliance"
+    },
+    "copyright": {
+      "line1": "© {{year}} PRHIMA 360°. Todos os direitos reservados.",
+      "line2": "Especialistas em proteção legal e compliance trabalhista."
+    },
+    "social": {
+      "linkedin": "LinkedIn",
+      "instagram": "Instagram",
+      "whatsapp": "WhatsApp",
+      "youtube": "YouTube"
+    }
+  },
+  "history": {
+    "title": "Nossa História",
+    "subtitle": "Uma trajetória marcada por inovação, expansão e compromisso com a excelência",
+    "timeline": {
+      "2015": {
+        "title": "Consolidação Nacional",
+        "text": "Expandimos nossa atuação para os principais estados do Brasil, consolidando a marca como referência em gestão de pessoas e compliance."
+      },
+      "2020": {
+        "title": "O ecossistema 360°",
+        "text": "Lançamos o modelo PRINMA 360°, integrando Recrutamento, Terceirização, Compliance e Clima Organizacional em um ecossistema estratégico."
+      },
+      "2023": {
+        "title": "Expansão Internacional",
+        "text": "Iniciamos nossa expansão global com bases estratégicas nos EUA e em Portugal, oferecendo suporte a clientes."
+      }
+    },
+    "vision": {
+      "title": "Nossa Visão Global",
+      "text": "Ser a maior rede de blindagem corporativa integrando soluções personalizadas para cada cliente."
+    },
+    "mission": {
+      "title": "Missão",
+      "text": "Blindar empresas e pessoas através da gestão ética e inteligente."
+    },
+    "companyVision": {
+      "title": "Visão",
+      "text": "Ser a referência global em blindagem corporativa, expandindo nosso impacto através de uma rede de franqueados de alta performance."
+    },
+    "values": {
+      "title": "Valores",
+      "items": ["Integridade", "Inovação", "Humanidade", "Resultado"]
+    }
+  }, 
+  "global": {
+    "hero": {
+      "badge": "PRESENÇA GLOBAL",
+      "title": "Nossa <span class='highlight'>Atuação Global</span>",
+      "subtitle": "Com bases estratégicas nas Américas, Europa e Ásia, oferecemos um ecossistema verdadeiramente global para a gestão de talentos e operações."
+    },
+    "map": {
+      "title": "Nossa Presença Global",
+      "countries": {
+        "brasil": {
+          "title": "Brasil",
+          "description": "Sede principal e centro de operações. Cobertura nacional com expertise local."
+        },
+        "portugal": {
+          "title": "Portugal",
+          "description": "Porta de entrada para a Europa. Centro de operações para o mercado europeu."
+        },
+        "eua": {
+          "title": "Estados Unidos",
+          "description": "Operações na América do Norte. Base estratégica para os mercados dos EUA e Canadá."
+        },
+        "china": {
+          "title": "China",
+          "description": "Ponte para a Ásia. Parcerias com empresas locais para operações na Ásia."
+        }
+      },
+      "countryCard": {
+        "title": "Operações em {{country}}",
+        "description": "Suporte completo para empresas que operam em {{country}}",
+        "services": "Serviços Oferecidos",
+        "legal": "Conformidade Legal",
+        "recruitment": "Recrutamento",
+        "outsourcing": "Terceirização",
+        "consulting": "Consultoria Estratégica"
+      }
+    },
+    "services": {
+      "title": "Soluções Globais",
+      "cards": [
+        {
+          "title": "Parcerias Internacionais",
+          "description": "Nossa rede de parceiros globais garante conformidade com as leis locais e acesso aos melhores talentos em cada mercado."
+        },
+        {
+          "title": "Atendimento Multilíngue",
+          "description": "Nossa equipe está preparada para atender sua empresa em Português, Inglês e Espanhol, quebrando barreiras de comunicação."
+        },
+        {
+          "title": "Modelos de Terceirização Global",
+          "description": "Oferecemos soluções de terceirização para empresas globais operando no Brasil e para empresas brasileiras expandindo para o exterior."
+        }
+      ]
+    },
+    "stats": {
+      "continents": {
+        "value": "4",
+        "label": "Continentes",
+        "description": "Américas, Europa, Ásia"
+      },
+      "countries": {
+        "value": "12+",
+        "label": "Países",
+        "description": "Rede de parceiros globais"
+      },
+      "support": {
+        "value": "24/7",
+        "label": "Suporte",
+        "description": "Atendimento em múltiplos fusos"
+      },
+      "clients": {
+        "value": "50+",
+        "label": "Clientes",
+        "description": "Empresas internacionais"
+      }
+    },
+    "cta": {
+      "title": "Pronto para Expandir Globalmente?",
+      "subtitle": "Conte com nossa expertise para levar sua empresa para o mundo com segurança e conformidade.",
+      "buttons": {
+        "international": "Expansão Internacional",
+        "brazil": "Operações no Brasil"
+      }
+    }
+  }, 
+  "contact": {
+    "hero": {
+      "title": "Fale com um Especialista",
+      "subtitle": "Selecione o seu principal interesse para direcionarmos sua mensagem ao time correto."
+    },
+    "form": {
+      "subject": {
+        "label": "Selecione um assunto... *",
+        "options": [
+          "Selecione um assunto...",
+          "Sou um cliente Potencial",
+          "Quero me tornar um Franqueado",
+          "Tenho interesse em Parcerias ou Mídias",
+          "Outros Assuntos"
+        ]
+      },
+      "name": {
+        "label": "Nome Completo *",
+        "placeholder": "Digite seu nome completo"
+      },
+      "email": {
+        "label": "Seu Melhor E-mail *",
+        "placeholder": "exemplo@email.com"
+      },
+      "message": {
+        "label": "Sua Mensagem *",
+        "placeholder": "Digite sua mensagem aqui..."
+      },
+      "submit": "Enviar Mensagem",
+      "success": "Mensagem enviada com sucesso! Entraremos em contato em breve."
+    },
+    "info": {
+      "address": {
+        "title": "Endereço",
+        "street": "Av. Ayrton Senna, 2500 - Barra da Tijuca, Rio de Janeiro - RJ, 22775-003",
+        "maps": "Ver no Google Maps",
+        "tags": ["Info", "Cas Shopping", "Google"],
+        "notes": [
+          "Dados cartográficos: 2023/5 Google",
+          "Termos: Informar erro no mapa"
+        ]
+      },
+      "emails": {
+        "title": "Nossos E-mails",
+        "list": [
+          { "department": "Geral", "email": "contato@prhima.com.br" },
+          { "department": "Currículos", "email": "curriculos@prhima.com.br" },
+          { "department": "Comercial", "email": "comercial@prhima.com.br" },
+          { "department": "Franquias", "email": "franquias@prhima.com.br" },
+          { "department": "Jurídico", "email": "juridico@prhima.com.br" },
+          { "department": "Imprensa", "email": "imprensa@prhima.com.br" },
+          { "department": "Ouvidoria", "email": "ouvidoria@prhima.com.br" },
+          { "department": "Parcerias", "email": "parcerias@prhima.com.br" }
+        ]
+      }
+    }
+  }
+}

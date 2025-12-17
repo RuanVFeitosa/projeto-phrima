@@ -1,10 +1,8 @@
 // pages/HomePage.jsx
 import { useState, useEffect } from 'react'
-import { FaPhone, FaEnvelope, FaGlobe, FaShieldAlt, FaCalendarCheck, FaRocket } from 'react-icons/fa';
-import Footer from '../components/Footer'; // Com F maiúsculo se o arquivo for Footer.jsx
+import { useTranslation } from '../hooks/useTranslation';
+import Footer from '../components/Footer';
 import '../CSS/App.css'
-import '@fortawesome/fontawesome-free/css/all.min.css'
-
 import Navbar from '../components/navBar';
 
 import foto1 from '../assets/foto1.png'
@@ -12,8 +10,9 @@ import foto2 from '../assets/foto2.png'
 import foto3 from '../assets/foto3.png'
 
 function HomePage() {
+  const { t } = useTranslation();
   const slidesData = [
-    { src: foto1, }, { src: foto2, }, { src: foto3, },
+    { src: foto1 }, { src: foto2 }, { src: foto3 },
   ]
 
   const [currentSlide, setCurrentSlide] = useState(0)
@@ -44,81 +43,92 @@ function HomePage() {
               <img src={slide.src} alt={slide.caption} className='slideshowDecoration' />
             </div>
           ))}
-
         </div>
-        <h1 className='bannerH1'>Blindamos pessoas, processos e relações em qualquer lugar do mundo.</h1>
+
+        {/* <h1 className='bannerH1'>
+          {t('home.banner.title')}
+        </h1>
         <p className="bannerP">
-          PRHIMA 360° integra Recrutamento, Terceirização, Relações Trabalhistas,
-          Compliance e Clima Organizacional em um único modelo estratégico.
+          {t('home.banner.description')}
         </p>
         <div className="bannerDescription">
-          <p className="bannerDescription1">+200 empresas protegidas</p>
+          <p className="bannerDescription1">
+            {t('home.banner.stats.companies')}
+          </p>
           <div className="vertical-line1"></div>
 
-          <p className="bannerDescription2">Atuação Nacional e Internacional</p>
+          <p className="bannerDescription2">
+            {t('home.banner.stats.coverage')}
+          </p>
           <div className="vertical-line2"></div>
 
-          <p className="bannerDescription3">98% de satisfação</p>
-        </div>
+          <p className="bannerDescription3">
+            {t('home.banner.stats.satisfaction')}
+          </p>
+        </div> */}
       </div>
 
       <div className="home2-section">
         <div className="home2-container">
-
           {/* Cabeçalho Impactante */}
           <div className="home2-header">
             <div className="warning-badge">
               <i className="fas fa-exclamation-triangle"></i>
-              <span>ALERTA DE SEGURANÇA</span>
+              <span>{t('home.security.alert')}</span>
             </div>
 
             <h2 className="home2-title">
-              Sua empresa está
-              <span className="title-highlight"> realmente segura?</span>
+              {t('home.security.question')}
+              <span className="title-highlight"></span>
             </h2>
 
             <p className="home2-subtitle">
-              Riscos invisíveis podem custar caro. Descubra se seu negócio está exposto.
+              {t('home.security.subtitle')}
             </p>
-
-
           </div>
 
           {/* Diagnóstico Rápido */}
           <div className="diagnostico-box">
             <h3 className="diagnostico-title">
               <i className="fas fa-clipboard-check"></i>
-              Faça um diagnóstico rápido do seu negócio
+              {t('home.security.diagnosis.title')}
             </h3>
             <p className="diagnostico-text">
-              Responda mentalmente: seu negócio está exposto a algum desses riscos?
+              {t('home.security.diagnosis.text')}
             </p>
           </div>
 
           {/* Riscos em Cards */}
           <div className="riscos-container">
             <div className="riscos-grid">
-
               {/* Risco 1 */}
               <div className="risco-card">
                 <div className="risco-header">
                   <div className="risco-icon">
                     <i className="fas fa-hard-hat"></i>
                   </div>
-                  <div className="risco-tag">ALTA GRAVIDADE</div>
+                  <div className="risco-tag">{t('home.risks.tags.highGravity')}</div>
                 </div>
-                <h4 className="risco-title">Riscos Trabalhistas</h4>
+                <h4 className="risco-title">
+                  {t('home.risks.labor.title')}
+                </h4>
                 <p className="risco-desc">
-                  Processos, multas e passivos trabalhistas que podem surgir a qualquer momento.
+                  {t('home.risks.labor.description')}
                 </p>
                 <div className="risco-exemplos">
-                  <span className="exemplo-item">• Reclamações trabalhistas</span>
-                  <span className="exemplo-item">• Multas por irregularidades</span>
-                  <span className="exemplo-item">• Passivos ocultos</span>
+                  {t('home.risks.labor.examples.0') && (
+                    <span className="exemplo-item">• {t('home.risks.labor.examples.0')}</span>
+                  )}
+                  {t('home.risks.labor.examples.1') && (
+                    <span className="exemplo-item">• {t('home.risks.labor.examples.1')}</span>
+                  )}
+                  {t('home.risks.labor.examples.2') && (
+                    <span className="exemplo-item">• {t('home.risks.labor.examples.2')}</span>
+                  )}
                 </div>
                 <div className="risco-alerta">
                   <i className="fas fa-clock"></i>
-                  <span>Prejuízos: Imediatos e de longo prazo</span>
+                  <span>{t('home.risks.labor.alert')}</span>
                 </div>
               </div>
 
@@ -128,20 +138,30 @@ function HomePage() {
                   <div className="risco-icon">
                     <i className="fas fa-file-excel"></i>
                   </div>
-                  <div className="risco-tag tag-compliance">COMPLIANCE</div>
+                  <div className="risco-tag tag-compliance">
+                    {t('home.risks.tags.compliance')}
+                  </div>
                 </div>
-                <h4 className="risco-title">Falhas em Compliance</h4>
+                <h4 className="risco-title">
+                  {t('home.risks.compliance.title')}
+                </h4>
                 <p className="risco-desc">
-                  Desconformidade com leis e regulamentos que podem paralisar suas operações.
+                  {t('home.risks.compliance.description')}
                 </p>
                 <div className="risco-exemplos">
-                  <span className="exemplo-item">• Sanções regulatórias</span>
-                  <span className="exemplo-item">• Perda de certificações</span>
-                  <span className="exemplo-item">• Restrições operacionais</span>
+                  {t('home.risks.compliance.examples.0') && (
+                    <span className="exemplo-item">• {t('home.risks.compliance.examples.0')}</span>
+                  )}
+                  {t('home.risks.compliance.examples.1') && (
+                    <span className="exemplo-item">• {t('home.risks.compliance.examples.1')}</span>
+                  )}
+                  {t('home.risks.compliance.examples.2') && (
+                    <span className="exemplo-item">• {t('home.risks.compliance.examples.2')}</span>
+                  )}
                 </div>
                 <div className="risco-alerta">
                   <i className="fas fa-ban"></i>
-                  <span>Consequência: Interdição da empresa</span>
+                  <span>{t('home.risks.compliance.alert')}</span>
                 </div>
               </div>
 
@@ -151,46 +171,65 @@ function HomePage() {
                   <div className="risco-icon">
                     <i className="fas fa-database"></i>
                   </div>
-                  <div className="risco-tag tag-lgpd">LGPD</div>
+                  <div className="risco-tag tag-lgpd">
+                    {t('home.risks.tags.lgpd')}
+                  </div>
                 </div>
-                <h4 className="risco-title">Vulnerabilidade LGPD</h4>
+                <h4 className="risco-title">
+                  {t('home.risks.lgpd.title')}
+                </h4>
                 <p className="risco-desc">
-                  Vazamento de dados e descumprimento da Lei Geral de Proteção de Dados.
+                  {t('home.risks.lgpd.description')}
                 </p>
                 <div className="risco-exemplos">
-                  <span className="exemplo-item">• Multas de até R$ 50 milhões</span>
-                  <span className="exemplo-item">• Danos à reputação</span>
-                  <span className="exemplo-item">• Processos por danos morais</span>
+                  {t('home.risks.lgpd.examples.0') && (
+                    <span className="exemplo-item">• {t('home.risks.lgpd.examples.0')}</span>
+                  )}
+                  {t('home.risks.lgpd.examples.1') && (
+                    <span className="exemplo-item">• {t('home.risks.lgpd.examples.1')}</span>
+                  )}
+                  {t('home.risks.lgpd.examples.2') && (
+                    <span className="exemplo-item">• {t('home.risks.lgpd.examples.2')}</span>
+                  )}
                 </div>
                 <div className="risco-alerta">
                   <i className="fas fa-user-secret"></i>
-                  <span>Risco: Exposição de dados sensíveis</span>
+                  <span>{t('home.risks.lgpd.alert')}</span>
                 </div>
               </div>
 
               {/* Risco 4 */}
               <div className="risco-card">
-                <div className="risco-header">
-                  <div className="risco-icon">
-                    <i className="fas fa-clock"></i>
-                  </div>
-                  <div className="risco-tag tag-operacional">OPERACIONAL</div>
-                </div>
-                <h4 className="risco-title">Ineficiência Operacional</h4>
+      <div className="risco-header">
+        <div className="risco-icon">
+          <i className="fas fa-clock"></i>
+        </div>
+        <div className="risco-tag tag-operacional">
+          {t('home.risks.tags.operational')}
+        </div>
+      </div>
+      <h4 className="risco-title">
+        {t('home.risks.operational.title')}
+      </h4>
                 <p className="risco-desc">
-                  Processos ineficientes que reduzem produtividade e aumentam custos.
+                  {t('home.risks.operational.description')}
                 </p>
                 <div className="risco-exemplos">
-                  <span className="exemplo-item">• Baixa produtividade</span>
-                  <span className="exemplo-item">• Custos desnecessários</span>
-                  <span className="exemplo-item">• Perda de competitividade</span>
+                  {t('home.risks.operational.examples.0') && (
+                    <span className="exemplo-item">• {t('home.risks.operational.examples.0')}</span>
+                  )}
+                  {t('home.risks.operational.examples.1') && (
+                    <span className="exemplo-item">• {t('home.risks.operational.examples.1')}</span>
+                  )}
+                  {t('home.risks.operational.examples.2') && (
+                    <span className="exemplo-item">• {t('home.risks.operational.examples.2')}</span>
+                  )}
                 </div>
                 <div className="risco-alerta">
                   <i className="fas fa-chart-line-down"></i>
-                  <span>Impacto: Redução de lucratividade</span>
+                  <span>{t('home.risks.operational.alert')}</span>
                 </div>
               </div>
-
             </div>
           </div>
 
@@ -198,35 +237,34 @@ function HomePage() {
           <div className="risco-cta">
             <div className="cta-content">
               <div className="cta-text">
-                <h3>Identificou algum desses riscos?</h3>
-                <p>Não espere o problema acontecer. A prevenção é a melhor estratégia.</p>
+                <h3>{t('home.risks.cta.title')}</h3>
+                <p>{t('home.risks.cta.description')}</p>
               </div>
               <div className="cta-buttons">
                 <button className="btn-analise">
                   <i className="fas fa-search"></i>
-                  Fazer Análise de Risco Gratuita
+                  {t('common.buttons.freeAnalysis')}
                 </button>
                 <button className="btn-fale-especialista">
                   <i className="fas fa-headset"></i>
-                  Falar com Especialista
+                  {t('common.buttons.speakExpert')}
                 </button>
               </div>
             </div>
           </div>
-
         </div>
 
-
+        {/* Modelo PRHIMA */}
         <div className="modelo-prhima">
           <div className="modelo-container">
-
             {/* Cabeçalho */}
             <div className="modelo-header">
-              <div className="modelo-tag">NOSSO MODELO</div>
-              <h2 className="modelo-title">O Modelo <span className="highlight">PRHIMA</span></h2>
+              <div className="modelo-tag">{t('home.model.tag')}</div>
+              <h2 className="modelo-title">
+                {t('home.model.title')} <span className="highlight">PRHIMA</span>
+              </h2>
               <p className="modelo-subtitle">
-                A PRHIMA não aluga pessoas.<br />
-                <strong>Nós assumimos o risco por você.</strong>
+                {t('home.model.subtitle')}
               </p>
             </div>
 
@@ -236,20 +274,24 @@ function HomePage() {
                 <div className="comparacao-icon">
                   <i className="fas fa-building fa-2x"></i>
                 </div>
-                <h3 className="comparacao-titulo">Sua Empresa</h3>
-                <p className="comparacao-desc">Foco no seu core business</p>
+                <h3 className="comparacao-titulo">
+                  {t('home.model.comparison.company.title')}
+                </h3>
+                <p className="comparacao-desc">
+                  {t('home.model.comparison.company.description')}
+                </p>
                 <div className="comparacao-lista">
                   <div className="lista-item">
                     <i className="fas fa-check-circle"></i>
-                    <span>Crescimento sustentável</span>
+                    <span>{t('home.model.comparison.company.benefits.0')}</span>
                   </div>
                   <div className="lista-item">
                     <i className="fas fa-check-circle"></i>
-                    <span>Produtividade máxima</span>
+                    <span>{t('home.model.comparison.company.benefits.1')}</span>
                   </div>
                   <div className="lista-item">
                     <i className="fas fa-check-circle"></i>
-                    <span>Zero burocracia</span>
+                    <span>{t('home.model.comparison.company.benefits.2')}</span>
                   </div>
                 </div>
               </div>
@@ -259,32 +301,39 @@ function HomePage() {
               </div>
 
               <div className="comparacao-item prhima">
-                <div className="comparacao-icon">
-                  <i className="fas fa-shield-alt fa-2x"></i>
-                </div>
-                <h3 className="comparacao-titulo">PRHIMA</h3>
-                <p className="comparacao-desc">Assumimos todas as responsabilidades</p>
-                <div className="comparacao-badge">
-                  <i className="fas fa-medal"></i>
-                  <span>Blindagem Total</span>
-                </div>
-              </div>
+  <div className="comparacao-icon">
+    <i className="fas fa-shield-alt fa-2x"></i>
+  </div>
+  <h3 className="comparacao-titulo">
+    {t('home.model.comparison.prhima.title')}
+  </h3>
+  <p className="comparacao-desc">
+    {t('home.model.comparison.prhima.description')}
+  </p>
+  <div className="comparacao-badge">
+    <i className="fas fa-medal"></i>
+    <span>{t('home.model.badges.totalShielding')}</span>
+  </div>
+</div>
             </div>
 
             {/* Benefícios em grid */}
             <div className="modelo-beneficios">
-              <h3 className="beneficios-titulo">Tudo que assumimos para você:</h3>
+              <h3 className="beneficios-titulo">
+                {t('home.model.benefits.title')}
+              </h3>
 
               <div className="beneficios-grid">
-
                 {/* Benefício 1 */}
                 <div className="beneficio-card">
                   <div className="beneficio-icon">
                     <i className="fas fa-file-contract fa-2x"></i>
                   </div>
-                  <h4 className="beneficio-titulo">Vínculo Empregatício</h4>
+                  <h4 className="beneficio-titulo">
+                    {t('home.model.benefits.employment.title')}
+                  </h4>
                   <p className="beneficio-desc">
-                    A PRHIMA é a empregadora legal, eliminando o vínculo direto com sua empresa.
+                    {t('home.model.benefits.employment.description')}
                   </p>
                 </div>
 
@@ -293,9 +342,11 @@ function HomePage() {
                   <div className="beneficio-icon">
                     <i className="fas fa-calculator fa-2x"></i>
                   </div>
-                  <h4 className="beneficio-titulo">Gestão de Folha</h4>
+                  <h4 className="beneficio-titulo">
+                    {t('home.model.benefits.payroll.title')}
+                  </h4>
                   <p className="beneficio-desc">
-                    Cuidamos de toda a burocracia salarial, impostos e contribuições.
+                    {t('home.model.benefits.payroll.description')}
                   </p>
                 </div>
 
@@ -304,9 +355,11 @@ function HomePage() {
                   <div className="beneficio-icon">
                     <i className="fas fa-gift fa-2x"></i>
                   </div>
-                  <h4 className="beneficio-titulo">Benefícios</h4>
+                  <h4 className="beneficio-titulo">
+                    {t('home.model.benefits.benefits.title')}
+                  </h4>
                   <p className="beneficio-desc">
-                    Gerenciamento completo de benefícios e controle de jornada.
+                    {t('home.model.benefits.benefits.description')}
                   </p>
                 </div>
 
@@ -315,9 +368,11 @@ function HomePage() {
                   <div className="beneficio-icon">
                     <i className="fas fa-sync-alt fa-2x"></i>
                   </div>
-                  <h4 className="beneficio-titulo">Substituições</h4>
+                  <h4 className="beneficio-titulo">
+                    {t('home.model.benefits.replacements.title')}
+                  </h4>
                   <p className="beneficio-desc">
-                    Garantia de continuidade operacional com reposição ágil de profissionais.
+                    {t('home.model.benefits.replacements.description')}
                   </p>
                 </div>
 
@@ -326,67 +381,95 @@ function HomePage() {
                   <div className="beneficio-icon">
                     <i className="fas fa-balance-scale fa-2x"></i>
                   </div>
-                  <h4 className="beneficio-titulo">Risco Jurídico</h4>
+                  <h4 className="beneficio-titulo">
+                    {t('home.model.benefits.legal.title')}
+                  </h4>
                   <p className="beneficio-desc">
-                    Assumimos a totalidade do risco trabalhista e previdenciário.
+                    {t('home.model.benefits.legal.description')}
                   </p>
                   <div className="beneficio-badge">
                     <i className="fas fa-shield"></i>
                     <span>Proteção Total</span>
                   </div>
                 </div>
-
               </div>
             </div>
 
             {/* CTA Final */}
             <div className="modelo-cta">
               <div className="cta-content">
-                <h3 className="cta-titulo">Pronto para focar no que realmente importa?</h3>
+                <h3 className="cta-titulo">
+                  {t('home.model.cta.title')}
+                </h3>
                 <p className="cta-texto">
-                  Deixe a burocracia e os riscos trabalhistas conosco. Sua empresa livre para crescer.
+                  {t('home.model.cta.description')}
                 </p>
                 <button className="cta-button">
                   <i className="fas fa-handshake"></i>
-                  Fale com um Especialista
+                  {t('common.buttons.speakExpert')}
                 </button>
               </div>
             </div>
-
           </div>
         </div>
 
+        {/* Resultados */}
         <div className="resultados-completo">
-          <h1 className="confiarH1">Por que confiar na PHRIMA?</h1>
+          <h1 className="confiarH1">
+            {t('home.results.title')}
+          </h1>
           <div className="resultados-conteudo">
-
             <div className="caixas-container">
               <div className="caixas-grid">
                 <div className="caixas-linha">
                   <div className="colaboradoresCaixa resultado-caixa">
-                    <h1 className="colaboradoresGerenciados">Colaboradores Gerenciados</h1>
-                    <h3 className="anosExelencia">+17 anos</h3>
-                    <p className="colaboradoresP">de excelência</p>
+                    <h1 className="colaboradoresGerenciados">
+                      {t('home.results.stats.managed.title')}
+                    </h1>
+                    <h3 className="anosExelencia">
+                      {t('home.results.stats.managed.value')}
+                    </h3>
+                    <p className="colaboradoresP">
+                      {t('home.results.stats.managed.description')}
+                    </p>
                   </div>
 
                   <div className="reducaoCaixa resultado-caixa">
-                    <h1 className="reducaoPassivo">Redução de Passivos</h1>
-                    <h3 className="reducaoNum">-34,97%</h3>
-                    <p className="reducaoP">de redução média</p>
+                    <h1 className="reducaoPassivo">
+                      {t('home.results.stats.reduction.title')}
+                    </h1>
+                    <h3 className="reducaoNum">
+                      {t('home.results.stats.reduction.value')}
+                    </h3>
+                    <p className="reducaoP">
+                      {t('home.results.stats.reduction.description')}
+                    </p>
                   </div>
                 </div>
 
                 <div className="caixas-linha">
                   <div className="slaCaixa resultado-caixa">
-                    <h1 className="slaSub">SLA de Substituição</h1>
-                    <h3 className="horaResposta">24h</h3>
-                    <p className="repostaP">de resposta média</p>
+                    <h1 className="slaSub">
+                      {t('home.results.stats.sla.title')}
+                    </h1>
+                    <h3 className="horaResposta">
+                      {t('home.results.stats.sla.value')}
+                    </h3>
+                    <p className="repostaP">
+                      {t('home.results.stats.sla.description')}
+                    </p>
                   </div>
 
                   <div className="clienteCaixa resultado-caixa">
-                    <h1 className="satisfacaoCli">Satisfação do Cliente</h1>
-                    <h3 className="satisPor">+90%</h3>
-                    <p className="satisP">de aprovação</p>
+                    <h1 className="satisfacaoCli">
+                      {t('home.results.stats.satisfaction.title')}
+                    </h1>
+                    <h3 className="satisPor">
+                      {t('home.results.stats.satisfaction.value')}
+                    </h3>
+                    <p className="satisP">
+                      {t('home.results.stats.satisfaction.description')}
+                    </p>
                   </div>
                 </div>
               </div>
@@ -398,15 +481,21 @@ function HomePage() {
                   <i className="fas fa-medal fa-2x"></i>
                 </div>
 
-                <h2 className="prova-social-title">Prova Social</h2>
+                <h2 className="prova-social-title">
+                  {t('home.results.social.title')}
+                </h2>
 
                 <div className="prova-social-item">
                   <div className="item-icon">
                     <i className="fas fa-video"></i>
                   </div>
                   <div className="item-content">
-                    <h3 className="item-title">Vídeos Reais</h3>
-                    <p className="item-desc">Depoimentos de clientes no nosso site</p>
+                    <h3 className="item-title">
+                      {t('home.results.social.videos.title')}
+                    </h3>
+                    <p className="item-desc">
+                      {t('home.results.social.videos.description')}
+                    </p>
                   </div>
                 </div>
 
@@ -415,8 +504,12 @@ function HomePage() {
                     <i className="fas fa-chart-bar"></i>
                   </div>
                   <div className="item-content">
-                    <h3 className="item-title">Resultados Concretos</h3>
-                    <p className="item-desc">Imagens de operações reais</p>
+                    <h3 className="item-title">
+                      {t('home.results.social.results.title')}
+                    </h3>
+                    <p className="item-desc">
+                      {t('home.results.social.results.description')}
+                    </p>
                   </div>
                 </div>
 
@@ -425,19 +518,16 @@ function HomePage() {
                     <i className="fas fa-quote-left"></i>
                   </div>
                   <p className="quote-text">
-                    Números não mentem.<br />
-                    Confiança se constrói com<br />
-                    <strong>resultado real.</strong>
+                    {t('home.results.social.quote')}
                   </p>
                 </div>
 
                 <button className="prova-social-button">
                   <i className="fas fa-play-circle"></i>
-                  Ver Depoimentos
+                  {t('common.buttons.watchTestimonials')}
                 </button>
               </div>
             </div>
-
           </div>
         </div>
       </div>

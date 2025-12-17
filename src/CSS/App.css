@@ -21,69 +21,218 @@
 
 /* Slideshow container */
 .slideshow-container {
-  margin-top: 60px;
   position: relative;
-  height: 40vh;
-  margin: 60px auto 0;
-}
-
-.slideshowDecoration {
   width: 100%;
-  height: 90vh;
-  opacity: 0.3;
+  height: 100vh; /* Ocupa toda a altura da viewport */
+  max-height: 900px; /* Limite máximo para telas grandes */
+  min-height: 500px; /* Altura mínima para mobile */
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
 }
 
+/* Para dispositivos móveis, ajustamos a altura */
+@media (max-width: 768px) {
+  .slideshow-container {
+    height: 70vh; /* Altura menor em mobile */
+    min-height: 400px;
+    max-height: 600px;
+  }
+}
+
+@media (max-width: 480px) {
+  .slideshow-container {
+    height: 60vh; /* Altura ainda menor em telas pequenas */
+    min-height: 350px;
+    max-height: 500px;
+  }
+}
+
+/* Slides */
 .mySlides {
   display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
 }
 
-.next {
+.mySlides.active {
+  display: block;
+  opacity: 0.3; /* Mantém a opacidade do design original */
+}
+
+/* Imagens do slideshow */
+.slideshowDecoration {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Garante que a imagem cubra todo o container */
+  object-position: center;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+/* Botões de navegação */
+.prev, .next {
+  display: none; /* Esconde os botões em mobile */
+}
+
+/* Pontos indicadores */
+.dots-container {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
   right: 0;
-  border-radius: 3px 0 0 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  z-index: 10;
+  padding: 10px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-
-/* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
+  height: 12px;
+  width: 12px;
+  margin: 0 4px;
+  background-color: rgba(255, 255, 255, 0.5);
   border-radius: 50%;
   display: inline-block;
-  transition: background-color 0.6s ease;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
 }
 
-.active,
 .dot:hover {
-  background-color: #717171;
+  background-color: rgba(255, 255, 255, 0.8);
+  transform: scale(1.2);
 }
 
-/* Fading animation */
+.dot.active {
+  background-color: var(--color-secondary);
+  transform: scale(1.2);
+  box-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
+}
+
+/* Responsividade para os dots */
+@media (max-width: 768px) {
+  .dots-container {
+    bottom: 15px;
+  }
+  
+  .dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 3px;
+  }
+}
+
+@media (max-width: 480px) {
+  .dots-container {
+    bottom: 10px;
+  }
+  
+  .dot {
+    height: 8px;
+    width: 8px;
+    margin: 0 2px;
+  }
+}
+
+/* Animações */
 .fade {
   animation-name: fade;
   animation-duration: 1.5s;
+  animation-fill-mode: both;
 }
 
 @keyframes fade {
   from {
-    opacity: .4
+    opacity: 0.4;
   }
-
   to {
-    opacity: 1
+    opacity: 1;
   }
 }
 
-* {
-  box-sizing: border-box
+/* Otimização para performance */
+.slideshow-container {
+  will-change: transform;
+  backface-visibility: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Suporte para telas touch */
+@media (hover: none) and (pointer: coarse) {
+  .dot {
+    height: 14px;
+    width: 14px;
+    margin: 0 6px;
+  }
+  
+  .dots-container {
+    bottom: 25px; /* Mais espaço para o dedo */
+  }
+}
+
+/* Modo retrato (portrait) */
+@media (orientation: portrait) {
+  .slideshow-container {
+    aspect-ratio: 3/4; /* Proporção mais adequada para retrato */
+  }
+}
+
+/* Modo paisagem (landscape) */
+@media (orientation: landscape) and (max-height: 500px) {
+  .slideshow-container {
+    height: 80vh;
+    min-height: 300px;
+  }
+  
+  .dots-container {
+    bottom: 10px;
+  }
+}
+
+/* Suporte para dispositivos com notch */
+@supports (padding-top: env(safe-area-inset-top)) {
+  .slideshow-container {
+    padding-top: env(safe-area-inset-top);
+  }
+}
+
+/* Melhorias de acessibilidade */
+.dot:focus {
+  outline: 2px solid var(--color-secondary);
+  outline-offset: 2px;
+}
+
+/* Prevenção de zoom em iOS */
+@supports (-webkit-touch-callout: none) {
+  .slideshow-container {
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+/* Loading state */
+.slideshow-container.loading {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+/* Controles de swipe (opcional) */
+.slideshow-container {
+  touch-action: pan-y pinch-zoom;
 }
 
 body {
@@ -140,14 +289,7 @@ a:hover {
   gap: 20px;
 }
 
-.banner {
-  background-color: var(--color-primary);
-  color: var(--color-white);
-  text-align: center;
-  width: 100%;
-  height: 90vh;
 
-}
 
 .bannerH1 {
   position: relative;
@@ -155,7 +297,7 @@ a:hover {
   font-size: 55px;
   margin: 0 auto;
   margin-top: -100px;
-  max-width: 1000px;
+  max-width: 1200px;
   padding: 20px 30px 10px -50px;
   font-weight: bold;
   text-align: center;
@@ -198,7 +340,7 @@ a:hover {
   width: 100%;
   overflow: hidden;
   justify-content: center;
-  gap: 20px;
+  gap: 80px;
 }
 
 .vertical-line1 {
@@ -206,7 +348,7 @@ a:hover {
   height: 200px;
   position: absolute;
   left: 44.7%;
-  margin-left: -3px;
+  margin-left: -48px;
   top: 0;
 }
 
@@ -215,7 +357,7 @@ a:hover {
   height: 500px;
   position: absolute;
   left: 58.6%;
-  margin-left: -3px;
+  margin-left: 30px;
   top: 0;
 }
 
@@ -1181,7 +1323,6 @@ a:hover {
 }
 
 
-/* Responsividade */
 
 /* Responsividade */
 @media (max-width: 1024px) {

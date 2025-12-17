@@ -1,0 +1,404 @@
+{
+  "common": {
+    "nav": {
+      "about": "About Us",
+      "services": "Services",
+      "global": "Global Presence",
+      "cases": "Case Studies",
+      "contact": "Contact Us"
+    },
+    "buttons": {
+      "speakExpert": "Speak with an Expert",
+      "freeAnalysis": "Free Risk Analysis",
+      "watchTestimonials": "Watch Testimonials",
+      "seeMore": "Learn More",
+      "send": "Send"
+    }
+  },
+  "home": {
+    "banner": {
+      "title": "We protect people, processes and relationships anywhere in the world.",
+      "description": "PRHIMA 360° integrates Recruitment, Outsourcing, Labor Relations, Compliance and Organizational Climate into a single strategic model.",
+      "stats": {
+        "companies": "+200 protected companies",
+        "coverage": "National and International Coverage",
+        "satisfaction": "98% satisfaction rate"
+      }
+    },
+    "security": {
+      "alert": "SECURITY ALERT",
+      "question": "Is your company really protected?",
+      "subtitle": "Invisible risks can be costly. Find out if your business is exposed.",
+      "diagnosis": {
+        "title": "Quickly diagnose your business",
+        "text": "Mentally answer: is your business exposed to any of these risks?"
+      }
+    },
+    "risks": {
+      "labor": {
+        "title": "Labor Risks",
+        "description": "Lawsuits, fines and labor liabilities that can arise at any time.",
+        "examples": [
+          "Labor claims",
+          "Fines for irregularities",
+          "Hidden liabilities"
+        ],
+        "alert": "Losses: Immediate and long-term"
+      },
+      "compliance": {
+        "title": "Compliance Failures",
+        "description": "Non-compliance with laws and regulations that can paralyze your operations.",
+        "examples": [
+          "Regulatory sanctions",
+          "Loss of certifications",
+          "Operational restrictions"
+        ],
+        "alert": "Consequence: Company shutdown"
+      },
+      "lgpd": {
+        "title": "LGPD Vulnerability",
+        "description": "Data breaches and non-compliance with the General Data Protection Law.",
+        "examples": [
+          "Fines up to R$ 50 million",
+          "Reputational damage",
+          "Moral damages lawsuits"
+        ],
+        "alert": "Risk: Exposure of sensitive data"
+      },
+      "operational": {
+        "title": "Operational Inefficiency",
+        "description": "Inefficient processes that reduce productivity and increase costs.",
+        "examples": [
+          "Low productivity",
+          "Unnecessary costs",
+          "Loss of competitiveness"
+        ],
+        "alert": "Impact: Reduced profitability"
+      },
+      "tags": {
+        "highGravity": "HIGH GRAVITY",
+        "compliance": "COMPLIANCE",
+        "lgpd": "LGPD",
+        "operational": "OPERATIONAL"
+      },
+      "cta": {
+        "title": "Did you identify any of these risks?",
+        "description": "Don't wait for the problem to happen. Prevention is the best strategy."
+      }
+    },
+    "model": {
+      "tag": "OUR MODEL",
+      "title": "The PRHIMA Model",
+      "subtitle": "PRHIMA doesn't rent people. We take the risk for you.",
+      "comparison": {
+        "company": {
+          "title": "Your Company",
+          "description": "Focus on your core business",
+          "benefits": [
+            "Sustainable growth",
+            "Maximum productivity",
+            "Zero bureaucracy"
+          ]
+        },
+        "prhima": {
+          "title": "PRHIMA",
+          "description": "We take all responsibilities"
+        }
+      },
+      "benefits": {
+        "title": "Everything we take on for you:",
+        "employment": {
+          "title": "Employment Bond",
+          "description": "PRHIMA is the legal employer, eliminating direct ties with your company."
+        },
+        "payroll": {
+          "title": "Payroll Management",
+          "description": "We handle all salary bureaucracy, taxes and contributions."
+        },
+        "benefits": {
+          "title": "Benefits",
+          "description": "Complete benefits management and work schedule control."
+        },
+        "replacements": {
+          "title": "Replacements",
+          "description": "Operational continuity guarantee with agile professional replacement."
+        },
+        "legal": {
+          "title": "Legal Risk",
+          "description": "We assume all labor and social security risks."
+        }
+      },
+      "badges": {
+        "totalShielding": "Total Shielding",
+        "totalProtection": "Total Protection"
+      },
+      "cta": {
+        "title": "Ready to focus on what really matters?",
+        "description": "Leave bureaucracy and labor risks with us. Your company is free to grow."
+      }
+    },
+    "results": {
+      "title": "Why trust PRHIMA?",
+      "stats": {
+        "managed": {
+          "title": "Managed Employees",
+          "value": "+17 years",
+          "description": "of excellence"
+        },
+        "reduction": {
+          "title": "Liability Reduction",
+          "value": "-34.97%",
+          "description": "average reduction"
+        },
+        "sla": {
+          "title": "Replacement SLA",
+          "value": "24h",
+          "description": "average response time"
+        },
+        "satisfaction": {
+          "title": "Customer Satisfaction",
+          "value": "+90%",
+          "description": "approval rate"
+        }
+      },
+      "social": {
+        "title": "Social Proof",
+        "videos": {
+          "title": "Real Videos",
+          "description": "Customer testimonials on our website"
+        },
+        "results": {
+          "title": "Concrete Results",
+          "description": "Images of real operations"
+        },
+        "quote": "Numbers don't lie. Trust is built with real results."
+      }
+    }
+  },
+  "footer": {
+    "title": {
+      "line1": "You Already Know the Risk.",
+      "line2": "Protection Has a Name:"
+    },
+    "description": {
+      "line1": "Outsourcing exposed to risks without adequate protection can compromise your company",
+      "line2": "PRHIMA offers the complete solution for your legal protection"
+    },
+    "buttons": {
+      "proposal": "Request Your Shielded Proposal",
+      "meeting": "Schedule a Strategic Meeting",
+      "start": "Start Your Protection Now"
+    },
+    "contact": {
+      "title": "Contact",
+      "phone": "+55 (21) 96628-6353",
+      "email": "comercial@prhima.com.br",
+      "website": "www.prhima.com.br"
+    },
+    "quickLinks": {
+      "title": "Quick Links",
+      "about": "About Us",
+      "services": "Services",
+      "global": "Global Presence",
+      "cases": "Case Studies",
+      "contact": "Contact Us"
+    },
+    "services": {
+      "title": "Our Services",
+      "compliance": "Corporate Compliance",
+      "risk": "Risk Management",
+      "lgpd": "LGPD Consulting",
+      "outsourcing": "Shielded Outsourcing",
+      "audit": "Labor Audit"
+    },
+    "certifications": {
+      "certified": "Certified Company",
+      "excellence": "Excellence in Compliance"
+    },
+    "copyright": {
+      "line1": "© {{year}} PRHIMA 360°. All rights reserved.",
+      "line2": "Experts in legal protection and labor compliance."
+    },
+    "social": {
+      "linkedin": "LinkedIn",
+      "instagram": "Instagram",
+      "whatsapp": "WhatsApp",
+      "youtube": "YouTube"
+    }
+  },
+  "history": {
+    "title": "Our History",
+    "subtitle": "A journey marked by innovation, expansion and commitment to excellence",
+    "timeline": {
+      "2015": {
+        "title": "National Consolidation",
+        "text": "We expanded our operations to the main states of Brazil, consolidating the brand as a reference in people management and compliance."
+      },
+      "2020": {
+        "title": "The 360° Ecosystem",
+        "text": "We launched the PRHIMA 360° model, integrating Recruitment, Outsourcing, Compliance and Organizational Climate into a strategic ecosystem."
+      },
+      "2023": {
+        "title": "International Expansion",
+        "text": "We began our global expansion with strategic bases in the USA and Portugal, offering support to clients."
+      }
+    },
+    "vision": {
+      "title": "Our Global Vision",
+      "text": "To be the largest corporate shielding network integrating customized solutions for each client."
+    },
+    "mission": {
+      "title": "Mission",
+      "text": "To shield companies and people through ethical and intelligent management."
+    },
+    "companyVision": {
+      "title": "Vision",
+      "text": "To be the global reference in corporate shielding, expanding our impact through a network of high-performance franchisees."
+    },
+    "values": {
+      "title": "Values",
+      "items": ["Integrity", "Innovation", "Humanity", "Results"]
+    }
+  }, 
+  "global": {
+    "hero": {
+      "badge": "GLOBAL PRESENCE",
+      "title": "Our <span class='highlight'>Global Presence</span>",
+      "subtitle": "With strategic bases in the Americas, Europe and Asia, we offer a truly global ecosystem for talent management and operations."
+    },
+    "map": {
+      "title": "Our Global Presence",
+      "countries": {
+        "brasil": {
+          "title": "Brazil",
+          "description": "Headquarters and main operations center. National coverage with local expertise."
+        },
+        "portugal": {
+          "title": "Portugal",
+          "description": "Gateway to Europe. Operations center for the European market."
+        },
+        "eua": {
+          "title": "United States",
+          "description": "North American operations. Strategic base for the US and Canadian markets."
+        },
+        "china": {
+          "title": "China",
+          "description": "Bridge to Asia. Partnerships with local companies for operations in Asia."
+        }
+      },
+      "countryCard": {
+        "title": "Operations in {{country}}",
+        "description": "Full support for companies operating in {{country}}",
+        "services": "Services Offered",
+        "legal": "Legal Compliance",
+        "recruitment": "Recruitment",
+        "outsourcing": "Outsourcing",
+        "consulting": "Strategic Consulting"
+      }
+    },
+    "services": {
+      "title": "Global Solutions",
+      "cards": [
+        {
+          "title": "International Partnerships",
+          "description": "Our global partner network ensures compliance with local laws and access to the best talent in each market."
+        },
+        {
+          "title": "Multilingual Support",
+          "description": "Our team is prepared to serve your company in Portuguese, English and Spanish, breaking communication barriers."
+        },
+        {
+          "title": "Global Outsourcing Models",
+          "description": "We offer outsourcing solutions for global companies operating in Brazil and for Brazilian companies expanding abroad."
+        }
+      ]
+    },
+    "stats": {
+      "continents": {
+        "value": "4",
+        "label": "Continents",
+        "description": "Americas, Europe, Asia"
+      },
+      "countries": {
+        "value": "12+",
+        "label": "Countries",
+        "description": "Global partner network"
+      },
+      "support": {
+        "value": "24/7",
+        "label": "Support",
+        "description": "Multi-timezone service"
+      },
+      "clients": {
+        "value": "50+",
+        "label": "Clients",
+        "description": "International companies"
+      }
+    },
+    "cta": {
+      "title": "Ready to Expand Globally?",
+      "subtitle": "Count on our expertise to take your company worldwide safely and compliantly.",
+      "buttons": {
+        "international": "International Expansion",
+        "brazil": "Operations in Brazil"
+      }
+    }
+  }, 
+  "contact": {
+    "hero": {
+      "title": "Talk to an Expert",
+      "subtitle": "Select your main interest so we can direct your message to the right team."
+    },
+    "form": {
+      "subject": {
+        "label": "Select a subject... *",
+        "options": [
+          "Select a subject...",
+          "I'm a Potential Client",
+          "I want to become a Franchisee",
+          "I'm interested in Partnerships or Media",
+          "Other Subjects"
+        ]
+      },
+      "name": {
+        "label": "Full Name *",
+        "placeholder": "Enter your full name"
+      },
+      "email": {
+        "label": "Your Best Email *",
+        "placeholder": "example@email.com"
+      },
+      "message": {
+        "label": "Your Message *",
+        "placeholder": "Type your message here..."
+      },
+      "submit": "Send Message",
+      "success": "Message sent successfully! We'll contact you soon."
+    },
+    "info": {
+      "address": {
+        "title": "Address",
+        "street": "Av. Ayrton Senna, 2500 - Barra da Tijuca, Rio de Janeiro - RJ, 22775-003",
+        "maps": "View on Google Maps",
+        "tags": ["Info", "Cas Shopping", "Google"],
+        "notes": [
+          "Cartographic data: 2023/5 Google",
+          "Terms: Report map error"
+        ]
+      },
+      "emails": {
+        "title": "Our Emails",
+        "list": [
+          { "department": "General", "email": "contato@prhima.com.br" },
+          { "department": "Resumes", "email": "curriculos@prhima.com.br" },
+          { "department": "Commercial", "email": "comercial@prhima.com.br" },
+          { "department": "Franchises", "email": "franquias@prhima.com.br" },
+          { "department": "Legal", "email": "juridico@prhima.com.br" },
+          { "department": "Press", "email": "imprensa@prhima.com.br" },
+          { "department": "Ombudsman", "email": "ouvidoria@prhima.com.br" },
+          { "department": "Partnerships", "email": "parcerias@prhima.com.br" }
+        ]
+      }
+    }
+  }
+}

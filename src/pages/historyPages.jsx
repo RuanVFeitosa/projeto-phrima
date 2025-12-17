@@ -2,14 +2,17 @@
 import React from 'react';
 import '../CSS/HistoryPage.css';
 import Footer from '../components/Footer';
+import { useTranslation } from '../hooks/useTranslation';
 
 const HistoryPage = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="history-page">
       <header className="history-header">
-        <h1 className="history-main-title">Nossa História</h1>
+        <h1 className="history-main-title">{t('history.title')}</h1>
         <p className="history-subtitle">
-          Uma trajetória marcada por inovação, expansão e compromisso com a excelência
+          {t('history.subtitle')}
         </p>
       </header>
 
@@ -19,10 +22,9 @@ const HistoryPage = () => {
           <div className="timeline-item">
             <h2 className="timeline-year">2015</h2>
             <div className="timeline-content">
-              <h3 className="timeline-title">Consolidação Nacional</h3>
+              <h3 className="timeline-title">{t('history.timeline.2015.title')}</h3>
               <p className="timeline-text">
-                Expandimos nossa atuação para os principais estados do Brasil,
-                consolidando a marca como referência em gestão de pessoas e compliance.
+                {t('history.timeline.2015.text')}
               </p>
             </div>
           </div>
@@ -30,10 +32,9 @@ const HistoryPage = () => {
           <div className="timeline-item">
             <h2 className="timeline-year">2020</h2>
             <div className="timeline-content">
-              <h3 className="timeline-title">O ecossistema 360°</h3>
+              <h3 className="timeline-title">{t('history.timeline.2020.title')}</h3>
               <p className="timeline-text">
-                Lançamos o modelo PRINMA 360°, integrando Recrutamento, Terceirização,
-                Compliance e Clima Organizacional em um ecossistema estratégico.
+                {t('history.timeline.2020.text')}
               </p>
             </div>
           </div>
@@ -41,10 +42,9 @@ const HistoryPage = () => {
           <div className="timeline-item">
             <h2 className="timeline-year">2023</h2>
             <div className="timeline-content">
-              <h3 className="timeline-title">Expansão Internacional</h3>
+              <h3 className="timeline-title">{t('history.timeline.2023.title')}</h3>
               <p className="timeline-text">
-                Iniciamos nossa expansão global com bases estratégicas nos EUA e em Portugal,
-                oferecendo suporte e clientes.
+                {t('history.timeline.2023.text')}
               </p>
             </div>
           </div>
@@ -53,35 +53,34 @@ const HistoryPage = () => {
         {/* Visão no lado direito */}
         <div className="history-vision">
           <div className="vision-container">
-            <h2 className="vision-title">Nossa Visão Global</h2>
+            <h2 className="vision-title">{t('history.vision.title')}</h2>
             <p className="vision-text">
-              Ser a maior rede de blindagem corporativa integrando soluções personalizadas
-              para cada cliente.
+              {t('history.vision.text')}
             </p>
 
             <div className="mission-values">
               <div className="mission-card">
-                <h3 className="mission-title">Missão</h3>
+                <h3 className="mission-title">{t('history.mission.title')}</h3>
                 <p className="mission-text">
-                  Blindar empresas e pessoas através da gestão ética e inteligente.
+                  {t('history.mission.text')}
                 </p>
               </div>
 
               <div className="vision-card">
-                <h3 className="mission-title">Visão</h3>
+                <h3 className="mission-title">{t('history.companyVision.title')}</h3>
                 <p className="mission-text">
-                  Ser a referência global em blindagem corporativa, expandindo nosso impacto
-                  através de uma rede de franqueados de alta performance.
+                  {t('history.companyVision.text')}
                 </p>
               </div>
 
               <div className="values-card">
-                <h3 className="mission-title">Valores</h3>
+                <h3 className="mission-title">{t('history.values.title')}</h3>
                 <div className="values-list">
-                  <span className="value-item">Integridade</span>
-                  <span className="value-item">Inovação</span>
-                  <span className="value-item">Humanidade</span>
-                  <span className="value-item">Resultado</span>
+                  {t('history.values.items', []).map((item, index) => (
+                    <span key={index} className="value-item">
+                      {item}
+                    </span>
+                  ))}
                 </div>
               </div>
             </div>
