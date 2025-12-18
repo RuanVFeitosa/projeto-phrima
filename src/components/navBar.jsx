@@ -39,6 +39,7 @@ const Navbar = () => {
     const menu = [
         { key: 'about', path: '/sobre-nos', icon: 'fas fa-building' },
         { key: 'services', path: '/servicos', icon: 'fas fa-briefcase' },
+        {key: 'total', path: '/total-prhima', icon: 'fas fa-cogs' },
         { key: 'global', path: '/atuacao-global', icon: 'fas fa-globe' },
         { key: 'contact', path: '/fale-conosco', icon: 'fas fa-envelope' },
     ];

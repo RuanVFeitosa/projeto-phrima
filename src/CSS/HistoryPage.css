@@ -1,9 +1,9 @@
 /* CSS/HistoryPage.css */
 .history-page {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  max-width: 1200px;
+  max-width: 1500px;
   margin: 0 auto;
-  padding: 40px 20px;
+  padding: 0px -10px;
   color: #333;
   background-color: #f9f9f9;
   min-height: 100vh;
@@ -47,7 +47,8 @@
 .history-timeline {
   flex: 1;
   position: relative;
-  padding-left: 80px;
+  padding-right: 120px;
+  
 }
 
 .history-timeline::before {
@@ -113,7 +114,8 @@
 /* Visão no lado direito */
 .history-vision {
   flex: 1;
-  min-width: 300px;
+  min-width: 70px;
+  padding-left: -200px;
 }
 
 .vision-container {

@@ -4,8 +4,9 @@
       "about": "Sobre Nosotros",
       "services": "Servicios",
       "global": "Presencia Global",
-      "cases": "Casos de Éxito",
-      "contact": "Contáctenos"
+      "cases": "Casos de Estudio",
+      "contact": "Contáctenos",
+      "total": "PRHIMA Total"
     },
     "buttons": {
       "speakExpert": "Hablar con un Experto",
@@ -17,7 +18,7 @@
   },
   "home": {
     "banner": {
-      "title": "Protegemos personas, procesos y relaciones en cualquier lugar del mundo.",
+      "title": "Protegemos personas, procesos y relaciones en cualquier parte del mundo.",
       "description": "PRHIMA 360° integra Reclutamiento, Externalización, Relaciones Laborales, Cumplimiento y Clima Organizacional en un único modelo estratégico.",
       "stats": {
         "companies": "+200 empresas protegidas",
@@ -39,14 +40,14 @@
         "title": "Riesgos Laborales",
         "description": "Procesos, multas y pasivos laborales que pueden surgir en cualquier momento.",
         "examples": [
-          "Reclamos laborales",
+          "Reclamaciones laborales",
           "Multas por irregularidades",
           "Pasivos ocultos"
         ],
         "alert": "Pérdidas: Inmediatas y a largo plazo"
       },
       "compliance": {
-        "title": "Fallas de Cumplimiento",
+        "title": "Fallos de Cumplimiento",
         "description": "Incumplimiento de leyes y regulaciones que pueden paralizar sus operaciones.",
         "examples": [
           "Sanciones regulatorias",
@@ -57,7 +58,7 @@
       },
       "lgpd": {
         "title": "Vulnerabilidad LGPD",
-        "description": "Filtración de datos e incumplimiento de la Ley General de Protección de Datos.",
+        "description": "Fuga de datos e incumplimiento de la Ley General de Protección de Datos.",
         "examples": [
           "Multas de hasta R$ 50 millones",
           "Daños a la reputación",
@@ -67,7 +68,7 @@
       },
       "operational": {
         "title": "Ineficiencia Operativa",
-        "description": "Procesos ineficientes que reducen la productividad y aumentan los costos.",
+        "description": "Procesos ineficientes que reducen la productividad y aumentan costos.",
         "examples": [
           "Baja productividad",
           "Costos innecesarios",
@@ -79,7 +80,7 @@
         "highGravity": "ALTA GRAVEDAD",
         "compliance": "CUMPLIMIENTO",
         "lgpd": "LGPD",
-        "operational": "OPERACIONAL"
+        "operational": "OPERATIVO"
       },
       "cta": {
         "title": "¿Identificó alguno de estos riesgos?",
@@ -89,7 +90,7 @@
     "model": {
       "tag": "NUESTRO MODELO",
       "title": "El Modelo PRHIMA",
-      "subtitle": "El PRHIMA no alquila personas. Asumimos el riesgo por usted.",
+      "subtitle": "PRHIMA no alquila personas. Asumimos el riesgo por usted.",
       "comparison": {
         "company": {
           "title": "Su Empresa",
@@ -153,7 +154,7 @@
         "sla": {
           "title": "SLA de Sustitución",
           "value": "24h",
-          "description": "de tiempo de respuesta promedio"
+          "description": "de tiempo promedio de respuesta"
         },
         "satisfaction": {
           "title": "Satisfacción del Cliente",
@@ -165,7 +166,7 @@
         "title": "Prueba Social",
         "videos": {
           "title": "Videos Reales",
-          "description": "Testimonios de clientes en nuestro sitio"
+          "description": "Testimonios de clientes en nuestro sitio web"
         },
         "results": {
           "title": "Resultados Concretos",
@@ -181,7 +182,7 @@
       "line2": "La Protección Tiene un Nombre:"
     },
     "description": {
-      "line1": "La externalización expuesta a riesgos sin protección adecuada puede comprometer su empresa",
+      "line1": "La externalización expuesta a riesgos sin la protección adecuada puede comprometer su empresa",
       "line2": "PRHIMA ofrece la solución completa para su protección legal"
     },
     "buttons": {
@@ -200,7 +201,7 @@
       "about": "Sobre Nosotros",
       "services": "Servicios",
       "global": "Presencia Global",
-      "cases": "Casos de Éxito",
+      "cases": "Casos de Estudio",
       "contact": "Contáctenos"
     },
     "services": {
@@ -230,17 +231,21 @@
     "title": "Nuestra Historia",
     "subtitle": "Una trayectoria marcada por innovación, expansión y compromiso con la excelencia",
     "timeline": {
+      "2008": {
+        "title": "Fundación",
+        "text": "Fundada en Río de Janeiro"
+      },
       "2015": {
         "title": "Consolidación Nacional",
-        "text": "Ampliamos nuestra actuación a los principales estados de Brasil, consolidando la marca como referencia en gestión de personas y cumplimiento normativo."
+        "text": "Expandimos nuestra operación a los principales estados de Brasil, consolidando la marca como referencia en gestión de personas y cumplimiento."
       },
       "2020": {
-        "title": "El ecosistema 360°",
+        "title": "El Ecosistema 360°",
         "text": "Lanzamos el modelo PRHIMA 360°, integrando Reclutamiento, Externalización, Cumplimiento y Clima Organizacional en un ecosistema estratégico."
       },
       "2023": {
         "title": "Expansión Internacional",
-        "text": "Iniciamos nuestra expansión global con bases estratégicas en EE.UU. y Portugal, ofreciendo soporte a clientes."
+        "text": "Comenzamos nuestra expansión global con bases estratégicas en EE.UU. y Portugal, ofreciendo soporte a clientes."
       }
     },
     "vision": {
@@ -257,9 +262,14 @@
     },
     "values": {
       "title": "Valores",
-      "items": ["Integridad", "Innovación", "Humanidad", "Resultados"]
+      "items": [
+        "Integridad",
+        "Innovación",
+        "Humanidad",
+        "Resultado"
+      ]
     }
-  }, 
+  },
   "global": {
     "hero": {
       "badge": "PRESENCIA GLOBAL",
@@ -279,18 +289,18 @@
         },
         "eua": {
           "title": "Estados Unidos",
-          "description": "Operaciones en Norteamérica. Base estratégica para los mercados de EE.UU. y Canadá."
+          "description": "Operaciones en América del Norte. Base estratégica para los mercados de EE.UU. y Canadá."
         },
         "china": {
           "title": "China",
-          "description": "Puente hacia Asia. Alianzas con empresas locales para operaciones en Asia."
+          "description": "Puente hacia Asia. Asociaciones con empresas locales para operaciones en Asia."
         }
       },
       "countryCard": {
         "title": "Operaciones en {{country}}",
         "description": "Soporte completo para empresas que operan en {{country}}",
         "services": "Servicios Ofrecidos",
-        "legal": "Cumplimiento Legal",
+        "legal": "Conformidad Legal",
         "recruitment": "Reclutamiento",
         "outsourcing": "Externalización",
         "consulting": "Consultoría Estratégica"
@@ -300,11 +310,11 @@
       "title": "Soluciones Globales",
       "cards": [
         {
-          "title": "Alianzas Internacionales",
-          "description": "Nuestra red de socios globales garantiza el cumplimiento de las leyes locales y el acceso a los mejores talentos en cada mercado."
+          "title": "Asociaciones Internacionales",
+          "description": "Nuestra red de socios globales garantiza conformidad con las leyes locales y acceso a los mejores talentos en cada mercado."
         },
         {
-          "title": "Soporte Multilingüe",
+          "title": "Atención Multilingüe",
           "description": "Nuestro equipo está preparado para atender su empresa en Portugués, Inglés y Español, rompiendo barreras de comunicación."
         },
         {
@@ -337,13 +347,13 @@
     },
     "cta": {
       "title": "¿Listo para Expandirse Globalmente?",
-      "subtitle": "Cuente con nuestra experiencia para llevar su empresa al mundo con seguridad y cumplimiento.",
+      "subtitle": "Cuente con nuestra experiencia para llevar su empresa al mundo con seguridad y conformidad.",
       "buttons": {
         "international": "Expansión Internacional",
         "brazil": "Operaciones en Brasil"
       }
     }
-  }, 
+  },
   "contact": {
     "hero": {
       "title": "Hable con un Experto",
@@ -355,8 +365,8 @@
         "options": [
           "Seleccione un asunto...",
           "Soy un Cliente Potencial",
-          "Quiero ser un Franquiciado",
-          "Tengo interés en Alianzas o Medios",
+          "Quiero convertirme en Franquiciado",
+          "Tengo interés en Asociaciones o Medios",
           "Otros Asuntos"
         ]
       },
@@ -378,9 +388,13 @@
     "info": {
       "address": {
         "title": "Dirección",
-        "street": "Av. Ayrton Senna, 2500 - Barra da Tijuca, Rio de Janeiro - RJ, 22775-003",
+        "street": "Av. Ayrton Senna, 2500 - Barra da Tijuca, Río de Janeiro - RJ, 22775-003",
         "maps": "Ver en Google Maps",
-        "tags": ["Info", "Cas Shopping", "Google"],
+        "tags": [
+          "Info",
+          "Cas Shopping",
+          "Google"
+        ],
         "notes": [
           "Datos cartográficos: 2023/5 Google",
           "Términos: Informar error en el mapa"
@@ -389,18 +403,42 @@
       "emails": {
         "title": "Nuestros Correos Electrónicos",
         "list": [
-          { "department": "General", "email": "contato@prhima.com.br" },
-          { "department": "Currículums", "email": "curriculos@prhima.com.br" },
-          { "department": "Comercial", "email": "comercial@prhima.com.br" },
-          { "department": "Franquicias", "email": "franquias@prhima.com.br" },
-          { "department": "Jurídico", "email": "juridico@prhima.com.br" },
-          { "department": "Prensa", "email": "imprensa@prhima.com.br" },
-          { "department": "Ouvidoria", "email": "ouvidoria@prhima.com.br" },
-          { "department": "Alianzas", "email": "parcerias@prhima.com.br" }
+          {
+            "department": "General",
+            "email": "contato@prhima.com.br"
+          },
+          {
+            "department": "Currículos",
+            "email": "curriculos@prhima.com.br"
+          },
+          {
+            "department": "Comercial",
+            "email": "comercial@prhima.com.br"
+          },
+          {
+            "department": "Franquicias",
+            "email": "franquias@prhima.com.br"
+          },
+          {
+            "department": "Jurídico",
+            "email": "juridico@prhima.com.br"
+          },
+          {
+            "department": "Prensa",
+            "email": "imprensa@prhima.com.br"
+          },
+          {
+            "department": "Oidoría",
+            "email": "ouvidoria@prhima.com.br"
+          },
+          {
+            "department": "Asociaciones",
+            "email": "parcerias@prhima.com.br"
+          }
         ]
       }
     }
-  }, 
+  },
   "services": {
     "hero": {
       "badge": "SOLUCIONES INTEGRADAS",
@@ -408,7 +446,7 @@
       "subtitle": "Nuestras soluciones están diseñadas para crear un verdadero blindaje corporativo, integrando personas, procesos y tecnología en un modelo estratégico de operación global."
     },
     "stats": {
-      "compliance": "Cumplimiento",
+      "compliance": "Conformidad",
       "coverage": "Cobertura",
       "monitoring": "Monitoreo"
     },
@@ -416,13 +454,13 @@
       "recruitment": {
         "tag": "INNOVACIÓN",
         "title": "Reclutamiento Inteligente",
-        "description": "Utilizamos IA y análisis de ajuste cultural para encontrar los talentos adecuados, reduciendo el tiempo de contratación y la rotación.",
+        "description": "Utilizamos IA y análisis de ajuste cultural para encontrar los talentos correctos, reduciendo el tiempo de contratación y la rotación.",
         "features": [
-          "Garantizamos SLA para contratación de posiciones estratégicas",
+          "Garantizamos el SLA de contratación para posiciones estratégicas",
           "Análisis predictivo de desempeño",
-          "Matching inteligente con cultura organizacional"
+          "Emparejamiento inteligente con cultura organizacional"
         ],
-        "cta": "Hablar con experto"
+        "cta": "Hablar con especialista"
       },
       "outsourcing": {
         "tag": "PROTECCIÓN TOTAL",
@@ -431,7 +469,7 @@
         "features": [
           "Seguro de Responsabilidad Civil",
           "Seguro de Garantía Contractual",
-          "Protección contra multas y penalizaciones",
+          "Protección contra multas y sanciones",
           "Continuidad operativa garantizada"
         ],
         "cta": "Solicitar propuesta"
@@ -446,31 +484,31 @@
           "Reducción de pasivos laborales",
           "Transformación de RRHH en ventaja competitiva"
         ],
-        "cta": "Hablar con experto"
+        "cta": "Hablar con especialista"
       },
       "compliance": {
         "tag": "CUMPLIMIENTO",
         "title": "Cumplimiento Laboral",
-        "description": "Ofrecemos monitoreo continuo, dashboards con indicadores de riesgo y consultoría para mantener su empresa 100% conforme con la legislación.",
+        "description": "Ofrecemos monitoreo continuo, dashboards con indicadores de riesgo y consultoría para mantener su empresa 100% conforme a la legislación.",
         "features": [
           "Monitoreo continuo 24/7",
           "Dashboards con indicadores de riesgo",
           "Consultoría especializada en legislación",
-          "Auditorías de cumplimiento regulares"
+          "Auditorías de conformidad regulares"
         ],
         "cta": "Solicitar propuesta"
       },
       "wellness": {
         "tag": "BIENESTAR",
         "title": "Clima Organizacional y Salud Mental",
-        "description": "Desarrollamos programas de engagement, bienestar y salud corporativa integrada para aumentar la productividad y retener sus mejores talentos.",
+        "description": "Desarrollamos programas de compromiso, bienestar y salud corporativa integrada para aumentar la productividad y retener sus mejores talentos.",
         "features": [
-          "Programas de engagement personalizados",
+          "Programas de compromiso personalizados",
           "Salud mental corporativa",
           "Encuestas de clima organizacional",
           "Estrategias de retención de talentos"
         ],
-        "cta": "Hablar con experto"
+        "cta": "Hablar con especialista"
       }
     },
     "benefits": {
@@ -485,12 +523,12 @@
       "subtitle": "Nuestro enfoque integrado garantiza un blindaje corporativo completo",
       "items": [
         {
-          "title": "Alianza Estratégica",
-          "description": "No somos solo proveedores, somos aliados en el crecimiento de su negocio"
+          "title": "Asociación Estratégica",
+          "description": "No somos solo proveedores, somos socios en el crecimiento de su negocio"
         },
         {
           "title": "Blindaje Completo",
-          "description": "Protección legal, financiera y operativa en un único modelo"
+          "description": "Protección jurídica, financiera y operativa en un único modelo"
         },
         {
           "title": "Tecnología Avanzada",
@@ -504,51 +542,249 @@
     },
     "cta": {
       "title": "¿Listo para blindar su negocio?",
-      "text": "Contáctese con nuestro equipo de expertos y descubra cómo podemos transformar su gestión de personas en una ventaja competitiva.",
+      "text": "Póngase en contacto con nuestro equipo de expertos y descubra cómo podemos transformar su gestión de personas en una ventaja competitiva.",
       "buttons": {
         "speakExpert": "Hablar con Experto",
         "requestProposal": "Solicitar Propuesta Personalizada"
       }
-    }
-  },
-    "shielding": {
-      "tag": "Diferencial Absoluto",
-      "title": "Blindaje Jurídico Real",
-      "subtitle": "Nuestra Garantía No es una Promesa. Es una Póliza.",
-      "insurance": {
-        "professional": {
-          "title": "Seguro de Responsabilidad Civil Profesional & E&O",
-          "benefits": [
-            "Cobertura contra pérdidas financieras por fallas profesionales",
-            "Defensa contra costos judiciales e indemnizaciones",
-            "Cobertura para daños materiales, corporales y morales",
-            "Protección contra acciones por errores y omisiones"
-          ]
-        },
-        "contractual": {
-          "title": "Seguro de Garantía Contractual",
-          "benefits": [
-            "Cobertura específica para verbas laborales",
-            "Protección contra cargos y responsabilidades",
-            "Garantía de cumplimiento contractual",
-            "Salvaguarda financiera contra incumplimiento"
-          ]
+    },
+    "guarantee": {
+      "title": "Garantía Operacional PRHIMA",
+      "subtitle": "Compromiso con la continuidad y excelencia de su operación",
+      "replacement": {
+        "title": "Sustitución en 24h",
+        "description": "Nuestra promesa es sustituir cualquier colaborador en hasta 24 horas tras solicitud.",
+        "badge": "Garantía contractual"
+      },
+      "reserve": {
+        "title": "Profesionales de Reserva",
+        "features": [
+          "Equipo estable y preparado",
+          "Capacidad de escalada inmediata",
+          "Calidad constante"
+        ]
+      },
+      "supervision": {
+        "title": "Supervisión Técnica Activa",
+        "features": [
+          "Supervisores experimentados",
+          "Monitoreo constante",
+          "Intervención inmediata"
+        ]
+      },
+      "banner": {
+        "title": "Operación Continua 24/7",
+        "subtitle": "Su operación no puede parar. Y con PRHIMA, no lo hará.",
+        "stats": {
+          "operation": "Operación continua",
+          "coverage": "Cobertura garantizada"
         }
-      },
-      "beneficiary": {
-        "title": "Cliente como Beneficiario Directo",
-        "benefits": [
-          "Cliente nombrado como beneficiario principal",
-          "Indemnización dirigida al tomador de servicios",
-          "Protección prioritaria y sin burocracia",
-          "Compromiso reforzado de blindaje proactivo"
-        ],
-        "badge": "Protección Prioritaria"
-      },
-      "summary": {
-        "title": "Protección Triple",
-        "description": "Seguro profesional + Garantía contractual + Cliente como beneficiario directo. El blindaje que su negocio realmente necesita."
       }
     }
+  },
+  "shielding": {
+    "tag": "Diferencial Absoluto",
+    "title": "Blindaje Jurídico Real",
+    "subtitle": "Nuestra Garantía No es una Promesa. Es una Póliza.",
+    "insurance": {
+      "professional": {
+        "title": "Seguro de Responsabilidad Civil Profesional & E&O",
+        "benefits": [
+          "Cobertura contra pérdidas financieras por fallas profesionales",
+          "Defensa contra costos judiciales e indemnizaciones",
+          "Cobertura para daños materiales, corporales y morales",
+          "Protección contra acciones por errores y omisiones"
+        ]
+      },
+      "contractual": {
+        "title": "Seguro de Garantía Contractual",
+        "benefits": [
+          "Cobertura específica para verbas laborales",
+          "Protección contra cargos y responsabilidades",
+          "Garantía de cumplimiento contractual",
+          "Salvaguardia financiera contra incumplimiento"
+        ]
+      }
+    },
+    "beneficiary": {
+      "title": "Cliente como Beneficiario Directo",
+      "benefits": [
+        "Cliente nombrado como beneficiario principal",
+        "Indemnización dirigida al tomador de servicios",
+        "Protección prioritaria y sin burocracia",
+        "Compromiso reforzado de blindaje proactivo"
+      ],
+      "badge": "Protección Prioritaria"
+    },
+    "summary": {
+      "title": "Triple Protección",
+      "description": "Seguro profesional + Garantía contractual + Cliente como beneficiario directo. El blindaje que su negocio realmente necesita."
+    }
+  },
+  "totalPrhima": {
+    "mainTitle": "Soluciones PRHIMA por Segmento",
+    "subtitle": "Soluciones especializadas en externalización de mano de obra para diferentes segmentos del mercado",
+    "transparency": {
+      "title": "Transparencia Total PRHIMA",
+      "tagline": "Confianza y visibilidad total en cada etapa de la gestión de su mano de obra",
+      "relatorio": {
+        "title": "Informe Mensual",
+        "analise": "Análisis",
+        "aprovacao": "Aprobación",
+        "confirmacao": "Confirmación"
+      },
+      "comprovantes": {
+        "title": "Comprobantes de Pago",
+        "salarios": "Salarios y beneficios",
+        "fgts": "FGTS e INSS",
+        "encargos": "Cargos e impuestos",
+        "previdenciarias": "Contribuciones previsionales"
+      },
+      "prestacao": {
+        "title": "Rendición de Cuentas",
+        "detalhamento": "Detallado completo",
+        "registro": "Registro de todos los movimientos",
+        "relatorios": "Informes gerenciales",
+        "dashboard": "Dashboard de indicadores"
+      },
+      "beneficios": {
+        "title": "Beneficios para el Cliente",
+        "controle": "Control total sobre los procesos",
+        "transparencia": "Transparencia absoluta",
+        "eliminacao": "Eliminación de márgenes para dudas",
+        "confiabilidade": "Confiabilidad y credibilidad"
+      },
+      "seguranca": "Seguridad y protección de datos",
+      "relatoriosMensais": "Informes enviados mensualmente"
+    },
+    "bares": {
+      "title": "PRHIMA Bares, Restaurantes y Hoteles",
+      "dor": {
+        "title": "EL DOLOR",
+        "faltasFds": "Faltas en fines de semana",
+        "faltasFdsDesc": "Compromete la operación durante los días de mayor movimiento",
+        "adicionalNoturno": "Adicional nocturno se convierte en pasivo",
+        "adicionalNoturnoDesc": "Costos extras que impactan directamente en la rentabilidad",
+        "cozinhaParada": "Cocina parada",
+        "cozinhaParadaDesc": "Interrupción de la operación culinaria que afecta la calidad",
+        "quartoNaoLiberado": "Habitación no liberada",
+        "quartoNaoLiberadoDesc": "Impacta en la experiencia del huésped y puede resultar en evaluaciones negativas",
+        "avaliacoesNegativas": "Evaluaciones negativas",
+        "avaliacoesNegativasDesc": "Daños a la reputación y pérdida de clientes"
+      },
+      "solucao": {
+        "title": "LA SOLUCIÓN PRHIMA",
+        "substituicao24h": "Sustitución en hasta 24h",
+        "substituicao24hDesc": "Equipo listo para atender inmediatamente sus necesidades",
+        "equipeTreinada": "Equipo entrenado",
+        "equipeTreinadaDesc": "Profesionales calificados para atender clientes y huéspedes",
+        "encargosPrhima": "Cargos bajo responsabilidad de PRHIMA",
+        "encargosPrhimaDesc": "Todos los costos y obligaciones laborales y previsionales",
+        "riscoApolice": "Riesgo transformado en póliza",
+        "riscoApoliceDesc": "Protección total contra imprevistos y riesgos operacionales"
+      },
+      "operacao24h": "Operación continua 24/7"
+    },
+    "condominios": {
+      "title": "PRHIMA Condominios",
+      "dor": {
+        "title": "EL DOLOR",
+        "faltasPorteiros": "Faltas de Porteros",
+        "faltasPorteirosDesc": "Ausencias imprevistas que comprometen la seguridad y la atención a los residentes",
+        "limpezaComprometida": "Limpieza Comprometida",
+        "limpezaComprometidaDesc": "Falla en el mantenimiento de áreas comunes, impactando la calidad de vida y el valor del inmueble",
+        "sindicoExposto": "Síndico Expuesto",
+        "sindicoExpostoDesc": "Riesgo jurídico para el síndico y administradora en casos de fallas operacionales"
+      },
+      "solucao": {
+        "title": "LA SOLUCIÓN PRHIMA",
+        "equipeEstavel": "Equipo Estable",
+        "equipeEstavelDesc": "Profesionales entrenados y preparados para atender las necesidades del condominio 24/7",
+        "substituicaoImediata": "Sustitución Inmediata",
+        "substituicaoImediataDesc": "Garantía de reposición en hasta 24 horas, sin interrupción en la prestación de servicios",
+        "protecaoJuridica": "Protección Jurídica",
+        "protecaoJuridicaDesc": "Blindaje completo para el síndico y administradora, evitando exposición en casos de fallas operacionales"
+      },
+      "seguranca": "Seguridad y continuidad operacional",
+      "protecao": "Protección total para síndicos y administradoras"
+    },
+    "logistica": {
+      "title": "PRHIMA Logística",
+      "dor": {
+        "title": "EL DOLOR",
+        "faltasTurnos": "Faltas en Turnos",
+        "faltasTurnosDesc": "Sustituciones imprevistas que impactan la operación",
+        "quebraEscala": "Ruptura de Escala",
+        "quebraEscalaDesc": "Dificultad para mantener horarios y rutinas operacionales",
+        "metasComprometidas": "Metas Comprometidas",
+        "metasComprometidasDesc": "Resultados afectados por falta de equipo técnico"
+      },
+      "solucao": {
+        "title": "LA SOLUCIÓN PRHIMA",
+        "equipesDedicadas": "Equipos Dedicados",
+        "equipesDedicadasDesc": "Profesionales entrenados específicamente para su operación",
+        "substituicao24h": "Sustitución en 24h",
+        "substituicao24hDesc": "Garantía de reposición inmediata dentro del plazo",
+        "gestaoTotal": "Gestión Total",
+        "gestaoTotalDesc": "Supervisión técnica activa y operación continua",
+        "blindagemSeguros": "Blindaje por Seguros",
+        "blindagemSegurosDesc": "Protección contra riesgos laborales y previsionales"
+      },
+      "confiancaOperacional": "Confianza Operacional 24/7"
+    },
+    "industria": {
+      "title": "PRHIMA Industria",
+      "dor": {
+        "title": "EL DOLOR",
+        "absenteismo": "Absentismo",
+        "absenteismoDesc": "Pérdidas operacionales e impactos en la productividad",
+        "quebraTurno": "Ruptura de turno",
+        "quebraTurnoDesc": "Interrupciones en la producción y escalación",
+        "riscosProdutivos": "Riesgos productivos",
+        "riscosProdutivosDesc": "Errores operacionales y accidentes",
+        "passivosOcultos": "Pasivos ocultos",
+        "passivosOcultosDesc": "Riesgos laborales y previsionales no identificados"
+      },
+      "solucao": {
+        "title": "LA SOLUCIÓN PRHIMA",
+        "gestaoOperacional": "Gestión Operacional",
+        "gestaoOperacionalDesc": "Especialización completa en gestión de mano de obra para ambientes industriales complejos",
+        "supervisaoAtiva": "Supervisión Activa",
+        "supervisaoAtivaDesc": "Equipo dedicado de supervisores experimentados para garantizar la calidad y continuidad de las operaciones",
+        "substituicao24h": "Sustitución 24h",
+        "substituicao24hDesc": "Garantía de reposición inmediata de cualquier profesional durante todo el período de operación",
+        "blindagemContratual": "Blindaje Contractual",
+        "blindagemContratualDesc": "Protección completa contra riesgos laborales y previsionales a través de nuestra póliza de seguro"
+      },
+      "solucoesTerceirizacao": "Soluciones en Externalización de Mano de Obra Industrial",
+      "colaboradoresGerenciados": "15 mil colaboradores gestionados en operaciones industriales"
+    },
+    "construcao": {
+      "title": "PRHIMA Construcción Civil",
+      "dor": {
+        "title": "LO QUE ENFRENTAN LAS EMPRESAS DEL SEGMENTO",
+        "rotatividade": "Rotación de mano de obra",
+        "rotatividadeDesc": "Altos costos con reclutamiento y entrenamiento constantes",
+        "fiscalizacoes": "Fiscalizaciones",
+        "fiscalizacoesDesc": "Riesgos legales y multas por no conformidad",
+        "acoesTrabalhistas": "Acciones laborales",
+        "acoesTrabalhistasDesc": "Procesos movidos por colaboradores tercerizados",
+        "paralisacoes": "Paralizaciones de obra",
+        "paralisacoesDesc": "Interrupción de servicios esenciales"
+      },
+      "solucao": {
+        "title": "CÓMO PRHIMA LO RESUELVE",
+        "maoObraRegularizada": "Mano de obra regularizada",
+        "maoObraRegularizadaDesc": "Colaboradores con vínculo empleativo verbal",
+        "substituicaoImediata": "Sustitución inmediata",
+        "substituicaoImediataDesc": "Reposición 24h sin interrupción de servicio",
+        "coberturaApolice": "Cobertura por póliza",
+        "coberturaApoliceDesc": "Protección contra riesgos laborales",
+        "segurancaJuridica": "Seguridad jurídica total",
+        "segurancaJuridicaDesc": "Blindaje completo contra acciones laborales"
+      },
+      "solucoesSobMedida": "Soluciones a medida para la construcción civil",
+      "colaboradoresGerenciados": "+50 mil colaboradores gestionados"
+    }
   }
-
+}

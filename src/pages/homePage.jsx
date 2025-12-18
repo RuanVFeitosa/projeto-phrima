@@ -55,7 +55,7 @@ function HomePage() {
           <div className="home2-header">
             <div className="warning-badge">
               <i className="fas fa-exclamation-triangle"></i>
-              <span>{t('home.security.alert')}</span>
+              <span className='securityAlert'>{t('home.security.alert')}</span>
             </div>
 
             <h2 className="home2-title">
@@ -522,9 +522,7 @@ function HomePage() {
                 </button>
               </div>
             </div>
-
           </div>
-
         </div>
       </div>
       <Footer />

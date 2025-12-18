@@ -19,6 +19,8 @@
   --font-main: 'Poppins', sans-serif;
 }
 
+
+
 /* Slideshow container */
 .slideshow-container {
   position: relative;
@@ -29,8 +31,6 @@
   min-height: 500px;
   /* Altura mínima para mobile */
   overflow: hidden;
-  margin: 0;
-  padding: 0;
 }
 
 /* Para dispositivos móveis, ajustamos a altura */
@@ -249,6 +249,15 @@
 /* Controles de swipe (opcional) */
 .slideshow-container {
   touch-action: pan-y pinch-zoom;
+  margin-bottom: 20px;
+}
+
+.securityAlert {
+  padding-top: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--color-primary);
+  margin-left: 8px;
 }
 
 body {
@@ -380,7 +389,7 @@ a:hover {
 /* Seção Home2 */
 .home2-section {
   background: linear-gradient(135deg, #f8fafc 0%, #e8eff5 100%);
-  padding: 80px 20px;
+  /* padding: 40px 20px; */
   position: relative;
   overflow: hidden;
 }
@@ -392,7 +401,6 @@ a:hover {
   left: 0;
   right: 0;
   height: 4px;
-  background: linear-gradient(90deg, #e74c3c, #f39c12, #3498db, #2ecc71);
 }
 
 .home2-container {
@@ -1168,7 +1176,7 @@ a:hover {
     font-size: 16px;
   }
 
-  .cta-button {
+  .cta-buttons {
     padding: 16px 30px;
     font-size: 16px;
     width: 100%;
@@ -1236,10 +1244,6 @@ a:hover {
   transform: scale(1.05);
 }
 
-.resultados-completo {
-  padding: 0px 20px;
-}
-
 .confiarH1 {
   text-align: center;
   font-size: 36px;
@@ -1248,48 +1252,42 @@ a:hover {
   font-weight: 700;
 }
 
-.resultados-conteudo {
-  max-width: 1000px;
-  margin: 0 auto;
-  display: flex;
-  gap: 40px;
-  align-items: flex-start;
-}
-
-.caixas-container {
-  flex: 1.2;
+.resultados-completo {
+  padding: 20px 70px 20px; 
 }
 
 .caixas-grid {
   display: flex;
   flex-direction: column;
   gap: 25px;
+  height: 100%; 
 }
 
 .caixas-linha {
   display: flex;
   gap: 25px;
+  flex: 1; 
 }
 
 .resultado-caixa {
   flex: 1;
   background: white;
   border-radius: 12px;
-  padding: 30px;
+  padding: 40px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   text-align: center;
   transition: all 0.3s ease;
   border: 1px solid var(--color-border);
-}
-
-.resultado-caixa:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; 
+  min-height: 250px; 
 }
 
 .prova-social-container {
-  max-width: 1200px;
+  flex: 1; 
   display: flex;
+  margin-top: 30px;
 }
 
 .prova-social-card {
@@ -1300,18 +1298,22 @@ a:hover {
   border: 2px solid var(--color-secondary);
   position: relative;
   overflow: hidden;
+  display: flex; /* Adicionado */
+  flex-direction: column; /* Adicionado */
+  flex: 1; /* Adicionado */
+  justify-content: center;
+  align-items: center;
 }
 
-.prova-social-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 5px;
-  background: linear-gradient(90deg, var(--color-secondary), #ffd700);
+/* Ajustar o conteúdo dentro do card */
+.prova-social-content-wrapper {
+  display: flex;
+  gap: 30px;
+  margin-top: 20px;
+  flex: 1; /* Adicionado para ocupar espaço disponível */
 }
 
+/* Remover margin-bottom desnecessário */
 .prova-social-icon {
   text-align: center;
   margin-bottom: 20px;
@@ -1328,24 +1330,7 @@ a:hover {
   padding-bottom: 15px;
 }
 
-.prova-social-title::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 25%;
-  right: 25%;
-  height: 3px;
-  background: var(--color-secondary);
-  border-radius: 2px;
-}
-
-/* Nova estrutura de layout */
-.prova-social-content-wrapper {
-  display: flex;
-  gap: 30px;
-  margin-top: 20px;
-}
-
+/* Ajustar itens para se expandirem uniformemente */
 .prova-social-items-column {
   flex: 1;
   display: flex;
@@ -1362,50 +1347,8 @@ a:hover {
   transition: all 0.3s ease;
   align-items: flex-start;
   flex: 1;
-  min-height: 120px;
 }
 
-.prova-social-item:hover {
-  background: rgba(212, 175, 55, 0.1);
-  transform: translateX(5px);
-}
-
-.item-icon {
-  width: 45px;
-  height: 45px;
-  background: var(--color-secondary);
-  color: white;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  margin-top: 5px;
-}
-
-.item-icon i {
-  font-size: 20px;
-}
-
-.item-content {
-  flex: 1;
-}
-
-.item-title {
-  font-size: 18px;
-  font-weight: 600;
-  color: var(--color-primary);
-  margin-bottom: 8px;
-}
-
-.item-desc {
-  font-size: 14px;
-  color: var(--color-text);
-  line-height: 1.5;
-  margin: 0;
-}
-
-/* Citação lado a lado */
 .prova-social-quote {
   flex: 1;
   background: linear-gradient(135deg, var(--color-primary) 0%, #1a3a63 100%);
@@ -1416,9 +1359,7 @@ a:hover {
   justify-content: center;
   align-items: center;
   color: white;
-  min-height: 280px;
 }
-
 .quote-icon {
   color: var(--color-secondary);
   font-size: 28px;
@@ -1440,7 +1381,7 @@ a:hover {
 
 /* Botão abaixo do conteúdo */
 .prova-social-button {
-  width: 100%;
+  width: 50%;
   background: var(--color-secondary);
   color: var(--color-primary);
   border: none;
@@ -1463,291 +1404,513 @@ a:hover {
   box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3);
 }
 
-/* Responsividade */
-@media (max-width: 1024px) {
+/* ==================== RESPONSIVIDADE COMPLETA ==================== */
+
+/* Telas Grandes (1200px - 1920px) */
+@media screen and (min-width: 1200px) and (max-width: 1920px) {
+  .home2-container,
+  .modelo-container {
+    max-width: 1100px;
+    padding: 0 30px;
+  }
+  
+  .resultados-completo {
+    padding: 20px 50px 20px;
+  }
+}
+
+/* Tablet Grande (992px - 1200px) */
+@media screen and (max-width: 1200px) {
+  .riscos-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .beneficios-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .resultados-conteudo {
+    flex-direction: column;
+    gap: 40px;
+  }
+  
   .prova-social-content-wrapper {
     flex-direction: column;
   }
-
+  
   .prova-social-quote {
     min-height: auto;
     margin-top: 20px;
   }
+  
+  .espec {
+    width: 300px;
+  }
+  
+  .cta-contentHP {
+    gap: 30px;
+  }
 }
 
-@media (max-width: 768px) {
+/* Tablet Médio (768px - 992px) */
+@media screen and (max-width: 992px) {
+  .home2-title {
+    font-size: 36px;
+  }
+  
+  .modelo-title {
+    font-size: 32px;
+  }
+  
+  .modelo-comparacao {
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .comparacao-seta {
+    transform: rotate(90deg);
+    margin: 20px 0;
+  }
+  
+  .comparacao-item {
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .cta-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+  
+  .avisoHP {
+    width: 200px;
+  }
+  
+  .cta-text h3,
+  .cta-text p {
+    margin-left: 0;
+  }
+  
+  .cta-buttons {
+    justify-content: center;
+  }
+  
+  .btn-analise,
+  .btn-fale-especialista {
+    min-width: 250px;
+  }
+  
+  .cta-contentHP {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .cta-tituloHP,
+  .cta-textoHP {
+    text-align: center;
+  }
+  
+  .espec {
+    width: 250px;
+  }
+  
   .prova-social-card {
     padding: 25px;
   }
+  
+  .prova-social-button {
+    width: 70%;
+  }
+}
 
-  .prova-social-content-wrapper {
+/* Tablet Pequeno (600px - 768px) */
+@media screen and (max-width: 768px) {
+  .home2-section {
+    padding: 40px 15px;
+  }
+  
+  .home2-title {
+    font-size: 30px;
+  }
+  
+  .home2-subtitle {
+    font-size: 18px;
+    padding: 0 15px;
+  }
+  
+  .diagnostico-box {
+    padding: 20px;
+    margin: 30px 15px;
+  }
+  
+  .diagnostico-title {
+    font-size: 18px;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .riscos-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  
+  .risco-card {
+    padding: 25px;
+  }
+  
+  .risco-cta {
+    border-radius: 15px;
+    margin: 0 15px;
+  }
+  
+  .cta-buttons {
+    flex-direction: column;
+  }
+  
+  .btn-analise,
+  .btn-fale-especialista {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .modelo-prhima {
+    padding: 50px 15px;
+  }
+  
+  .modelo-title {
+    font-size: 28px;
+  }
+  
+  .modelo-subtitle {
+    font-size: 18px;
+    padding: 0 15px;
+  }
+  
+  .beneficios-grid {
+    grid-template-columns: 1fr;
     gap: 20px;
   }
-
+  
+  .beneficio-card {
+    padding: 25px;
+  }
+  
+  .modelo-cta {
+    padding: 40px 25px;
+    margin: 0 15px;
+  }
+  
+  .cta-tituloHP {
+    font-size: 26px;
+  }
+  
+  .cta-textoHP {
+    font-size: 16px;
+  }
+  
+  .cta-buttonHP {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .resultados-completo {
+    padding: 20px 30px 20px;
+  }
+  
+  .confiarH1 {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .caixas-linha {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .resultado-caixa {
+    min-height: 220px;
+    padding: 30px;
+  }
+  
   .prova-social-item {
     padding: 15px;
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
-
+  
   .item-icon {
     margin-bottom: 10px;
   }
-
+  
   .quote-text {
     font-size: 16px;
   }
-}
-
-/* Responsividade */
-@media (max-width: 1024px) {
-  .home2-title {
-    font-size: 42px;
-  }
-
-  .cta-content {
-    flex-direction: column;
-    text-align: center;
-    gap: 30px;
-  }
-
-  .cta-text {
-    min-width: 100%;
+  
+  .prova-social-button {
+    width: 100%;
   }
 }
 
-@media (max-width: 768px) {
-  .home2-section {
-    padding: 60px 15px;
+/* Mobile Grande (480px - 600px) */
+@media screen and (max-width: 600px) {
+  .slideshow-container {
+    height: 60vh;
+    min-height: 400px;
   }
-
+  
   .home2-title {
-    font-size: 36px;
+    font-size: 26px;
+    padding: 0 15px;
   }
-
-  .stats-warning {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
+  
+  .modelo-title {
+    font-size: 24px;
   }
-
-  .stat-item {
-    width: 100%;
-    max-width: 300px;
+  
+  .comparacao-item {
+    padding: 25px;
   }
-
-  .riscos-grid {
-    grid-template-columns: 1fr;
+  
+  .comparacao-titulo {
+    font-size: 22px;
   }
-
-  .risco-cta {
-    padding: 40px 25px;
+  
+  .comparacao-desc {
+    font-size: 16px;
   }
-
-  .cta-buttons {
-    flex-direction: column;
-    width: 100%;
+  
+  .beneficios-titulo {
+    font-size: 24px;
+    margin-bottom: 30px;
   }
+  
+  .cta-tituloHP {
+    font-size: 24px;
+  }
+  
+  .confiarH1 {
+    font-size: 26px;
+  }
+  
+  .resultado-caixa {
+    min-height: 200px;
+    padding: 25px;
+  }
+  
+  .prova-social-title {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+}
 
+/* Mobile Pequeno (até 480px) */
+@media screen and (max-width: 480px) {
+  .slideshow-container {
+    height: 50vh;
+    min-height: 350px;
+  }
+  
+  .home2-title {
+    font-size: 24px;
+  }
+  
+  .home2-subtitle {
+    font-size: 16px;
+  }
+  
+  .diagnostico-box {
+    padding: 15px;
+  }
+  
+  .diagnostico-title {
+    font-size: 16px;
+  }
+  
+  .risco-card {
+    padding: 20px;
+  }
+  
+  .risco-title {
+    font-size: 18px;
+  }
+  
+  .risco-desc {
+    font-size: 13px;
+  }
+  
+  .cta-text h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  
+  .cta-text p {
+    font-size: 16px;
+  }
+  
   .btn-analise,
   .btn-fale-especialista {
-    width: 100%;
-    justify-content: center;
+    padding: 15px 20px;
+    font-size: 14px;
+    min-width: 100%;
   }
-}
-
-@media (max-width: 480px) {
-  .home2-title {
-    font-size: 28px;
-  }
-
-  .home2-subtitle {
-    font-size: 18px;
-  }
-
-  .diagnostico-box {
-    padding: 20px 25px;
-  }
-
-  .diagnostico-title {
-    font-size: 18px;
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .risco-card {
-    padding: 25px;
-  }
-}
-
-@media (max-width: 1024px) {
+  
   .modelo-title {
-    font-size: 36px;
+    font-size: 22px;
   }
-
+  
   .modelo-subtitle {
+    font-size: 16px;
+  }
+  
+  .beneficio-titulo {
+    font-size: 18px;
+  }
+  
+  .beneficio-desc {
+    font-size: 14px;
+  }
+  
+  .modelo-cta {
+    padding: 30px 20px;
+  }
+  
+  .cta-tituloHP {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+  
+  .cta-textoHP {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .cta-buttonHP {
+    padding: 15px 25px;
+    font-size: 16px;
+  }
+  
+  .espec {
+    width: 200px;
+  }
+  
+  .confiarH1 {
+    font-size: 24px;
+  }
+  
+  .resultados-completo {
+    padding: 20px 15px 20px;
+  }
+  
+  .resultado-caixa {
+    padding: 20px;
+  }
+  
+  .prova-social-card {
+    padding: 20px;
+  }
+  
+  .prova-social-title {
     font-size: 20px;
   }
+  
+  .item-title {
+    font-size: 16px;
+  }
+  
+  .item-desc {
+    font-size: 13px;
+  }
 }
 
-@media (max-width: 768px) {
-  .modelo-prhima {
-    padding: 60px 15px;
+/* Ajustes específicos para orientação paisagem em mobile */
+@media screen and (max-height: 600px) and (orientation: landscape) {
+  .slideshow-container {
+    height: 70vh;
+    min-height: 300px;
   }
-
-  .modelo-title {
-    font-size: 30px;
+  
+  .home2-section {
+    padding: 30px 15px;
   }
-
-  .modelo-subtitle {
-    font-size: 18px;
+  
+  .riscos-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
   }
-
-  .comparacao-item {
-    min-width: 100%;
-    padding: 30px;
+  
+  .risco-card {
+    padding: 15px;
   }
-
+  
   .beneficios-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .modelo-cta {
-    padding: 40px 20px;
-  }
-
-  .cta-titulo {
-    font-size: 26px;
-  }
-
-  .cta-texto {
-    font-size: 16px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
   }
 }
 
-@media (max-width: 480px) {
+/* Ajustes para telas muito pequenas (até 360px) */
+@media screen and (max-width: 360px) {
+  .home2-title {
+    font-size: 22px;
+  }
+  
   .modelo-title {
-    font-size: 26px;
+    font-size: 20px;
   }
-
-  .comparacao-titulo {
-    font-size: 24px;
+  
+  .confiarH1 {
+    font-size: 22px;
   }
-
-  .beneficio-card {
-    padding: 25px;
-  }
-
-  .cta-button {
-    width: 100%;
-    justify-content: center;
-    padding: 16px 30px;
-  }
-
-}
-
-@media (max-width: 1024px) {
-  .footer-title {
-    font-size: 32px;
-  }
-
-  .title-line2 {
-    font-size: 36px;
-  }
-
-  .cta-button {
-    min-width: 240px;
-  }
-}
-
-@media (max-width: 768px) {
-  .footer {
-    padding: 40px 20px 20px;
-  }
-
-  .footer-title {
-    font-size: 28px;
-  }
-
-  .title-line2 {
-    font-size: 32px;
-  }
-
-  .footer-cta {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .cta-button {
-    width: 100%;
-    max-width: 350px;
-  }
-
-  .footer-bottom {
-    grid-template-columns: 1fr;
-    gap: 30px;
-  }
-
-  .footer-end {
-    flex-direction: column;
-    text-align: center;
-    gap: 25px;
-  }
-
-  .footer-copyright {
-    min-width: 100%;
-  }
-}
-
-@media (max-width: 480px) {
-  .footer-title {
-    font-size: 24px;
-  }
-
-  .title-line2 {
-    font-size: 28px;
-  }
-
-  .description-text {
-    font-size: 16px;
-  }
-
-  .cta-button {
-    padding: 15px 20px;
+  
+  .prova-social-button {
+    padding: 12px;
     font-size: 14px;
   }
 }
 
-@media (max-width: 1024px) {
+/* Correções específicas para o layout dos cards de resultados */
+@media screen and (max-width: 768px) {
   .resultados-conteudo {
     flex-direction: column;
-    gap: 40px;
   }
-
+  
+  .caixas-container,
   .prova-social-container {
-    position: static;
-  }
-
-  .caixas-linha {
-    flex-direction: column;
-  }
-
-  .resultado-caixa {
+    width: 100%;
     max-width: 100%;
+  }
+  
+  .caixas-grid {
+    margin-bottom: 30px;
   }
 }
 
-@media (max-width: 768px) {
-  .prova-social-card {
-    padding: 25px;
+/* Ajustes para o modelo de comparação em telas pequenas */
+@media screen and (max-width: 480px) {
+  .comparacao-item {
+    padding: 20px;
   }
-
-  .prova-social-title {
-    font-size: 24px;
+  
+  .comparacao-titulo {
+    font-size: 20px;
   }
+  
+  .comparacao-desc {
+    font-size: 14px;
+  }
+}
 
-  .quote-text {
-    font-size: 18px;
+/* Melhorias de espaçamento geral */
+@media screen and (max-width: 768px) {
+  .home2-container,
+  .modelo-container {
+    padding: 0 15px;
+  }
+  
+  .risco-cta,
+  .modelo-cta {
+    margin: 40px 0;
   }
 }

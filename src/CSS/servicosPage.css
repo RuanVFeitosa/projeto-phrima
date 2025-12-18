@@ -289,6 +289,258 @@
     }
 }
 
+/* Garantia Operacional Section - CSS Simples */
+.garantia-operacional-section {
+  padding: 80px 20px;
+  background-color: #f8fafc;
+}
+
+.garantia-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.garantia-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.garantia-title {
+  font-size: 2.5rem;
+  color: #1a3a6e;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.garantia-subtitle {
+  font-size: 1.2rem;
+  color: #2c5aa0;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.garantia-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.garantia-card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.garantia-card:hover {
+  transform: translateY(-5px);
+}
+
+.garantia-card-highlight {
+  background: linear-gradient(135deg, #2c5aa0 0%, #1a3a6e 100%);
+  color: white;
+}
+
+.garantia-card-icon {
+  font-size: 2.5rem;
+  color: #2c5aa0;
+  margin-bottom: 20px;
+}
+
+.garantia-card-highlight .garantia-card-icon {
+  color: white;
+}
+
+.garantia-card-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #1a3a6e;
+}
+
+.garantia-card-highlight .garantia-card-title {
+  color: white;
+}
+
+.garantia-card-text {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.garantia-card-highlight .garantia-card-text {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.garantia-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.garantia-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.garantia-list-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+  color: #444;
+}
+
+.garantia-list-item svg {
+  color: #2c5aa0;
+  flex-shrink: 0;
+}
+
+.garantia-card-highlight .garantia-list-item {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.garantia-card-highlight .garantia-list-item svg {
+  color: #ffd700;
+}
+
+/* Garantia Banner */
+.garantia-banner {
+  background: linear-gradient(135deg, #4CAF50 0%, #2e7d32 100%);
+  border-radius: 12px;
+  padding: 30px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.garantia-banner-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.garantia-banner-icon {
+  font-size: 2.5rem;
+  opacity: 0.9;
+}
+
+.garantia-banner-text {
+  flex: 1;
+}
+
+.garantia-banner-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.garantia-banner-subtitle {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+.garantia-banner-stats {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.garantia-stat {
+  text-align: center;
+}
+
+.garantia-stat-number {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ffd700;
+  display: block;
+}
+
+.garantia-stat-label {
+  font-size: 0.9rem;
+  opacity: 0.9;
+  margin-top: 5px;
+}
+
+.garantia-stat-divider {
+  width: 1px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .garantia-operacional-section {
+    padding: 60px 20px;
+  }
+  
+  .garantia-title {
+    font-size: 2rem;
+  }
+  
+  .garantia-subtitle {
+    font-size: 1rem;
+  }
+  
+  .garantia-cards {
+    grid-template-columns: 1fr;
+    max-width: 500px;
+    margin: 0 auto 40px;
+  }
+  
+  .garantia-banner {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+  
+  .garantia-banner-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .garantia-banner-stats {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .garantia-title {
+    font-size: 1.8rem;
+  }
+  
+  .garantia-card {
+    padding: 20px;
+  }
+  
+  .garantia-banner {
+    padding: 20px;
+  }
+  
+  .garantia-banner-stats {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .garantia-stat-divider {
+    display: none;
+  }
+}
+
 /* Seção de Diferenciais */
 .diferenciais-section {
     padding: 0px 20px;

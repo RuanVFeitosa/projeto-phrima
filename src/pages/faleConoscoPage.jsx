@@ -99,7 +99,7 @@ const FaleConoscoPage = () => {
                 onChange={handleChange}
                 required
                 placeholder={t('contact.form.message.placeholder')}
-                rows="6"
+                rows="30"
                 className="form-textarea"
               />
             </div>

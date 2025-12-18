@@ -19,6 +19,17 @@ const HistoryPage = () => {
       <div className="history-content">
         {/* Timeline vertical no lado esquerdo */}
         <div className="history-timeline">
+          {/* NOVA ENTRADA - 2008 */}
+          <div className="timeline-item">
+            <h2 className="timeline-year">2008</h2>
+            <div className="timeline-content">
+              <h3 className="timeline-title">{t('history.timeline.2008.title')}</h3>
+              <p className="timeline-text">
+                {t('history.timeline.2008.text')}
+              </p>
+            </div>
+          </div>
+
           <div className="timeline-item">
             <h2 className="timeline-year">2015</h2>
             <div className="timeline-content">

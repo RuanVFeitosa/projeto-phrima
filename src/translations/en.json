@@ -5,7 +5,8 @@
       "services": "Services",
       "global": "Global Presence",
       "cases": "Case Studies",
-      "contact": "Contact Us"
+      "contact": "Contact Us",
+      "total": "Total PRHIMA"
     },
     "buttons": {
       "speakExpert": "Speak with an Expert",
@@ -230,6 +231,10 @@
     "title": "Our History",
     "subtitle": "A journey marked by innovation, expansion and commitment to excellence",
     "timeline": {
+      "2008": {
+        "title": "Foundation",
+        "text": "Founded in Rio de Janeiro"
+      },
       "2015": {
         "title": "National Consolidation",
         "text": "We expanded our operations to the main states of Brazil, consolidating the brand as a reference in people management and compliance."
@@ -268,7 +273,7 @@
   "global": {
     "hero": {
       "badge": "GLOBAL PRESENCE",
-      "title": "Our <span class='highlight'>Global Presence</span>",
+      "title": "Our Global Presence",
       "subtitle": "With strategic bases in the Americas, Europe and Asia, we offer a truly global ecosystem for talent management and operations."
     },
     "map": {
@@ -437,7 +442,7 @@
   "services": {
     "hero": {
       "badge": "INTEGRATED SOLUTIONS",
-      "title": "PRHIMA 360º <span class='highlight'>Services</span>",
+      "title": "PRHIMA 360º Services",
       "subtitle": "Our solutions are designed to create true corporate shielding, integrating people, processes and technology into a global strategic operating model."
     },
     "stats": {
@@ -512,9 +517,73 @@
         "speakExpert": "Talk to Expert",
         "requestProposal": "Request Proposal"
       }
+    }, "guarantee": {
+    "title": "Operational Guarantee PRHIMA",
+    "subtitle": "Commitment to the continuity and excellence of your operation",
+    "replacement": {
+      "title": "24-Hour Replacement",
+      "description": "Our promise is to replace any employee within 24 hours after request.",
+      "badge": "Contractual guarantee"
     },
+    "reserve": {
+      "title": "Reserve Professionals",
+      "features": [
+        "Stable and prepared team",
+        "Immediate scaling capacity",
+        "Constant quality"
+      ]
+    },
+    "supervision": {
+      "title": "Active Technical Supervision",
+      "features": [
+        "Experienced supervisors",
+        "Constant monitoring",
+        "Immediate intervention"
+      ]
+    },
+    "banner": {
+      "title": "24/7 Continuous Operation",
+      "subtitle": "Your operation cannot stop. And with PRHIMA, it won't.",
+      "stats": {
+        "operation": "Continuous operation",
+        "coverage": "Guaranteed coverage"
+      }
+    }
+  }, "guarantee": {
+    "title": "Operational Guarantee PRHIMA",
+    "subtitle": "Commitment to the continuity and excellence of your operation",
+    "replacement": {
+      "title": "24-Hour Replacement",
+      "description": "Our promise is to replace any employee within 24 hours after request.",
+      "badge": "Contractual guarantee"
+    },
+    "reserve": {
+      "title": "Reserve Professionals",
+      "features": [
+        "Stable and prepared team",
+        "Immediate scaling capacity",
+        "Constant quality"
+      ]
+    },
+    "supervision": {
+      "title": "Active Technical Supervision",
+      "features": [
+        "Experienced supervisors",
+        "Constant monitoring",
+        "Immediate intervention"
+      ]
+    },
+    "banner": {
+      "title": "24/7 Continuous Operation",
+      "subtitle": "Your operation cannot stop. And with PRHIMA, it won't.",
+      "stats": {
+        "operation": "Continuous operation",
+        "coverage": "Guaranteed coverage"
+      }
+    }
+  },
     "differentiators": {
-      "title": "Why choose <span class='highlight'>PRHIMA 360º</span>?",
+      "title": "Why choose PRHIMA 360º?",
       "subtitle": "Our integrated approach ensures complete corporate shielding",
       "items": [
         {
@@ -544,43 +613,209 @@
       }
     }
   },
-    "shielding": {
-      "tag": "Absolute Differential",
-      "title": "Real Legal Shielding",
-      "subtitle": "Our Guarantee is Not a Promise. It's a Policy.",
-      "insurance": {
-        "professional": {
-          "title": "Professional Civil Liability Insurance & E&O",
-          "benefits": [
-            "Coverage against financial losses due to professional failures",
-            "Defense against legal costs and indemnifications",
-            "Coverage for material, bodily, and moral damages",
-            "Protection against lawsuits for errors and omissions"
-          ]
-        },
-        "contractual": {
-          "title": "Contractual Guarantee Insurance",
-          "benefits": [
-            "Specific coverage for labor claims",
-            "Protection against charges and responsibilities",
-            "Guarantee of contractual compliance",
-            "Financial safeguard against default"
-          ]
-        }
-      },
-      "beneficiary": {
-        "title": "Client as Direct Beneficiary",
+  "shielding": {
+    "tag": "Absolute Differential",
+    "title": "Real Legal Shielding",
+    "subtitle": "Our Guarantee is Not a Promise. It's a Policy.",
+    "insurance": {
+      "professional": {
+        "title": "Professional Civil Liability Insurance & E&O",
         "benefits": [
-          "Client named as primary beneficiary",
-          "Compensation directed to the service taker",
-          "Priority protection without bureaucracy",
-          "Reinforced commitment to proactive shielding"
-        ],
-        "badge": "Priority Protection"
+          "Coverage against financial losses due to professional failures",
+          "Defense against legal costs and indemnifications",
+          "Coverage for material, bodily, and moral damages",
+          "Protection against lawsuits for errors and omissions"
+        ]
       },
-      "summary": {
-        "title": "Threefold Protection",
-        "description": "Professional insurance + Contractual guarantee + Client as direct beneficiary. The shielding your business really needs."
+      "contractual": {
+        "title": "Contractual Guarantee Insurance",
+        "benefits": [
+          "Specific coverage for labor claims",
+          "Protection against charges and responsibilities",
+          "Guarantee of contractual compliance",
+          "Financial safeguard against default"
+        ]
       }
+    },
+    "beneficiary": {
+      "title": "Client as Direct Beneficiary",
+      "benefits": [
+        "Client named as primary beneficiary",
+        "Compensation directed to the service taker",
+        "Priority protection without bureaucracy",
+        "Reinforced commitment to proactive shielding"
+      ],
+      "badge": "Priority Protection"
+    },
+    "summary": {
+      "title": "Threefold Protection",
+      "description": "Professional insurance + Contractual guarantee + Client as direct beneficiary. The shielding your business really needs."
+    }
+  },
+  "totalPrhima": {
+    "mainTitle": "PRHIMA Solutions by Segment",
+    "subtitle": "Specialized workforce outsourcing solutions for different market segments",
+    "transparency": {
+      "title": "Total Transparency PRHIMA",
+      "tagline": "Trust and total visibility at every stage of your workforce management",
+      "relatorio": {
+        "title": "Monthly Report",
+        "analise": "Analysis",
+        "aprovacao": "Approval",
+        "confirmacao": "Confirmation"
+      },
+      "comprovantes": {
+        "title": "Payment Receipts",
+        "salarios": "Salaries and benefits",
+        "fgts": "FGTS and INSS",
+        "encargos": "Charges and taxes",
+        "previdenciarias": "Pension contributions"
+      },
+      "prestacao": {
+        "title": "Accounting",
+        "detalhamento": "Complete detailing",
+        "registro": "Record of all transactions",
+        "relatorios": "Management reports",
+        "dashboard": "Indicator dashboard"
+      },
+      "beneficios": {
+        "title": "Client Benefits",
+        "controle": "Total control over processes",
+        "transparencia": "Absolute transparency",
+        "eliminacao": "Elimination of doubt margins",
+        "confiabilidade": "Reliability and credibility"
+      },
+      "seguranca": "Data security and protection",
+      "relatoriosMensais": "Reports sent monthly"
+    },
+    "bares": {
+      "title": "PRHIMA Bars, Restaurants and Hotels",
+      "dor": {
+        "title": "THE PAIN",
+        "faltasFds": "Weekend absences",
+        "faltasFdsDesc": "Compromises operations during peak days",
+        "adicionalNoturno": "Night shift premium becomes liability",
+        "adicionalNoturnoDesc": "Extra costs that directly impact profitability",
+        "cozinhaParada": "Kitchen shutdown",
+        "cozinhaParadaDesc": "Culinary operation interruption affecting quality",
+        "quartoNaoLiberado": "Room not available",
+        "quartoNaoLiberadoDesc": "Impacts guest experience and may result in negative reviews",
+        "avaliacoesNegativas": "Negative reviews",
+        "avaliacoesNegativasDesc": "Damage to reputation and loss of customers"
+      },
+      "solucao": {
+        "title": "THE PRHIMA SOLUTION",
+        "substituicao24h": "Replacement within 24 hours",
+        "substituicao24hDesc": "Team ready to immediately meet your needs",
+        "equipeTreinada": "Trained team",
+        "equipeTreinadaDesc": "Qualified professionals to serve customers and guests",
+        "encargosPrhima": "Charges under PRHIMA responsibility",
+        "encargosPrhimaDesc": "All costs and labor and pension obligations",
+        "riscoApolice": "Risk transformed into policy",
+        "riscoApoliceDesc": "Total protection against unforeseen events and operational risks"
+      },
+      "operacao24h": "Continuous 24/7 operation"
+    },
+    "condominios": {
+      "title": "PRHIMA Condominiums",
+      "dor": {
+        "title": "THE PAIN",
+        "faltasPorteiros": "Doorman absences",
+        "faltasPorteirosDesc": "Unexpected absences compromising security and resident service",
+        "limpezaComprometida": "Compromised cleaning",
+        "limpezaComprometidaDesc": "Failure in common area maintenance, impacting quality of life and property value",
+        "sindicoExposto": "Exposed building manager",
+        "sindicoExpostoDesc": "Legal risk for manager and administration company in case of operational failures"
+      },
+      "solucao": {
+        "title": "THE PRHIMA SOLUTION",
+        "equipeEstavel": "Stable team",
+        "equipeEstavelDesc": "Trained professionals ready to meet condominium needs 24/7",
+        "substituicaoImediata": "Immediate replacement",
+        "substituicaoImediataDesc": "Guaranteed replacement within 24 hours, without service interruption",
+        "protecaoJuridica": "Legal protection",
+        "protecaoJuridicaDesc": "Complete shielding for manager and administration company, avoiding exposure in operational failures"
+      },
+      "seguranca": "Security and operational continuity",
+      "protecao": "Total protection for managers and administration companies"
+    },
+    "logistica": {
+      "title": "PRHIMA Logistics",
+      "dor": {
+        "title": "THE PAIN",
+        "faltasTurnos": "Shift absences",
+        "faltasTurnosDesc": "Unexpected replacements that impact operations",
+        "quebraEscala": "Schedule breakdown",
+        "quebraEscalaDesc": "Difficulty maintaining schedules and operational routines",
+        "metasComprometidas": "Compromised goals",
+        "metasComprometidasDesc": "Results affected by lack of technical team"
+      },
+      "solucao": {
+        "title": "THE PRHIMA SOLUTION",
+        "equipesDedicadas": "Dedicated teams",
+        "equipesDedicadasDesc": "Professionals specifically trained for your operation",
+        "substituicao24h": "24-hour replacement",
+        "substituicao24hDesc": "Guaranteed immediate replacement within deadline",
+        "gestaoTotal": "Total management",
+        "gestaoTotalDesc": "Active technical supervision and continuous operation",
+        "blindagemSeguros": "Insurance shielding",
+        "blindagemSegurosDesc": "Protection against labor and pension risks"
+      },
+      "confiancaOperacional": "24/7 Operational Confidence"
+    },
+    "industria": {
+      "title": "PRHIMA Industry",
+      "dor": {
+        "title": "THE PAIN",
+        "absenteismo": "Absenteeism",
+        "absenteismoDesc": "Operational losses and productivity impacts",
+        "quebraTurno": "Shift breakdown",
+        "quebraTurnoDesc": "Production interruptions and scheduling issues",
+        "riscosProdutivos": "Productive risks",
+        "riscosProdutivosDesc": "Operational errors and accidents",
+        "passivosOcultos": "Hidden liabilities",
+        "passivosOcultosDesc": "Unidentified labor and pension risks"
+      },
+      "solucao": {
+        "title": "THE PRHIMA SOLUTION",
+        "gestaoOperacional": "Operational management",
+        "gestaoOperacionalDesc": "Complete specialization in workforce management for complex industrial environments",
+        "supervisaoAtiva": "Active supervision",
+        "supervisaoAtivaDesc": "Dedicated team of experienced supervisors to ensure quality and continuity of operations",
+        "substituicao24h": "24-hour replacement",
+        "substituicao24hDesc": "Guaranteed immediate replacement of any professional throughout operation period",
+        "blindagemContratual": "Contractual shielding",
+        "blindagemContratualDesc": "Complete protection against labor and pension risks through our insurance policy"
+      },
+      "solucoesTerceirizacao": "Industrial Workforce Outsourcing Solutions",
+      "colaboradoresGerenciados": "15 thousand employees managed in industrial operations"
+    },
+    "construcao": {
+      "title": "PRHIMA Construction",
+      "dor": {
+        "title": "WHAT COMPANIES IN THE SEGMENT FACE",
+        "rotatividade": "Workforce turnover",
+        "rotatividadeDesc": "High costs with constant recruitment and training",
+        "fiscalizacoes": "Inspections",
+        "fiscalizacoesDesc": "Legal risks and fines for non-compliance",
+        "acoesTrabalhistas": "Labor lawsuits",
+        "acoesTrabalhistasDesc": "Lawsuits filed by outsourced employees",
+        "paralisacoes": "Construction stoppages",
+        "paralisacoesDesc": "Interruption of essential services"
+      },
+      "solucao": {
+        "title": "HOW PRHIMA SOLVES IT",
+        "maoObraRegularizada": "Regularized workforce",
+        "maoObraRegularizadaDesc": "Employees with verbal employment contract",
+        "substituicaoImediata": "Immediate replacement",
+        "substituicaoImediataDesc": "24-hour replacement without service interruption",
+        "coberturaApolice": "Policy coverage",
+        "coberturaApoliceDesc": "Protection against labor risks",
+        "segurancaJuridica": "Total legal security",
+        "segurancaJuridicaDesc": "Complete shielding against labor lawsuits"
+      },
+      "solucoesSobMedida": "Custom solutions for construction",
+      "colaboradoresGerenciados": "+50 thousand employees managed"
     }
   }
+}

@@ -1,16 +1,21 @@
 // pages/ServicosPage.jsx
 import React from 'react';
 import { useTranslation } from '../hooks/useTranslation';
-import { FaUsers, FaShieldAlt, FaBalanceScale, FaChartLine, FaHeartbeat, FaRobot, FaHandshake, FaFileContract, FaClipboardCheck, FaHeadset } from 'react-icons/fa';
+import {
+  FaShieldAlt, FaBalanceScale, FaChartLine, FaHeartbeat,
+  FaRobot, FaHandshake, FaFileContract, FaClipboardCheck, FaHeadset,
+  FaClock, FaUserCheck, FaUserTie, FaPlayCircle, FaCheckCircle
+} from 'react-icons/fa';
 import '../CSS/ServicosPage.css';
 
 const ServicosPage = () => {
   const { t } = useTranslation();
 
+  // Serviços existentes
   const servicos = [
     {
       id: 1,
-      icon: <FaRobot className="servico-icon" />,
+      icon: <FaRobot />,
       title: t('services.services.recruitment.title'),
       tag: t('services.services.recruitment.tag'),
       description: t('services.services.recruitment.description'),
@@ -21,7 +26,7 @@ const ServicosPage = () => {
     },
     {
       id: 2,
-      icon: <FaShieldAlt className="servico-icon" />,
+      icon: <FaShieldAlt />,
       title: t('services.services.outsourcing.title'),
       tag: t('services.services.outsourcing.tag'),
       description: t('services.services.outsourcing.description'),
@@ -32,7 +37,7 @@ const ServicosPage = () => {
     },
     {
       id: 3,
-      icon: <FaBalanceScale className="servico-icon" />,
+      icon: <FaBalanceScale />,
       title: t('services.services.labor.title'),
       tag: t('services.services.labor.tag'),
       description: t('services.services.labor.description'),
@@ -43,7 +48,7 @@ const ServicosPage = () => {
     },
     {
       id: 4,
-      icon: <FaChartLine className="servico-icon" />,
+      icon: <FaChartLine />,
       title: t('services.services.compliance.title'),
       tag: t('services.services.compliance.tag'),
       description: t('services.services.compliance.description'),
@@ -54,7 +59,7 @@ const ServicosPage = () => {
     },
     {
       id: 5,
-      icon: <FaHeartbeat className="servico-icon" />,
+      icon: <FaHeartbeat />,
       title: t('services.services.wellness.title'),
       tag: t('services.services.wellness.tag'),
       description: t('services.services.wellness.description'),
@@ -65,6 +70,9 @@ const ServicosPage = () => {
     }
   ];
 
+  // Diferenciais (exemplo simplificado)
+  const diferenciais = t('services.differentiators.items', []);
+
   return (
     <div className="servicos-page">
       {/* Hero Section */}
@@ -74,12 +82,9 @@ const ServicosPage = () => {
             <FaShieldAlt />
             <span>{t('services.hero.badge')}</span>
           </div>
-          <h1 
-            className="hero-title" 
-            dangerouslySetInnerHTML={{ 
-              __html: t('services.hero.title') 
-            }}
-          />
+          <h1 className="hero-title">
+            {t('services.hero.title').replace('<span class="highlight">', '').replace('</span>', '')}
+          </h1>
           <p className="hero-subtitle">
             {t('services.hero.subtitle')}
           </p>
@@ -106,10 +111,7 @@ const ServicosPage = () => {
       <section className="servicos-grid-section">
         <div className="servicos-grid">
           {servicos.map((servico) => (
-            <div 
-              key={servico.id} 
-              className="servico-card"
-            >
+            <div key={servico.id} className="servico-card">
               <div className="card-header">
                 <div className="card-icon" style={{ backgroundColor: servico.color }}>
                   {servico.icon}
@@ -118,11 +120,11 @@ const ServicosPage = () => {
                   {servico.tag}
                 </div>
               </div>
-              
+
               <div className="card-body">
                 <h3 className="card-title">{servico.title}</h3>
                 <p className="card-description">{servico.description}</p>
-                
+
                 <div className="card-features">
                   <h4 className="features-title">{t('services.benefits.title')}:</h4>
                   <ul className="features-list">
@@ -135,9 +137,9 @@ const ServicosPage = () => {
                   </ul>
                 </div>
               </div>
-              
+
               <div className="card-footer">
-                <button 
+                <button
                   className="cta-button"
                   style={{ backgroundColor: servico.color }}
                 >
@@ -150,23 +152,104 @@ const ServicosPage = () => {
         </div>
       </section>
 
+      <section className="garantia-operacional-section">
+        <div className="garantia-container">
+          <div className="garantia-header">
+            <h2 className="garantia-title">{t('services.guarantee.title')}</h2>
+            <p className="garantia-subtitle">{t('services.guarantee.subtitle')}</p>
+          </div>
+
+          <div className="garantia-cards">
+            {/* Card 1: Substituição em 24h */}
+            <div className="garantia-card garantia-card-highlight">
+              <div className="garantia-card-icon">
+                <FaClock />
+              </div>
+              <h3 className="garantia-card-title">{t('services.guarantee.replacement.title')}</h3>
+              <p className="garantia-card-text">
+                {t('services.guarantee.replacement.description')}
+              </p>
+              <div className="garantia-badge">
+                <FaCheckCircle />
+                <span>{t('services.guarantee.replacement.badge')}</span>
+              </div>
+            </div>
+
+            {/* Card 2: Profissionais Reserva */}
+            <div className="garantia-card">
+              <div className="garantia-card-icon">
+                <FaUserCheck />
+              </div>
+              <h3 className="garantia-card-title">{t('services.guarantee.reserve.title')}</h3>
+              <ul className="garantia-list">
+                {Array.isArray(t('services.guarantee.reserve.features', [])) &&
+                  t('services.guarantee.reserve.features', []).map((feature, index) => (
+                    <li key={index} className="garantia-list-item">
+                      <FaCheckCircle />
+                      <span>{feature}</span>
+                    </li>
+                  ))}
+              </ul>
+            </div>
+
+            {/* Card 3: Supervisão Técnica Ativa */}
+            <div className="garantia-card">
+              <div className="garantia-card-icon">
+                <FaUserTie />
+              </div>
+              <h3 className="garantia-card-title">{t('services.guarantee.supervision.title')}</h3>
+              <ul className="garantia-list">
+                {Array.isArray(t('services.guarantee.supervision.features', [])) &&
+                  t('services.guarantee.supervision.features', []).map((feature, index) => (
+                    <li key={index} className="garantia-list-item">
+                      <FaCheckCircle />
+                      <span>{feature}</span>
+                    </li>
+                  ))}
+              </ul>
+            </div>
+          </div>
+
+          {/* Banner de Garantia */}
+          <div className="garantia-banner">
+            <div className="garantia-banner-content">
+              <div className="garantia-banner-icon">
+                <FaPlayCircle />
+              </div>
+              <div className="garantia-banner-text">
+                <h3 className="garantia-banner-title">{t('services.guarantee.banner.title')}</h3>
+                <p className="garantia-banner-subtitle">
+                  {t('services.guarantee.banner.subtitle')}
+                </p>
+              </div>
+            </div>
+            <div className="garantia-banner-stats">
+              <div className="garantia-stat">
+                <span className="garantia-stat-number">24/7</span>
+                <span className="garantia-stat-label">{t('services.guarantee.banner.stats.operation')}</span>
+              </div>
+              <div className="garantia-stat-divider"></div>
+              <div className="garantia-stat">
+                <span className="garantia-stat-number">100%</span>
+                <span className="garantia-stat-label">{t('services.guarantee.banner.stats.coverage')}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Seção de Diferenciais */}
       <section className="diferenciais-section">
         <div className="diferenciais-container">
           <div className="diferenciais-header">
-            <h2 
-              className="diferenciais-title" 
-              dangerouslySetInnerHTML={{ 
-                __html: t('services.differentiators.title') 
-              }}
-            />
+            <h2 className="diferenciais-title">{t('services.differentiators.title').replace('<span class="highlight">', '').replace('</span>', '')}</h2>
             <p className="diferenciais-subtitle">
               {t('services.differentiators.subtitle')}
             </p>
           </div>
-          
+
           <div className="diferenciais-grid">
-            {t('services.differentiators.items', []).map((diferencial, index) => (
+            {Array.isArray(diferenciais) && diferenciais.map((diferencial, index) => (
               <div key={index} className="diferencial-card">
                 <div className="diferencial-icon">
                   <FaHandshake />
@@ -184,9 +267,7 @@ const ServicosPage = () => {
         <div className="cta-container">
           <div className="cta-content">
             <h2 className="cta-title">{t('services.cta.title')}</h2>
-            <p className="cta-text">
-              {t('services.cta.text')}
-            </p>
+            <p className="cta-text">{t('services.cta.text')}</p>
             <div className="cta-buttons">
               <button className="cta-button-primary">
                 <FaHeadset />

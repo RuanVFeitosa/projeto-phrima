@@ -32,17 +32,17 @@ const Footer = () => {
           </div>
 
           <div className="footer-cta">
-            <button className="cta-button solicitar">
+            <button className="cta-buttonFooter solicitar">
               <FaShieldAlt className="button-icon" />
               <span>{t('footer.buttons.proposal')}</span>
             </button>
 
-            <button className="cta-button agendar">
+            <button className="cta-buttonFooter agendar">
               <FaCalendarCheck className="button-icon" />
               <span>{t('footer.buttons.meeting')}</span>
             </button>
 
-            <button className="cta-button iniciar">
+            <button className="cta-buttonFooter iniciar">
               <FaRocket className="button-icon" />
               <span>{t('footer.buttons.start')}</span>
             </button>
@@ -121,23 +121,7 @@ const Footer = () => {
             <p>{t('footer.copyright.line1', { year: new Date().getFullYear() })}</p>
             <p>{t('footer.copyright.line2')}</p>
           </div>
-
-          <div className="footer-social">
-            <a href="#" className="social-link" title={t('footer.social.linkedin')}>
-              <i className="fab fa-linkedin"></i>
-            </a>
-            <a href="#" className="social-link" title={t('footer.social.instagram')}>
-              <i className="fab fa-instagram"></i>
-            </a>
-            <a href="#" className="social-link" title={t('footer.social.whatsapp')}>
-              <i className="fab fa-whatsapp"></i>
-            </a>
-            <a href="#" className="social-link" title={t('footer.social.youtube')}>
-              <i className="fab fa-youtube"></i>
-            </a>
-          </div>
         </div>
-
       </div>
     </footer>
   );

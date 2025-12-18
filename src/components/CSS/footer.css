@@ -1,13 +1,14 @@
 .footer {
-  max-width: 2186px;
+  width: 100%;
   position: relative;
-  background: linear-gradient(135deg, #0a1f3a 0%, #0D2C4F );
+  background: linear-gradient(135deg, #0a1f3a 0%, #0D2C4F);
   color: white;
-  margin: -331px;
-  padding: 60px 50px 200px 30px;
-  margin-top: 80px;
+  margin: 0;
+  padding: 40px 20px 50px; /* Redução drástica: de 80px para 50px embaixo */
+  margin-top: 60px; /* Reduzido de 80px */
   position: relative;
   overflow: hidden;
+  box-sizing: border-box;
 }
 
 .footer::before {
@@ -16,51 +17,48 @@
   top: 0;
   left: 0;
   right: 0;
-  height: 4px;
+  height: 3px; /* Reduzido de 4px */
   background: linear-gradient(90deg, var(--color-secondary), #ffd700);
 }
 
 .footer-container {
+  max-width: 1200px; /* Reduzido de 1200px */
   width: 100%;
   margin: 0 auto;
   position: relative;
   z-index: 1;
+  box-sizing: border-box;
 }
 
 .footer-main {
   align-items: center;
   display: flex;
   flex-direction: column;
-  gap: 40px;
-  margin-bottom: 50px;
-  margin-left: 150px;
-}
-
-.footer-message {
+  margin-bottom: 30px; /* Reduzido de 40px */
   text-align: center;
 }
 
 .footer-title {
-  font-size: 36px;
+  font-size: 32px; /* Reduzido de 36px */
   font-weight: 300;
-  line-height: 1.3;
-  margin-bottom: 25px;
-  margin-left: 160px;
+  line-height: 1.2; /* Reduzido de 1.3 */
+  margin-bottom: 15px; /* Reduzido de 20px */
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 5px; /* Reduzido de 8px */
 }
 
 .title-line1 {
   color: rgba(255, 255, 255, 0.9);
   font-weight: 400;
-  
+  font-size: 28px; /* Adicionado para redução proporcional */
 }
 
 .title-line2 {
   color: white;
-  font-size: 42px;
+  font-size: 36px; /* Reduzido de 42px */
   font-weight: 700;
+  line-height: 1.1;
 }
 
 .title-line2 strong {
@@ -69,107 +67,107 @@
 }
 
 .footer-description {
-  max-width: 1000px;
-  margin-left: 130px;
+  max-width: 800px; /* Reduzido de 900px */
+  margin: 0 auto;
 }
 
 .description-text {
-  font-size: 18px;
-  line-height: 1.6;
-  margin-bottom: 15px;
+  font-size: 16px; /* Reduzido de 17px */
+  line-height: 1.4; /* Reduzido de 1.5 */
+  margin-bottom: 10px; /* Reduzido de 12px */
   color: rgba(255, 255, 255, 0.85);
   font-weight: 300;
 }
 
-/* Botões CTA */
+/* Botões CTA - Ajuste mais compacto */
 .footer-cta {
   display: flex;
   justify-content: center;
-  margin-left: 210px;
-  gap: 100px;
+  gap: 20px; /* Reduzido de 25px */
   flex-wrap: wrap;
+  margin-top: 10px; /* Reduzido de 15px */
 }
 
-.cta-button {
+.cta-buttonFooter {
   display: flex;
   align-items: center;
-  gap: 12px;
-  padding: 18px 30px;
+  gap: 8px; /* Reduzido de 10px */
+  padding: 14px 20px; /* Reduzido de 16px 25px */
   border-radius: 50px;
-  font-size: 16px;
+  font-size: 14px; /* Reduzido de 15px */
   font-weight: 600;
   border: none;
   cursor: pointer;
   transition: all 0.3s ease;
-  min-width: 280px;
+  min-width: 220px; /* Reduzido de 250px */
   justify-content: center;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+  height: 50px; /* Altura fixa para consistência */
 }
 
-.cta-button.solicitar {
+.cta-buttonFooter.solicitar {
   background: var(--color-secondary);
   color: var(--color-primary);
 }
 
-.cta-button.agendar {
+.cta-buttonFooter.agendar {
   background: transparent;
   color: white;
   border: 2px solid var(--color-secondary);
 }
 
-.cta-button.iniciar {
+.cta-buttonFooter.iniciar {
   background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
   color: white;
 }
 
-.cta-button:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+.cta-buttonFooter:hover {
+  transform: translateY(-2px); /* Reduzido de 3px */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-.cta-button.solicitar:hover {
+.cta-buttonFooter.solicitar:hover {
   background: #ffd940;
 }
 
-.cta-button.agendar:hover {
+.cta-buttonFooter.agendar:hover {
   background: var(--color-secondary);
   color: var(--color-primary);
 }
 
-.cta-button.iniciar:hover {
+.cta-buttonFooter.iniciar:hover {
   background: linear-gradient(135deg, #ff6b6b 0%, #e74c3c 100%);
 }
 
 .button-icon {
-  font-size: 18px;
+  font-size: 14px; /* Reduzido de 16px */
 }
 
-/* Divisor */
+/* Divisor - Mais fino e menos espaçado */
 .footer-divider {
   height: 1px;
-  background: rgba(255, 255, 255, 0.1);
-  margin: 40px 0;
+  background: rgba(255, 255, 255, 0.08); /* Mais transparente */
+  margin: 20px 0; /* Reduzido de 30px */
   width: 100%;
 }
 
-/* Seção inferior */
+/* Seção inferior - Layout mais compacto */
 .footer-bottom {
-  margin-left: 350px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 40px;
-  margin-bottom: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Reduzido de 220px */
+  gap: 25px; /* Reduzido de 30px */
+  margin-bottom: 25px; /* Reduzido de 30px */
 }
 
 .contact-title,
 .links-title,
 .services-title {
-  font-size: 20px;
+  font-size: 16px; /* Reduzido de 18px */
   font-weight: 600;
-  margin-bottom: 20px;
+  margin-bottom: 12px; /* Reduzido de 15px */
   color: var(--color-secondary);
   position: relative;
-  padding-bottom: 10px;
+  padding-bottom: 6px; /* Reduzido de 8px */
 }
 
 .contact-title::after,
@@ -179,43 +177,46 @@
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 40px;
-  height: 3px;
+  width: 30px; /* Reduzido de 35px */
+  height: 2px; /* Reduzido de 3px */
   background: var(--color-secondary);
 }
 
-/* Contato */
+/* Contato - Mais compacto */
 .contact-info {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 8px; /* Reduzido de 12px */
 }
 
 .contact-item {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 8px; /* Reduzido de 10px */
+  min-height: 24px; /* Altura mínima reduzida */
 }
 
 .contact-icon {
   color: var(--color-secondary);
-  font-size: 16px;
-  width: 20px;
+  font-size: 13px; /* Reduzido de 15px */
+  width: 16px; /* Reduzido de 18px */
+  flex-shrink: 0;
 }
 
 .contact-link {
   color: rgba(255, 255, 255, 0.85);
   text-decoration: none;
   transition: all 0.3s ease;
-  font-size: 15px;
+  font-size: 13px; /* Reduzido de 14px */
+  line-height: 1.3;
 }
 
 .contact-link:hover {
   color: var(--color-secondary);
-  transform: translateX(5px);
+  transform: translateX(3px); /* Reduzido de 5px */
 }
 
-/* Links rápidos */
+/* Links rápidos - Mais compactos */
 .links-list,
 .services-list {
   list-style: none;
@@ -225,7 +226,8 @@
 
 .links-list li,
 .services-list li {
-  margin-bottom: 12px;
+  margin-bottom: 6px; /* Reduzido de 10px */
+  line-height: 1.3;
 }
 
 .links-list a,
@@ -233,79 +235,82 @@
   color: rgba(255, 255, 255, 0.85);
   text-decoration: none;
   transition: all 0.3s ease;
-  font-size: 15px;
+  font-size: 13px; /* Reduzido de 14px */
   display: inline-block;
 }
 
 .links-list a:hover,
 .services-list a:hover {
   color: var(--color-secondary);
-  transform: translateX(5px);
+  transform: translateX(3px); /* Reduzido de 5px */
 }
 
-/* Certificações */
+/* Certificações - Mais compactas */
 .footer-certifications {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 12px; /* Reduzido de 15px */
 }
 
 .cert-badge {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 10px; /* Reduzido de 12px */
   background: rgba(255, 255, 255, 0.05);
-  padding: 15px;
-  border-radius: 8px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 10px; /* Reduzido de 12px */
+  border-radius: 6px; /* Reduzido de 8px */
+  border: 1px solid rgba(255, 255, 255, 0.08);
   transition: all 0.3s ease;
+  min-height: 50px; /* Altura mínima reduzida */
 }
 
 .cert-badge:hover {
   background: rgba(255, 255, 255, 0.1);
-  transform: translateY(-3px);
+  transform: translateY(-2px); /* Reduzido de 3px */
 }
 
 .cert-badge i {
   color: var(--color-secondary);
+  font-size: 1.3rem; /* Reduzido de 1.5rem */
 }
 
 .cert-badge span {
-  font-size: 14px;
+  font-size: 12px; /* Reduzido de 13px */
   font-weight: 500;
+  line-height: 1.2;
 }
 
-/* Rodapé final */
+/* Rodapé final - Muito mais compacto */
 .footer-end {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 30px;
-  margin-left: 320px;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 20px; /* Reduzido de 25px */
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 12px; /* Reduzido de 15px */
 }
 
 .footer-copyright {
   flex: 1;
-  min-width: 300px;
+  min-width: 200px; /* Reduzido de 250px */
 }
 
 .footer-copyright p {
-  font-size: 14px;
+  font-size: 12px; /* Reduzido de 13px */
   color: rgba(255, 255, 255, 0.6);
-  margin: 5px 0;
+  margin: 3px 0; /* Reduzido de 4px */
+  line-height: 1.3;
 }
 
 .footer-social {
   display: flex;
-  gap: 15px;
+  gap: 10px; /* Reduzido de 12px */
 }
 
 .social-link {
-  width: 40px;
-  height: 40px;
+  width: 32px; /* Reduzido de 36px */
+  height: 32px; /* Reduzido de 36px */
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
   display: flex;
@@ -314,11 +319,218 @@
   color: white;
   text-decoration: none;
   transition: all 0.3s ease;
-  font-size: 18px;
+  font-size: 14px; /* Reduzido de 16px */
 }
 
 .social-link:hover {
   background: var(--color-secondary);
   color: var(--color-primary);
-  transform: translateY(-3px);
+  transform: translateY(-2px); /* Reduzido de 3px */
+}
+
+/* ==================== RESPONSIVIDADE COMPACTA ==================== */
+
+/* Tablet (768px - 1024px) */
+@media screen and (max-width: 1024px) {
+  .footer {
+    padding: 30px 15px 40px;
+    margin-top: 40px;
+  }
+
+  .footer-title {
+    font-size: 26px;
+    margin-bottom: 12px;
+  }
+
+  .title-line1 {
+    font-size: 22px;
+  }
+
+  .title-line2 {
+    font-size: 28px;
+  }
+
+  .footer-cta {
+    gap: 15px;
+  }
+
+  .cta-button {
+    min-width: 200px;
+    padding: 12px 18px;
+    height: 46px;
+  }
+
+  .footer-bottom {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .footer-end {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+    padding-top: 15px;
+  }
+}
+
+/* Tablet Pequeno (600px - 768px) */
+@media screen and (max-width: 768px) {
+  .footer {
+    padding: 25px 12px 35px;
+    margin-top: 30px;
+  }
+
+  .footer-title {
+    font-size: 22px;
+  }
+
+  .title-line1 {
+    font-size: 20px;
+  }
+
+  .title-line2 {
+    font-size: 24px;
+  }
+
+  .description-text {
+    font-size: 14px;
+  }
+
+  .footer-cta {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .cta-button {
+    min-width: 220px;
+    width: 100%;
+    max-width: 250px;
+    padding: 10px 16px;
+    height: 44px;
+  }
+
+  .footer-bottom {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .footer-certifications {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .cert-badge {
+    flex: 1;
+    min-width: 160px;
+    padding: 8px;
+  }
+}
+
+/* Mobile (480px - 600px) */
+@media screen and (max-width: 600px) {
+  .footer {
+    padding: 20px 10px 30px;
+    margin-top: 20px;
+  }
+
+  .footer-main {
+    gap: 15px;
+  }
+
+  .footer-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .title-line1 {
+    font-size: 18px;
+  }
+
+  .title-line2 {
+    font-size: 22px;
+  }
+
+  .description-text {
+    font-size: 13px;
+    margin-bottom: 8px;
+  }
+
+  .cta-button {
+    padding: 9px 14px;
+    font-size: 13px;
+    height: 42px;
+  }
+
+  .footer-divider {
+    margin: 15px 0;
+  }
+
+  .footer-bottom {
+    gap: 20px;
+  }
+
+  .cert-badge {
+    min-width: 100%;
+  }
+
+  .footer-end {
+    padding-top: 15px;
+    gap: 10px;
+  }
+
+  .social-link {
+    width: 28px;
+    height: 28px;
+    font-size: 12px;
+  }
+}
+
+/* Mobile Pequeno (até 480px) */
+@media screen and (max-width: 480px) {
+  .footer {
+    padding: 15px 8px 25px;
+    margin-top: 15px;
+  }
+
+  .footer-title {
+    font-size: 18px;
+  }
+
+  .title-line1 {
+    font-size: 16px;
+  }
+
+  .title-line2 {
+    font-size: 20px;
+  }
+
+  .cta-button {
+    padding: 8px 12px;
+    font-size: 12px;
+    height: 40px;
+  }
+
+  .footer-bottom {
+    gap: 15px;
+  }
+
+  .footer-copyright p {
+    font-size: 11px;
+  }
+}
+
+/* Telas Grandes - Mantenho compacto */
+@media screen and (min-width: 1600px) {
+  .footer-container {
+    max-width: 1200px;
+  }
+  
+  .footer-cta {
+    gap: 25px;
+  }
+  
+  .cta-button {
+    min-width: 240px;
+  }
 }

@@ -8,6 +8,7 @@ import HomePage from './homePage';
 import ServicosPage from './servicosPages';
 import AtuacaoGlobalPage from './atuacaoGlobalPage';
 import FaleConoscoPage from '../pages/faleConoscoPage';
+import TotalPrhima from '../pages/totalPrhima';  
 
 const CasesPage = () => <div style={{ padding: '40px' }}><h1>Cases</h1></div>;
 
@@ -25,6 +26,7 @@ function App() {
               <Route path="/atuacao-global" element={<AtuacaoGlobalPage />} />
               <Route path="/cases" element={<CasesPage />} />
               <Route path="/fale-conosco" element={<FaleConoscoPage />} />
+              <Route path="/total-prhima" element={<TotalPrhima />} />
             </Routes>
           </main>
         </div>
